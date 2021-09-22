@@ -6,7 +6,7 @@ export default function Skills() {
             <div className='font-bold text-5xl'>
                 Skills
             </div>
-            <div className='flex justify-center mt-6 gap-x-10'>
+            <div className='flex justify-center mt-6 gap-x-10 skills'>
                 <img  src='/cssLogo.png' className='h-24 w-30'/>
                 <img  src='/htmlLogo.png' className='h-24 w-30'/>
                 <img  src='/jsIcon.png' className='h-24 w-30'/>

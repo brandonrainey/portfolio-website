@@ -7,7 +7,7 @@ export default function Header(props) {
                 My Portfolio
             </div>
             <div className='ml-auto mt-auto'>
-                <button onClick={() => props.setWorkScroll(true)} className='mr-4'>Work</button>
+                <button onClick={() => props.setWorkScroll(true)} className='mr-4'>Projects</button>
                 <button onClick={() => props.setAboutMeScroll(true)} className='mr-4'>About</button>
                 <button onClick={() => props.setContactScroll(true)} className='mr-4'>Contact</button>
             </div>

@@ -16,6 +16,12 @@ export default function Contact(props) {
             <div className='font-bold text-5xl'>
                 Contact
             </div>
+            <div className='font-bold underline mt-6'>
+                noneya67@yahoo.com
+            </div>
+            <div className='flex justify-center mt-4'>
+                <a href='https://github.com/Genlord'><img src='/githubIcon.png' className='h-10 w-10'/></a>
+            </div>
         </div>
     )
 }

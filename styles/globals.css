@@ -11,3 +11,44 @@
 html {
     background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
+
+@media (max-width: 500px) {
+    html,body{
+      overflow-x: hidden;
+  }
+
+    .intro {
+        align-items: center;
+    }
+
+    .introText {
+        width: 85%;
+        font-size: 50px;
+    }
+
+    .introSubText {
+        width: 75%;
+    }
+
+    .projectOne {
+        width: 75%;
+    }
+
+    .projectTwo {
+        width: 75%;
+    }
+
+    .projectContainer {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2.5rem;
+    }
+
+    .aboutMeText {
+        width: 75%;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+    }
+}
