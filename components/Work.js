@@ -18,8 +18,8 @@ export default function Work(props) {
                 Projects
             </div>
             <div className='flex justify-center mt-6 gap-x-10 projectContainer'>
-                <a className='w-1/4 transform duration-150 ease-in-out hover:scale-105 projectOne' href='https://google.com'><img src='/anime.png' className='rounded'/></a>
-                <a className='w-1/4 transform duration-150 ease-in-out hover:scale-105 projectTwo' href='https://google.com'><img src='/ecommerce.png' className='rounded'/></a>
+                <a className='w-1/4 transform duration-150 ease-in-out hover:scale-105 projectOne' href='https://mal-anime-db.netlify.app'><img src='/anime.png' className='rounded'/></a>
+                <a className='w-1/4 transform duration-150 ease-in-out hover:scale-105 projectTwo' href='https://compparts.netlify.app'><img src='/ecommerce.png' className='rounded'/></a>
             </div>
             
         </div>
