@@ -52,3 +52,29 @@ html {
         flex-wrap: wrap;
     }
 }
+
+.skills {
+    flex-basis: 30%;
+}
+
+.overlayOne {
+    opacity: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.3);;
+}
+
+.overlayOne:hover {
+    
+    opacity: 1;
+}
+
+.projectTitle {
+    margin-right: 500px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+.projectTitle2 {
+    margin-left: 500px;
+    margin-bottom: -20px;
+}
