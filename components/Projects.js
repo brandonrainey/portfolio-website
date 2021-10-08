@@ -23,6 +23,9 @@ export default function Work(props) {
             <div className='font-bold projectTitle2 text-xl'>
                 E-Commerce
             </div>
+            <div className='font-bold projectTitle3 text-xl'>
+                NFT-Tracker
+            </div>
             <div className='flex justify-center mt-6 gap-x-12 projectContainer relative'>
 
                 
@@ -36,7 +39,7 @@ export default function Work(props) {
                     </div>
                 </div>
 
-                <div className='w-1/4 absolute h-full right-one overlayOne flex justify-center gap-x-10'>
+                <div className='w-1/4 absolute h-full right-two overlayOne flex justify-center gap-x-10'>
                     <div className='mt-32 opacity-100'>
                         <a href='https://compparts.netlify.app' className='font-bold'>Live</a>
                     </div>
@@ -45,7 +48,10 @@ export default function Work(props) {
                     </div>
                 </div>
 
+                
+
                 <a className='w-1/4 relative transform duration-150 ease-in-out hover:scale-105 projectOne' href='https://mal-anime-db.netlify.app'><img src='/animedbss.png' className='rounded'/></a>
+                <a className='w-1/4 transform duration-150 ease-in-out hover:scale-105 projectTwo' href='https://compparts.netlify.app'><img src='/e-commercess.png' className='rounded'/></a>
                 <a className='w-1/4 transform duration-150 ease-in-out hover:scale-105 projectTwo' href='https://compparts.netlify.app'><img src='/e-commercess.png' className='rounded'/></a>
             </div>
             

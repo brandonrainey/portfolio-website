@@ -38,6 +38,10 @@ html {
         width: 75%;
     }
 
+    .projectThree {
+        width: 75%;
+    }
+
     .projectContainer {
         flex-direction: column;
         align-items: center;
@@ -69,12 +73,17 @@ html {
 }
 
 .projectTitle {
-    margin-right: 500px;
+    margin-right: 1050px;
     margin-bottom: -20px;
     margin-top: 20px;
 }
 
 .projectTitle2 {
-    margin-left: 500px;
+    
     margin-bottom: -20px;
+}
+
+.projectTitle3 {
+    margin-bottom: -20px;
+    margin-left: 1050px;
 }
