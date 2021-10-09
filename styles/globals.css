@@ -54,6 +54,45 @@ html {
 
     .skills {
         flex-wrap: wrap;
+        flex: 1 0 25%;
+    }
+
+    .overlayOne {
+        display: none;
+        
+    }
+
+    .overlayTwo {
+        display: none;
+    }
+
+    .overlayThree {
+        display: none;
+    }
+
+    .projectTitle {
+        display: none;
+    }
+
+    .projectTitle2 {
+        display: none;
+        
+    }
+
+    .projectTitle3 {
+        display: none;
+    }
+
+    .mobileTitle1 {
+        margin-bottom: -20px;
+    }
+
+    .mobileTitle2 {
+        margin-bottom: -20px;
+    }
+
+    .mobileTitle3 {
+        margin-bottom: -20px;
     }
 }
 

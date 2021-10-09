@@ -58,9 +58,22 @@ export default function Work(props) {
                 </div>
 
                 
+                    <div className='font-bold mobileTitle1 text-xl'>
+                        Anime DB
+                    </div>
 
                 <a className='w-1/4 relative transform duration-150 ease-in-out hover:scale-105 projectOne' href='https://mal-anime-db.netlify.app'><img src='/animedbss.png' className='rounded'/></a>
+
+                    <div className='font-bold mobileTitle2 text-xl'>
+                        E-Commerce
+                    </div>
+
                 <a className='w-1/4 transform duration-150 ease-in-out hover:scale-105 projectTwo' href='https://compparts.netlify.app'><img src='/e-commercess.png' className='rounded'/></a>
+
+                    <div className='font-bold mobileTitle3 text-xl'>
+                        NFT-Tracker
+                    </div>
+                    
                 <a className='w-1/4 transform duration-150 ease-in-out hover:scale-105 projectTwo' href='https://my-nft-tracker.netlify.app'><img src='/nfttrackerss.png' className='rounded'/></a>
             </div>
             
