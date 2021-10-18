@@ -10,8 +10,6 @@ module.exports = {
       'one': '10%',
       'two': '37.5%',
     },
-    
-    
   },
   variants: {
     extend: {},

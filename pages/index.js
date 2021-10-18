@@ -1,21 +1,19 @@
-import React, { useRef, useState } from 'react';
-import AboutMe from '../components/AboutMe';
-import Contact from '../components/Contact';
-import Header from '../components/Header'
-import Intro from '../components/Intro'
-import Skills from '../components/Skills';
-import Work from '../components/Projects'
-
+import React, { useState } from "react";
+import AboutMe from "../components/AboutMe";
+import Contact from "../components/Contact";
+import Header from "../components/Header";
+import Intro from "../components/Intro";
+import Skills from "../components/Skills";
+import Work from "../components/Projects";
 
 export default function Home() {
-
-  const [workScroll, setWorkScroll] = useState(false)
-  const [aboutMeScroll, setAboutMeScroll] = useState(false)
-  const [contactScroll, setContactScroll] = useState(false)
+  const [workScroll, setWorkScroll] = useState(false);
+  const [aboutMeScroll, setAboutMeScroll] = useState(false);
+  const [contactScroll, setContactScroll] = useState(false);
 
   return (
-    <div className=''>
-      <Header 
+    <div className="">
+      <Header
         workScroll={workScroll}
         setWorkScroll={setWorkScroll}
         aboutMeScroll={aboutMeScroll}
@@ -24,19 +22,16 @@ export default function Home() {
         setContactScroll={setContactScroll}
       />
       <Intro />
-      <Work 
-        workScroll={workScroll}
-        setWorkScroll={setWorkScroll}
-      />
-      <AboutMe 
+      <Work workScroll={workScroll} setWorkScroll={setWorkScroll} />
+      <AboutMe
         aboutMeScroll={aboutMeScroll}
         setAboutMeScroll={setAboutMeScroll}
       />
       <Skills />
-      <Contact 
+      <Contact
         contactScroll={contactScroll}
         setContactScroll={setContactScroll}
       />
     </div>
-  )
+  );
 }
