@@ -109,18 +109,17 @@ html {
 }
 
 .projectTitle {
-  margin-right: 1050px;
-  margin-bottom: -20px;
-  margin-top: 20px;
+  margin-left: 360px;
+  margin-bottom: -25px; 
 }
 
 .projectTitle2 {
-  margin-bottom: -20px;
+  margin-left: 880px;
+  margin-bottom: -30px;
 }
 
 .projectTitle3 {
-  margin-bottom: -20px;
-  margin-left: 1050px;
+  margin-left: 1410px;
 }
 
 .mobileTitle1 {
@@ -133,4 +132,14 @@ html {
 
 .mobileTitle3 {
   display: none;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+}
+
+.proj1tt:hover .tooltip {
+  visibility: visible; 
+  z-index: 50;
 }
