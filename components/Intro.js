@@ -6,8 +6,7 @@ export default function Intro() {
       <h1 className="font-bold text-2xl">Hi, im Brandon</h1>
       <div className="flex justify-center mt-4 introContainer">
         <p className="text-6xl w-1/3 text-center font-bold introText">
-          I am an aspiring self-taught frontend developer that loves building
-          websites.
+          I am an aspiring self-taught frontend developer seeking my first Junior Developer role.
         </p>
       </div>
       <p className="mt-4 introSubText">

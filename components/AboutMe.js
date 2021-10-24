@@ -21,19 +21,11 @@ export default function AboutMe(props) {
       <h1 className="font-bold text-5xl">About Me</h1>
       <div className="flex justify-center mt-6">
         <p className="w-1/2 aboutMeText">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum. It was popularised in the 1960s
-          with the release of Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
-          dummy text of the printing and typesetting industry.
+          I am a 27 year old aspiring developer based out of Ladson, South Carolina. I attended college for 2 years studying Engineering, but I started my self taught developer journey
+          about 6 months ago, focusing on the frontend. My intrests include Tech, Music, Video Games, and Anime, and I try 
+          to reflect them in my projects. I am also interested in learning web3 to start dealing with cryptocurrency and NFTs.
+          I enjoy creating websites and apps with javascript, but am also open to expanding my programming knowledge into other
+          software engineering areas.
         </p>
       </div>
     </div>
