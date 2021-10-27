@@ -19,8 +19,8 @@ export default function Contact(props) {
       ref={contactDiv}
       className="flex justify-center mt-40 flex-col text-center"
     >
-      <h1 className="font-bold text-5xl">Contact</h1>
-      <div className="font-bold underline mt-6">brandonhrainey@gmail.com</div>
+      <header className="font-bold text-5xl">Contact</header>
+      <p className="font-bold underline mt-6">brandonhrainey@gmail.com</p>
       <div className="flex justify-center mt-4">
         <a href="https://github.com/Genlord">
           <img src="/githubIcon.png" className="h-10 w-10" />
