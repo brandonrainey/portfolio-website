@@ -100,7 +100,7 @@ export default function Work(props) {
 
                   <div className='flex justify-center'>
                      <a
-                      className="w-full relative transform duration-150 ease-in-out hover:scale-105 projectOne"
+                      className="w-full relative projectOne"
                       href="https://mal-anime-db.netlify.app"
                     >
                       <img src="/animedbss.png" className="rounded h-60 w-full" />
@@ -122,7 +122,7 @@ export default function Work(props) {
                     
                 <div className='flex justify-center'>
                   <a
-                      className="w-full transform duration-150 ease-in-out hover:scale-105 projectTwo"
+                      className="w-full projectTwo"
                       href="https://compparts.netlify.app"
                     >
                       <img src="/e-commercess.png" className="rounded h-60" />
@@ -142,7 +142,7 @@ export default function Work(props) {
 
                   <div className='flex justify-center'>
                     <a
-                      className="w-full transform duration-150 ease-in-out hover:scale-105 projectTwo"
+                      className="w-full projectTwo"
                       href="https://my-nft-tracker.netlify.app"
                     >
                       <img src="/nfttrackerss.png" className="rounded h-60" />
