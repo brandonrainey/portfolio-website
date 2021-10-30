@@ -11,7 +11,7 @@
 }
 
 html {
-  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  background: linear-gradient(0deg, rgba(17,24,36,1) 0%, rgba(13,29,62,1) 100%);
 }
 
 @media (max-width: 500px) {
