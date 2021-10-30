@@ -110,7 +110,7 @@ export default function Work(props) {
               </div>
             
               <div className='flex flex-col w-96'>
-                <div>
+                
                   <section className="font-bold projectTitle2 text-xl proj1tt w-32 ml-32">
                   <span className='tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-500 -mt-20 -ml-40 text-sm max-w-md descriptionTwo'>
                     Basic e-commerce template site built with Create-React-App and Material UI. 
@@ -118,7 +118,7 @@ export default function Work(props) {
                     </span>
                   E-Commerce
                 </section>
-                </div>
+                
                     
                 <div className='flex justify-center'>
                   <a
