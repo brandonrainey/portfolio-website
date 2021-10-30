@@ -10,6 +10,9 @@ module.exports = {
       'one': '10%',
       'two': '37.5%',
     },
+    fontFamily: {
+      'custom': ['ABeeZee']
+    },
   },
   variants: {
     extend: {},

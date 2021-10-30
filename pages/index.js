@@ -12,7 +12,7 @@ export default function Home() {
   const [contactScroll, setContactScroll] = useState(false);
 
   return (
-    <div className="">
+    <div className="font-custom">
       <Header
         workScroll={workScroll}
         setWorkScroll={setWorkScroll}

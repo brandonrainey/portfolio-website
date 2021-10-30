@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
 :root {
   --tw-bg-opacity: 1;
   color: white;
+
 }
 
 html {
@@ -32,6 +35,7 @@ html {
 
   .projectOne {
     width: 75%;
+    
   }
 
   .projectTwo {
@@ -70,15 +74,20 @@ html {
   }
 
   .projectTitle {
-    display: none;
+   margin-left: 126px !important;
+   height: 50px;
   }
 
   .projectTitle2 {
-    display: none;
+    margin-left: 126px !important;
+    margin-top: 20px;
+   height: 50px;
   }
 
   .projectTitle3 {
-    display: none;
+    margin-left: 126px !important;
+    margin-top: 20px;
+   height: 50px;
   }
 
   .mobileTitle1 {
@@ -91,6 +100,28 @@ html {
 
   .mobileTitle3 {
     margin-bottom: -20px;
+  }
+
+  .projWrapper {
+    flex-direction: column;
+  }
+
+  .descriptionOne {
+    width: 90%;
+    margin-left: -124px;
+    margin-top: 40px;
+  }
+
+  .descriptionTwo {
+    width: 90%;
+    margin-left: -110px;
+    margin-top: 40px;
+  }
+
+  .descriptionThree {
+    width: 90%;
+    margin-left: -114px;
+    margin-top: 40px;
   }
 }
 
@@ -109,17 +140,15 @@ html {
 }
 
 .projectTitle {
-  margin-left: 360px;
-  margin-bottom: -25px; 
+  
 }
 
 .projectTitle2 {
-  margin-left: 880px;
-  margin-bottom: -30px;
+  
 }
 
 .projectTitle3 {
-  margin-left: 1410px;
+  
 }
 
 .mobileTitle1 {
@@ -143,3 +172,19 @@ html {
   visibility: visible; 
   z-index: 50;
 }
+
+.animeDB {
+  left: 125px;
+  top: 28px;
+}
+
+.eCommerce {
+  top: 28px;
+  left: 759px;
+}
+
+.nftTracker {
+  top: 28px;
+  left: 1394px;
+}
+
