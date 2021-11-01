@@ -25,18 +25,18 @@ export default function Work(props) {
         <div className="flex flex-row justify-around justify-center">
           {/*anime db overlay */}
           <div className="w-96 absolute h-60  overlayOne flex justify-center gap-x-10 animeDB align-center">
-            <div className="mt-32 opacity-100">
+            <div className="mt-28 opacity-100">
               <a
                 href="https://mal-anime-db.netlify.app"
-                className="font-bold text-2xl"
+                className="font-bold text-2xl underline hover:text-blue-400"
               >
                 Live
               </a>
             </div>
-            <div className="mt-32">
+            <div className="mt-28">
               <a
                 href="https://github.com/Genlord/anime-app"
-                className="font-bold text-2xl"
+                className="font-bold text-2xl underline hover:text-blue-400"
               >
                 Github
               </a>
@@ -45,18 +45,18 @@ export default function Work(props) {
 
           {/*e-commerce overlay */}
           <div className="w-96 absolute h-60  overlayOne flex justify-center gap-x-10 eCommerce">
-            <div className="mt-32 opacity-100">
+            <div className="mt-28 opacity-100">
               <a
                 href="https://compparts.netlify.app"
-                className="font-bold text-2xl"
+                className="font-bold text-2xl underline hover:text-blue-400"
               >
                 Live
               </a>
             </div>
-            <div className="mt-32">
+            <div className="mt-28">
               <a
                 href="https://github.com/Genlord/e-commerce"
-                className="font-bold text-2xl"
+                className="font-bold text-2xl underline hover:text-blue-400"
               >
                 Github
               </a>
@@ -65,18 +65,18 @@ export default function Work(props) {
           
           {/*nft tracker overlay */}
           <div className="w-96 absolute h-60  overlayOne flex justify-center gap-x-10 nftTracker">
-            <div className="mt-32 opacity-100">
+            <div className="mt-28 opacity-100 ">
               <a
                 href="https://my-nft-tracker.netlify.app"
-                className="font-bold text-2xl"
+                className="font-bold text-2xl underline hover:text-blue-400"
               >
                 Live
               </a>
             </div>
-            <div className="mt-32">
+            <div className="mt-28">
               <a
                 href="https://github.com/Genlord/NFT-Tracker"
-                className="font-bold text-2xl"
+                className="font-bold text-2xl underline hover:text-blue-400"
               >
                 Github
               </a>

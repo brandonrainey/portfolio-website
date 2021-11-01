@@ -137,6 +137,7 @@ html {
 
 .overlayOne:hover {
   opacity: 1;
+  transition: 0.3s;
 }
 
 .mobileTitle1 {
