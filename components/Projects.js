@@ -107,7 +107,7 @@ export default function Work(props) {
         <div className="flex flex-row justify-center w-full justify-around projWrapper">
           <div className="flex w-96 flex-col">
             <section className="font-bold projectTitle text-xl proj1tt w-32 ml-32">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-500 -mt-14 -ml-44 text-sm max-w-md descriptionOne">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -mt-14 -ml-44 text-sm max-w-md descriptionOne">
                 Anime database built with next.js and tailwind css. Takes data
                 from MAL API and displays it.
               </span>
@@ -126,7 +126,7 @@ export default function Work(props) {
 
           <div className="flex flex-col w-96">
             <section className="font-bold projectTitle2 text-xl proj1tt w-36 ml-32">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-500 -mt-20 -ml-40 text-sm max-w-md descriptionTwo">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -mt-20 -ml-40 text-sm max-w-md descriptionTwo">
                 Basic e-commerce template site built with Create-React-App and
                 Material UI. Uses Firebase Authentication and Firestore Database
                 to also implement simple CRUD functions.
@@ -146,7 +146,7 @@ export default function Work(props) {
 
           <div className="flex w-24 flex-col w-96">
             <section className="font-bold projectTitle3 text-xl proj1tt w-32 ml-32">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-500 -mt-20 -ml-40 text-sm max-w-md descriptionThree">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -mt-20 -ml-40 text-sm max-w-md descriptionThree">
                 A NFT tracker website built with next.js and tailwind css. Users
                 can enter thier ETH wallet address and displays cards with their
                 NFTs.
@@ -166,10 +166,10 @@ export default function Work(props) {
 
           <div className="flex flex-col w-96">
             <section className="font-bold projectTitle4 text-xl proj1tt w-44 ml-28">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-500 -mt-20 -ml-40 text-sm max-w-md descriptionTwo">
-                Basic e-commerce template site built with Create-React-App and
-                Material UI. Uses Firebase Authentication and Firestore Database
-                to also implement simple CRUD functions.
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -mt-24 -ml-40 text-sm max-w-md descriptionTwo">
+                Static homepage made from a FrontendMentor challenge. Active states on the nav and buttons, and cycles through three hero images.
+                Created with nextjs 
+                and basic css grid and flexbox layout.
               </span>
               Room-Homepage
             </section>
