@@ -80,13 +80,19 @@ html {
 
   .projectTitle2 {
     margin-left: 126px !important;
-    margin-top: 20px;
+    margin-top: 40px;
    height: 50px;
   }
 
   .projectTitle3 {
     margin-left: 126px !important;
-    margin-top: 20px;
+    margin-top: 40px;
+   height: 50px;
+  }
+
+  .projectTitle4 {
+    margin-left: 112px !important;
+    margin-top: 40px;
    height: 50px;
   }
 
@@ -104,6 +110,7 @@ html {
 
   .projWrapper {
     flex-direction: column;
+    align-items: center;
   }
 
   .descriptionOne {
@@ -163,17 +170,22 @@ html {
 }
 
 .animeDB {
-  left: 125px;
+  left: 46px;
   top: 28px;
 }
 
 .eCommerce {
   top: 28px;
-  left: 759px;
+  left: 520px;
 }
 
 .nftTracker {
   top: 28px;
-  left: 1394px;
+  left: 997px;
+}
+
+.roomHomepage {
+  top: 28px;
+  right: 46px;
 }
 

@@ -3,7 +3,7 @@ import React from "react";
 export default function Skills() {
   return (
     <div className="flex justify-center mt-40 flex-col text-center">
-      <h1 className="font-bold text-5xl">Skills</h1>
+      <h1 className="font-bold text-5xl">Technologies</h1>
       <div className="flex justify-center">
         <div className="flex justify-center mt-6 gap-x-10 gap-y-6 skills flex-wrap">
           <img src="/cssLogo.png" className="h-28 w-30" />
