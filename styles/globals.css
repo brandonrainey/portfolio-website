@@ -169,6 +169,11 @@ html {
   z-index: 50;
 }
 
+.aboutProj:hover .tooltip {
+  visibility: visible; 
+  z-index: 50;
+}
+
 .animeDB {
   left: 46px;
   top: 28px;

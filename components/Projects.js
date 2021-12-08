@@ -103,14 +103,11 @@ export default function Work(props) {
             </div>
           </div>
         </div>
-
+        {/* projects */}
         <div className="flex flex-row justify-center w-full justify-around projWrapper">
           <div className="flex w-96 flex-col">
             <section className="font-bold projectTitle text-xl proj1tt w-32 ml-32">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -mt-14 -ml-44 text-sm max-w-md descriptionOne">
-                Anime database built with next.js and tailwind css. Takes data
-                from MAL API and displays it.
-              </span>
+              
               Anime DB
             </section>
 
@@ -122,15 +119,18 @@ export default function Work(props) {
                 <img src="/animedbss.png" className="rounded h-60 w-full" />
               </a>
             </div>
+            <div className='aboutProj flex justify-center'>
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionOne">
+                Anime database built with next.js and tailwind css. Takes data
+                from MAL API and displays it.
+              </span>
+              About
+            </div>
           </div>
 
           <div className="flex flex-col w-96">
             <section className="font-bold projectTitle2 text-xl proj1tt w-36 ml-32">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -mt-20 -ml-40 text-sm max-w-md descriptionTwo">
-                Basic e-commerce template site built with Create-React-App and
-                Material UI. Uses Firebase Authentication and Firestore Database
-                to also implement simple CRUD functions.
-              </span>
+              
               E-Commerce
             </section>
 
@@ -142,15 +142,19 @@ export default function Work(props) {
                 <img src="/e-commercess.png" className="rounded h-60" />
               </a>
             </div>
+            <div className='aboutProj flex justify-center'>
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionTwo">
+                Basic e-commerce template site built with Create-React-App and
+                Material UI. Uses Firebase Authentication and Firestore Database
+                to also implement simple CRUD functions.
+              </span>
+              About
+            </div>
           </div>
 
           <div className="flex w-24 flex-col w-96">
             <section className="font-bold projectTitle3 text-xl proj1tt w-32 ml-32">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -mt-20 -ml-40 text-sm max-w-md descriptionThree">
-                A NFT tracker website built with next.js and tailwind css. Users
-                can enter thier ETH wallet address and displays cards with their
-                NFTs.
-              </span>
+              
               NFT-Tracker
             </section>
 
@@ -162,15 +166,19 @@ export default function Work(props) {
                 <img src="/nfttrackerss.png" className="rounded h-60" />
               </a>
             </div>
+            <div className='aboutProj flex justify-center'>
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionThree">
+                A NFT tracker website built with next.js and tailwind css. Users
+                can enter thier ETH wallet address and displays cards with their
+                NFTs.
+              </span>
+              About
+            </div>
           </div>
 
           <div className="flex flex-col w-96">
             <section className="font-bold projectTitle4 text-xl proj1tt w-44 ml-28">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -mt-24 -ml-40 text-sm max-w-md descriptionTwo">
-                Static homepage made from a FrontendMentor challenge. Active states on the nav and buttons, and cycles through three hero images.
-                Created with nextjs 
-                and basic css grid and flexbox layout.
-              </span>
+              
               Room-Homepage
             </section>
 
@@ -181,6 +189,14 @@ export default function Work(props) {
               >
                 <img src="/roomHomepageSS.png" className="rounded h-60" />
               </a>
+            </div>
+            <div className='aboutProj flex justify-center'>
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionTwo">
+                Static homepage made from a FrontendMentor challenge. Active states on the nav and buttons, and cycles through three hero images.
+                Created with nextjs 
+                and basic css grid and flexbox layout.
+              </span>
+              About
             </div>
           </div>
         </div>
