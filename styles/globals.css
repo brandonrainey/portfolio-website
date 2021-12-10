@@ -140,6 +140,7 @@ html {
   opacity: 0;
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.3);
+  width: 456px;
 }
 
 .overlayOne:hover {
@@ -175,22 +176,37 @@ html {
 }
 
 .animeDB {
-  left: 46px;
+  left: 10px;
   top: 28px;
 }
 
 .eCommerce {
   top: 28px;
-  left: 520px;
+  left: 486px;
 }
 
 .nftTracker {
   top: 28px;
-  left: 997px;
+  right: 486px;
 }
 
 .roomHomepage {
   top: 28px;
-  right: 46px;
+  right: 10px;
 }
 
+.projectOneWrapper {
+  width: 456px;
+}
+
+.projectTwoWrapper {
+  width: 456px;
+}
+
+.projectThreeWrapper {
+  width: 456px;
+}
+
+.projectFourWrapper {
+  width: 456px;
+}

@@ -24,7 +24,7 @@ export default function Work(props) {
       <div className="flex justify-center mt-6 projectContainer relative">
         <div className="flex flex-row justify-around justify-center">
           {/*anime db overlay */}
-          <div className="w-96 absolute h-60  overlayOne flex justify-center gap-x-10 animeDB align-center">
+          <div className=" absolute h-60  overlayOne flex justify-center gap-x-10 animeDB align-center">
             <div className="mt-28 opacity-100">
               <a
                 href="https://mal-anime-db.netlify.app"
@@ -105,8 +105,8 @@ export default function Work(props) {
         </div>
         {/* projects */}
         <div className="flex flex-row justify-center w-full justify-around projWrapper">
-          <div className="flex w-96 flex-col">
-            <section className="font-bold projectTitle text-xl proj1tt w-32 ml-32">
+          <div className="flex w-96 flex-col projectOneWrapper">
+            <section className="font-bold projectTitle text-xl proj1tt w-full justify-self-center">
               
               Anime DB
             </section>
@@ -128,8 +128,8 @@ export default function Work(props) {
             </div>
           </div>
 
-          <div className="flex flex-col w-96">
-            <section className="font-bold projectTitle2 text-xl proj1tt w-36 ml-32">
+          <div className="flex flex-col w-96 projectTwoWrapper">
+            <section className="font-bold projectTitle2 text-xl proj1tt w-full justify-self-center">
               
               E-Commerce
             </section>
@@ -152,8 +152,8 @@ export default function Work(props) {
             </div>
           </div>
 
-          <div className="flex w-24 flex-col w-96">
-            <section className="font-bold projectTitle3 text-xl proj1tt w-32 ml-32">
+          <div className="flex w-24 flex-col w-96 projectTwoWrapper">
+            <section className="font-bold projectTitle3 text-xl proj1tt w-full justify-self-center">
               
               NFT-Tracker
             </section>
@@ -176,8 +176,8 @@ export default function Work(props) {
             </div>
           </div>
 
-          <div className="flex flex-col w-96">
-            <section className="font-bold projectTitle4 text-xl proj1tt w-44 ml-28">
+          <div className="flex flex-col w-96 projectFourWrapper">
+            <section className="font-bold projectTitle4 text-xl proj1tt w-full justify-self-center">
               
               Room-Homepage
             </section>
