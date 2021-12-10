@@ -116,7 +116,7 @@ export default function Work(props) {
                 className="w-full relative projectOne"
                 href="https://mal-anime-db.netlify.app"
               >
-                <img src="/animedbss.png" className="rounded h-60 w-full" />
+                <img src="/animedbss.png" className="rounded h-60 w-full" alt='anime db screenshot'/>
               </a>
             </div>
             <div className='aboutProj flex justify-center'>
@@ -139,7 +139,7 @@ export default function Work(props) {
                 className="w-full projectTwo"
                 href="https://compparts.netlify.app"
               >
-                <img src="/e-commercess.png" className="rounded h-60" />
+                <img src="/e-commercess.png" className="rounded h-60" alt='e-commerse screenshot'/>
               </a>
             </div>
             <div className='aboutProj flex justify-center'>
@@ -163,7 +163,7 @@ export default function Work(props) {
                 className="w-full projectTwo"
                 href="https://my-nft-tracker.netlify.app"
               >
-                <img src="/nfttrackerss.png" className="rounded h-60" />
+                <img src="/nfttrackerss.png" className="rounded h-60" alt='nft tracker screenshot'/>
               </a>
             </div>
             <div className='aboutProj flex justify-center'>
@@ -187,7 +187,7 @@ export default function Work(props) {
                 className="w-full projectTwo"
                 href="https://the-room-homepage.netlify.app"
               >
-                <img src="/roomHomepageSS.png" className="rounded h-60" />
+                <img src="/roomHomepageSS.png" className="rounded h-60" alt='room homepage screenshot'/>
               </a>
             </div>
             <div className='aboutProj flex justify-center'>
