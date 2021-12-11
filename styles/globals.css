@@ -2,16 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 
 :root {
   --tw-bg-opacity: 1;
   color: white;
-
 }
 
 html {
-  background: linear-gradient(0deg, rgba(17,24,36,1) 0%, rgba(13,29,62,1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(17, 24, 36, 1) 0%,
+    rgba(13, 29, 62, 1) 100%
+  );
 }
 
 @media (max-width: 500px) {
@@ -35,7 +38,6 @@ html {
 
   .projectOne {
     width: 75%;
-    
   }
 
   .projectTwo {
@@ -74,26 +76,26 @@ html {
   }
 
   .projectTitle {
-   margin-left: 126px !important;
-   height: 50px;
+    margin-left: 126px !important;
+    height: 50px;
   }
 
   .projectTitle2 {
     margin-left: 126px !important;
     margin-top: 40px;
-   height: 50px;
+    height: 50px;
   }
 
   .projectTitle3 {
     margin-left: 126px !important;
     margin-top: 40px;
-   height: 50px;
+    height: 50px;
   }
 
   .projectTitle4 {
     margin-left: 112px !important;
     margin-top: 40px;
-   height: 50px;
+    height: 50px;
   }
 
   .mobileTitle1 {
@@ -166,18 +168,24 @@ html {
 }
 
 .proj1tt:hover .tooltip {
-  visibility: visible; 
+  visibility: visible;
   z-index: 50;
 }
 
 .aboutProj:hover .tooltip {
-  visibility: visible; 
+  visibility: visible;
   z-index: 50;
 }
 
 .animeDB {
   left: 10px;
   top: 28px;
+}
+
+.animeDBOverlay {
+  top: 28px;
+  left: 200px;
+  z-index: 10;
 }
 
 .eCommerce {
@@ -199,6 +207,26 @@ html {
   width: 456px;
 }
 
+.projectOneWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.projectTwoWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.projectThreeWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.projectFourWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
 .projectTwoWrapper {
   width: 456px;
 }
@@ -209,4 +237,15 @@ html {
 
 .projectFourWrapper {
   width: 456px;
+}
+
+.projectOverlay {
+  left: 0;
+  bottom: 24px;
+  width: 100%;
+  height: 82.3%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  opacity: 0;
+  align-self: center;
 }
