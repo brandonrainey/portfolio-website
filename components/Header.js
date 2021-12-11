@@ -5,6 +5,7 @@ export default function Header(props) {
   return (
     <div className="flex h-40">
       <Head>
+        <meta name="description" content="Personal frontend developer profile site of Brandon Rainey."/>
         <title>My Portfolio</title>
       </Head>
       <h1 className="mt-auto ml-8 font-bold">My Portfolio</h1>
