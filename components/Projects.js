@@ -27,7 +27,7 @@ export default function Work(props) {
         <div className="flex flex-row justify-center w-full justify-around projWrapper relative">
           {/* anime DB */}
           <div className="flex w-96 flex-col projectOneWrapper relative ">
-            <div className=" absolute h-60 flex justify-center gap-x-10 align-center projectOverlay rounded">
+            <div className=" absolute h-60 flex justify-center gap-x-10 projectOverlay rounded">
               <div className="mt-28 ">
                 <a
                   href="https://mal-anime-db.netlify.app"
@@ -46,7 +46,7 @@ export default function Work(props) {
               </div>
             </div>
 
-            <section className="font-bold projectTitle text-xl proj1tt w-full justify-self-center">
+            <section className="font-bold projectTitle text-xl proj1tt w-full justify-self-center text-center">
               Anime DB
             </section>
 
@@ -57,8 +57,9 @@ export default function Work(props) {
               >
                 <img
                   src="/animedbss.png"
-                  className="rounded h-60 w-full"
+                  className="rounded h-60 projectOneImage"
                   alt="anime db screenshot"
+                  
                 />
               </a>
             </div>
