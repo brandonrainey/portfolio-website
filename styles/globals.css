@@ -82,19 +82,19 @@ html {
 
   .projectTitle2 {
     
-    margin-top: 40px;
+    margin-top: 80px;
     height: 50px;
   }
 
   .projectTitle3 {
     
-    margin-top: 40px;
+    margin-top: 80px;
     height: 50px;
   }
 
   .projectTitle4 {
     
-    margin-top: 40px;
+    margin-top: 80px;
     height: 50px;
   }
 
@@ -117,19 +117,19 @@ html {
 
   .descriptionOne {
     width: 90%;
-    margin-left: -124px;
+    
     margin-top: 40px;
   }
 
   .descriptionTwo {
     width: 90%;
-    margin-left: -110px;
+    
     margin-top: 40px;
   }
 
   .descriptionThree {
     width: 90%;
-    margin-left: -114px;
+    
     margin-top: 40px;
   }
 
@@ -137,6 +137,26 @@ html {
     width: 75% !important;
     height: 67.7% !important;
     left: 57px !important;
+  }
+
+  .descriptionFour {
+    align-self: center;
+    margin-top: 22px;
+  }
+
+  .descriptionOne {
+    align-self: center;
+    margin-top: 22px;
+  }
+
+  .descriptionTwo {
+    align-self: center;
+    margin-top: 22px;
+  }
+
+  .descriptionThree {
+    align-self: center;
+    margin-top: 22px;
   }
 }
 

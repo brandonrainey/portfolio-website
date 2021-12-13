@@ -204,7 +204,7 @@ export default function Work(props) {
               </a>
             </div>
             <div className="aboutProj flex justify-center">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionTwo">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionFour">
                 Static homepage made from a FrontendMentor challenge. Active
                 states on the nav and buttons, and cycles through three hero
                 images. Created with nextjs and basic css grid and flexbox
