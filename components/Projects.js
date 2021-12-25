@@ -119,12 +119,12 @@ export default function Work(props) {
             </div>
           </div>
 
-          {/* nft-tracker */}
+          {/* twitch-top-3 */}
           <div className="flex w-24 flex-col w-96 projectThreeWrapper relative">
             <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded">
               <div className="mt-28 opacity-100 ">
                 <a
-                  href="https://my-nft-tracker.netlify.app"
+                  href="https://twitch-top-3.netlify.app/"
                   className="font-bold text-2xl underline hover:text-blue-400"
                 >
                   Live
@@ -132,7 +132,7 @@ export default function Work(props) {
               </div>
               <div className="mt-28">
                 <a
-                  href="https://github.com/Genlord/NFT-Tracker"
+                  href="https://github.com/Genlord/twitch-top-3"
                   className="font-bold text-2xl underline hover:text-blue-400"
                 >
                   Github
@@ -141,26 +141,25 @@ export default function Work(props) {
             </div>
 
             <section className="font-bold projectTitle3 text-xl proj1tt w-full justify-self-center">
-              NFT-Tracker
+              Twitch Top 3
             </section>
 
             <div className="flex justify-center">
               <a
                 className="w-full projectThree"
-                href="https://my-nft-tracker.netlify.app"
+                href="https://twitch-top-3.netlify.app/"
               >
                 <img
-                  src="/nfttrackerss.png"
+                  src="/twitchss.png"
                   className="rounded h-60"
-                  alt="nft tracker screenshot"
+                  alt="twitch top 3 screenshot"
                 />
               </a>
             </div>
             <div className="aboutProj flex justify-center">
               <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionThree">
-                A NFT tracker website built with next.js and tailwind css. Users
-                can enter thier ETH wallet address and displays cards with their
-                NFTs.
+                A website using the twitch api to display data. Users can enter the name of a twitch
+                channel and return the top three clips from the past week of that streamer.
               </span>
               About
             </div>
