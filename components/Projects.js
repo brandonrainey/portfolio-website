@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { FaChevronDown } from "react-icons/fa";
 
 export default function Work(props) {
   const workDiv = useRef();
@@ -27,7 +28,7 @@ export default function Work(props) {
         <div className="flex flex-row justify-center w-full justify-around projWrapper relative">
           {/* anime DB */}
           <div className="flex w-96 flex-col projectOneWrapper relative ">
-            <div className=" absolute h-60 flex justify-center gap-x-10 projectOverlay rounded">
+            <div className=" absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 ">
                 <a
                   href="https://mal-anime-db.netlify.app"
@@ -50,31 +51,32 @@ export default function Work(props) {
               Anime DB
             </section>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center imageOneWraper">
               <a
                 className="w-full relative projectOne"
                 href="https://mal-anime-db.netlify.app"
               >
                 <img
                   src="/animedbss.png"
-                  className="rounded h-60 projectOneImage"
+                  className="rounded-t-lg h-60 projectOneImage"
                   alt="anime db screenshot"
                   
                 />
               </a>
             </div>
-            <div className="aboutProj flex justify-center">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionOne">
+            <div className="aboutProj flex justify-center flex-col items-center">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700  -ml-30 text-sm w-full descriptionOne">
                 Anime database built with next.js and tailwind css. Takes data
                 from MAL API and displays it.
               </span>
               About
+              <FaChevronDown />
             </div>
           </div>
 
           {/* e-commerce */}
           <div className="flex flex-col w-96 projectTwoWrapper relative">
-            <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded">
+            <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 opacity-100">
                 <a
                   href="https://compparts.netlify.app"
@@ -104,24 +106,25 @@ export default function Work(props) {
               >
                 <img
                   src="/e-commercess.png"
-                  className="rounded h-60"
+                  className="rounded-t-lg h-60"
                   alt="e-commerse screenshot"
                 />
               </a>
             </div>
-            <div className="aboutProj flex justify-center">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionTwo">
+            <div className="aboutProj flex justify-center flex-col items-center">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700  -ml-30 text-sm w-full descriptionTwo">
                 Basic e-commerce template site built with Create-React-App and
                 Material UI. Uses Firebase Authentication and Firestore Database
                 to also implement simple CRUD functions.
               </span>
               About
+              <FaChevronDown />
             </div>
           </div>
 
           {/* twitch-top-3 */}
           <div className="flex w-24 flex-col w-96 projectThreeWrapper relative">
-            <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded">
+            <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 opacity-100 ">
                 <a
                   href="https://twitch-top-3.netlify.app/"
@@ -151,23 +154,24 @@ export default function Work(props) {
               >
                 <img
                   src="/twitchss.png"
-                  className="rounded h-60"
+                  className="rounded-t-lg h-60"
                   alt="twitch top 3 screenshot"
                 />
               </a>
             </div>
-            <div className="aboutProj flex justify-center">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionThree">
+            <div className="aboutProj flex justify-center flex-col items-center">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionThree">
                 A website using the twitch api to display data. Users can enter the name of a twitch
                 channel and return the top three clips from the past week of that streamer.
               </span>
               About
+              <FaChevronDown />
             </div>
           </div>
 
           {/* room-homepage */}
           <div className="flex flex-col w-96 projectFourWrapper relative">
-            <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay">
+            <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 opacity-100">
                 <a
                   href="https://the-room-homepage.netlify.app"
@@ -197,19 +201,20 @@ export default function Work(props) {
               >
                 <img
                   src="/roomHomepageSS.png"
-                  className="rounded h-60"
+                  className="rounded-t-lg h-60"
                   alt="room homepage screenshot"
                 />
               </a>
             </div>
-            <div className="aboutProj flex justify-center">
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 mt-10 -ml-30 text-sm w-96 descriptionFour">
+            <div className="aboutProj flex justify-center flex-col items-center">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFour">
                 Static homepage made from a FrontendMentor challenge. Active
                 states on the nav and buttons, and cycles through three hero
                 images. Created with nextjs and basic css grid and flexbox
                 layout.
               </span>
               About
+              <FaChevronDown />
             </div>
           </div>
         </div>

@@ -137,6 +137,7 @@ html {
     width: 75% !important;
     height: 67.7% !important;
     left: 57px !important;
+    
   }
 
   .descriptionFour {
@@ -203,6 +204,13 @@ html {
   z-index: 50;
 }
 
+.aboutProj {
+  width: 100%;
+  background:rgba(0, 0, 0, 0.6);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 .animeDB {
   left: 10px;
   top: 28px;
@@ -267,9 +275,9 @@ html {
 
 .projectOverlay {
   left: 0;
-  bottom: 24px;
+  bottom: 40px;
   width: 100%;
-  height: 82.3%;
+  height: 78%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 10;
   opacity: 0;
@@ -279,3 +287,46 @@ html {
 .projectOneImage {
   width: 456px;
 }
+
+.aboutProj:hover > .descriptionOne{
+  height: 30%;
+}
+
+.aboutProj:hover > .descriptionTwo{
+  height: 30%;
+}
+
+.aboutProj:hover > .descriptionThree{
+  height: 30%;
+}
+
+.aboutProj:hover > .descriptionFour{
+  height: 30%;
+}
+
+.descriptionOne {
+  transition: height 0.4s linear;
+  height: 0%;
+  margin-top: 3rem;
+}
+
+.descriptionTwo {
+  transition: height 0.4s linear;
+  height: 0%;
+  margin-top: 3rem;
+}
+
+.descriptionThree {
+  transition: height 0.4s linear;
+  height: 0%;
+  margin-top: 3rem;
+}
+
+.descriptionFour {
+  transition: height 0.4s linear;
+  height: 0%;
+  margin-top: 3rem;
+}
+
+
+
