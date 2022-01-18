@@ -226,7 +226,7 @@ export default function Work(props) {
               <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
                 <div className="mt-28 opacity-100">
                   <a
-                    href="https://the-room-homepage.netlify.app"
+                    href="https://gpu-comparison.netlify.app"
                     className="font-bold text-2xl underline hover:text-blue-400"
                   >
                     Live
@@ -249,10 +249,10 @@ export default function Work(props) {
               <div className="flex justify-center">
                 <a
                   className="w-full projectTwo"
-                  href="https://the-room-homepage.netlify.app"
+                  href="https://gpu-comparison.netlify.app"
                 >
                   <img
-                    src="/roomHomepageSS.png"
+                    src="gpu-comparisonss.png"
                     className="rounded-t-lg h-60"
                     alt="room homepage screenshot"
                   />

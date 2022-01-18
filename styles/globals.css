@@ -52,14 +52,13 @@ html {
     flex-direction: column;
     align-items: center;
     row-gap: 2.5rem;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .projectContainer2 {
     flex-direction: column;
     align-items: center;
     row-gap: 2.5rem;
-    
   }
 
   .aboutMeText {
@@ -84,24 +83,20 @@ html {
   }
 
   .projectTitle {
-    
     height: 50px;
   }
 
   .projectTitle2 {
-    
     margin-top: 80px;
     height: 50px;
   }
 
   .projectTitle3 {
-    
     margin-top: 80px;
     height: 50px;
   }
 
   .projectTitle4 {
-    
     margin-top: 80px;
     height: 50px;
   }
@@ -126,36 +121,35 @@ html {
   .projWrapper2 {
     flex-direction: column;
     align-items: center;
-    
   }
 
   .descriptionOne {
     width: 90%;
-    
+
     margin-top: 40px;
   }
 
   .descriptionTwo {
     width: 90%;
-    
+
     margin-top: 40px;
   }
 
   .descriptionThree {
     width: 90%;
-    
+
     margin-top: 40px;
   }
 
   .descriptionFour {
     width: 90%;
-    
+
     margin-top: 40px;
   }
 
   .descriptionFive {
     width: 90%;
-    
+
     margin-top: 40px;
   }
 
@@ -163,7 +157,6 @@ html {
     width: 75% !important;
     height: 67.7% !important;
     left: 57px !important;
-    
   }
 
   .descriptionFour {
@@ -241,7 +234,7 @@ html {
 
 .aboutProj {
   width: 100%;
-  background:rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -332,47 +325,46 @@ html {
   width: 456px;
 }
 
-.aboutProj:hover > .descriptionOne{
+.aboutProj:hover > .descriptionOne {
   line-height: 1.5;
   padding-top: 1em;
   padding-bottom: 1em;
   color: black;
 }
 
-.aboutProj:hover > .descriptionTwo{
+.aboutProj:hover > .descriptionTwo {
   line-height: 1.5;
   padding-top: 1em;
   padding-bottom: 1em;
   color: black;
 }
 
-.aboutProj:hover > .descriptionThree{
+.aboutProj:hover > .descriptionThree {
   line-height: 1.5;
   padding-top: 1em;
   padding-bottom: 1em;
   color: black;
 }
 
-.aboutProj:hover > .descriptionFour{
+.aboutProj:hover > .descriptionFour {
   line-height: 1.5;
   padding-top: 1em;
   padding-bottom: 1em;
   color: black;
 }
 
-.aboutProj:hover > .descriptionFive{
+.aboutProj:hover > .descriptionFive {
   line-height: 1.5;
   padding-top: 1em;
   padding-bottom: 1em;
   color: black;
 }
-
 
 .descriptionOne {
   background: #fff;
   overflow: hidden;
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   line-height: 0;
   padding: 0 1em;
   color: transparent;
@@ -382,7 +374,7 @@ html {
   background: #fff;
   overflow: hidden;
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   line-height: 0;
   padding: 0 1em;
   color: transparent;
@@ -392,7 +384,7 @@ html {
   background: #fff;
   overflow: hidden;
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   line-height: 0;
   padding: 0 1em;
   color: transparent;
@@ -402,7 +394,7 @@ html {
   background: #fff;
   overflow: hidden;
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   line-height: 0;
   padding: 0 1em;
   color: transparent;
@@ -412,11 +404,8 @@ html {
   background: #fff;
   overflow: hidden;
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   line-height: 0;
   padding: 0 1em;
   color: transparent;
 }
-
-
-
