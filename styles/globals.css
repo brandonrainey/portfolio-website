@@ -52,6 +52,14 @@ html {
     flex-direction: column;
     align-items: center;
     row-gap: 2.5rem;
+    margin-bottom: 100px;
+  }
+
+  .projectContainer2 {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+    
   }
 
   .aboutMeText {
@@ -113,6 +121,12 @@ html {
   .projWrapper {
     flex-direction: column;
     align-items: center;
+  }
+
+  .projWrapper2 {
+    flex-direction: column;
+    align-items: center;
+    
   }
 
   .descriptionOne {
@@ -261,6 +275,11 @@ html {
   transition: opacity 0.3s;
 }
 
+.projectFiveWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
 .projectTwoWrapper {
   width: 456px;
 }
@@ -270,6 +289,10 @@ html {
 }
 
 .projectFourWrapper {
+  width: 456px;
+}
+
+.projectFiveWrapper {
   width: 456px;
 }
 
@@ -289,43 +312,89 @@ html {
 }
 
 .aboutProj:hover > .descriptionOne{
-  height: 30%;
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
 }
 
 .aboutProj:hover > .descriptionTwo{
-  height: 30%;
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
 }
 
 .aboutProj:hover > .descriptionThree{
-  height: 30%;
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
 }
 
 .aboutProj:hover > .descriptionFour{
-  height: 30%;
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
 }
 
+.aboutProj:hover > .descriptionFive{
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+
+
 .descriptionOne {
-  transition: height 0.4s linear;
-  height: 0%;
-  margin-top: 3rem;
+  background: #fff;
+  overflow: hidden;
+
+  transition: all .2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
 }
 
 .descriptionTwo {
-  transition: height 0.4s linear;
-  height: 0%;
-  margin-top: 3rem;
+  background: #fff;
+  overflow: hidden;
+
+  transition: all .2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
 }
 
 .descriptionThree {
-  transition: height 0.4s linear;
-  height: 0%;
-  margin-top: 3rem;
+  background: #fff;
+  overflow: hidden;
+
+  transition: all .2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
 }
 
 .descriptionFour {
-  transition: height 0.4s linear;
-  height: 0%;
-  margin-top: 3rem;
+  background: #fff;
+  overflow: hidden;
+
+  transition: all .2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
+}
+
+.descriptionFive {
+  background: #fff;
+  overflow: hidden;
+
+  transition: all .2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
 }
 
 

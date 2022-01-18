@@ -22,7 +22,7 @@ export default function Work(props) {
     >
       <header className="font-bold text-5xl mb-10">Projects</header>
 
-      <div className="flex justify-center mt-6 projectContainer">
+      <div className="flex justify-center mt-6 mb-24 projectContainer">
         <div className="flex flex-row justify-around justify-center absolute"></div>
         {/* projects */}
         <div className="flex flex-row justify-center w-full justify-around projWrapper relative">
@@ -219,6 +219,55 @@ export default function Work(props) {
           </div>
         </div>
       </div>
+      <div className="flex flex-row justify-center w-full justify-around projWrapper2 relative">
+        {/* gpu-comparison */}
+        <div className="projectContainer2">
+            <div className="flex flex-col w-96 projectFiveWrapper relative">
+              <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
+                <div className="mt-28 opacity-100">
+                  <a
+                    href="https://the-room-homepage.netlify.app"
+                    className="font-bold text-2xl underline hover:text-blue-400"
+                  >
+                    Live
+                  </a>
+                </div>
+                <div className="mt-28">
+                  <a
+                    href="https://github.com/Genlord/gpu-comparison"
+                    className="font-bold text-2xl underline hover:text-blue-400"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+
+              <section className="font-bold projectTitle4 text-xl proj1tt w-full justify-self-center">
+                GPU-Comparison
+              </section>
+
+              <div className="flex justify-center">
+                <a
+                  className="w-full projectTwo"
+                  href="https://the-room-homepage.netlify.app"
+                >
+                  <img
+                    src="/roomHomepageSS.png"
+                    className="rounded-t-lg h-60"
+                    alt="room homepage screenshot"
+                  />
+                </a>
+              </div>
+              <div className="aboutProj flex justify-center flex-col items-center">
+                <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFive">
+                  site showing a chart and table of recent graphics cards comparing them.
+                </span>
+                About
+                <FaChevronDown />
+              </div>
+            </div>
+        </div>
+        </div>
     </div>
   );
 }
