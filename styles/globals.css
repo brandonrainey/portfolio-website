@@ -52,7 +52,7 @@ html {
     flex-direction: column;
     align-items: center;
     row-gap: 2.5rem;
-    margin-bottom: 100px;
+   margin-bottom: 20px;
   }
 
   .projectContainer2 {
@@ -147,6 +147,18 @@ html {
     margin-top: 40px;
   }
 
+  .descriptionFour {
+    width: 90%;
+    
+    margin-top: 40px;
+  }
+
+  .descriptionFive {
+    width: 90%;
+    
+    margin-top: 40px;
+  }
+
   .projectOverlay {
     width: 75% !important;
     height: 67.7% !important;
@@ -172,6 +184,15 @@ html {
   .descriptionThree {
     align-self: center;
     margin-top: 22px;
+  }
+
+  .aboutProj {
+    align-self: center;
+    width: 75% !important;
+  }
+
+  .projectOverlay {
+    height: 240px !important;
   }
 }
 
