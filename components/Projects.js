@@ -66,8 +66,8 @@ export default function Work(props) {
             </div>
             <div className="aboutProj flex justify-center flex-col items-center">
               <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700  -ml-30 text-sm w-full descriptionOne">
-                Anime database built with next.js and tailwind css. Takes data
-                from MAL API and displays it.
+                Anime database that takes data from an unofficial MyAnimeList.com API and displays it in 
+                a grid of cards, with basic filters and search functions. Built using Next.js and Tailwind CSS.
               </span>
               About
               <FaChevronDown />
@@ -161,7 +161,7 @@ export default function Work(props) {
             </div>
             <div className="aboutProj flex justify-center flex-col items-center">
               <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionThree">
-                A website using the twitch api to display data. Users can enter the name of a twitch
+                A Next.js built site using the Twitch API to display data. Users can enter the name of a twitch
                 channel and return the top three clips from the past week of that streamer.
               </span>
               About
@@ -210,7 +210,7 @@ export default function Work(props) {
               <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFour">
                 Static homepage made from a FrontendMentor challenge. Active
                 states on the nav and buttons, and cycles through three hero
-                images. Created with nextjs and basic css grid and flexbox
+                images. Created with Next.js and a basic CSS Grid and Flexbox
                 layout.
               </span>
               About
@@ -260,7 +260,8 @@ export default function Work(props) {
               </div>
               <div className="aboutProj flex justify-center flex-col items-center">
                 <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFive">
-                  site showing a chart and table of recent graphics cards comparing them.
+                  A site built using Next.js using static data to display recent Nvidia/AMD graphics
+                   cards via Recharts and MUI in a data grid and scatter plot chart.
                 </span>
                 About
                 <FaChevronDown />
