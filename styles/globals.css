@@ -409,3 +409,11 @@ html {
   padding: 0 1em;
   color: transparent;
 }
+
+.submitButton {
+  color: black;
+}
+
+.contactForm {
+  color: black;
+}
