@@ -169,8 +169,13 @@ export default function Work(props) {
             </div>
           </div>
 
-          {/* room-homepage */}
-          <div className="flex flex-col w-96 projectFourWrapper relative">
+          
+        </div>
+      </div>
+      <div className="flex flex-row justify-center w-full justify-around projWrapper2 relative">
+
+        {/* room-homepage */}
+        <div className="flex flex-col w-96 projectFourWrapper relative">
             <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 opacity-100">
                 <a
@@ -217,9 +222,7 @@ export default function Work(props) {
               <FaChevronDown />
             </div>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-row justify-center w-full justify-around projWrapper2 relative">
+
         {/* gpu-comparison */}
         <div className="projectContainer2">
             <div className="flex flex-col w-96 projectFiveWrapper relative">

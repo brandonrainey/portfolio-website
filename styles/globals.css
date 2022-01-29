@@ -410,10 +410,23 @@ html {
   color: transparent;
 }
 
-.submitButton {
-  color: black;
+.contactForm {
+ 
 }
 
-.contactForm {
+.submitButton {
   color: black;
+  
+}
+
+.formLabel {
+  color: white;
+}
+
+input:focus {
+  outline: 3px solid rgb(76, 76, 252);
+}
+
+textarea:focus {
+  outline: 3px solid rgb(76, 76, 252);
 }
