@@ -15,6 +15,15 @@ html {
     rgba(17, 24, 36, 1) 0%,
     rgba(13, 29, 62, 1) 100%
   );
+  
+}
+
+.lightModeText {
+  color: black;
+}
+
+.lightModeBackground {
+  background: white;
 }
 
 @media (max-width: 500px) {
@@ -410,10 +419,6 @@ html {
   color: transparent;
 }
 
-.contactForm {
- 
-}
-
 .submitButton {
   color: black;
   
@@ -429,4 +434,71 @@ input:focus {
 
 textarea:focus {
   outline: 3px solid rgb(76, 76, 252);
+}
+
+.toggleInput[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.toggleLabel {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 60px;
+	height: 30px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+.toggleLabel:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	width: 27px;
+	height: 27px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.toggleInput:checked + .toggleLabel {
+	background: #55a5da;
+}
+
+.toggleInput:checked + .toggleLabel:after {
+	left: calc(100% - 1.5px);
+	transform: translateX(-100%);
+}
+
+.toggleLabel:active:after {
+	width: 36px;
+}
+
+.toggleWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  margin-bottom: -60px;
+  margin-right: 12px;
+}
+
+.iconWrapper {
+  display: flex;
+}
+
+.moonIcon {
+  font-size: 22px;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+
+.sunIcon {
+  display: flex;
+  font-size: 22px;
+  margin-left: 4px;
+  margin-top: 4px
 }
