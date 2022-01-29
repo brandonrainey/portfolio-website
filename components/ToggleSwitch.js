@@ -19,7 +19,8 @@ export default function ToggleSwitch({ lightMode, setLightMode }) {
 
       <label htmlFor="switch" className="toggleLabel">
         <div className="iconWrapper">
-          <FaSun className="sunIcon" /> <FaMoon className="moonIcon" />
+          <FaMoon className="moonIcon" />
+          <FaSun className="sunIcon" /> 
         </div>
       </label>
     </div>

@@ -27,7 +27,9 @@ export default function Contact(props) {
     >
       <header className="font-bold text-5xl">Contact</header>
       <p className="font-bold underline mt-6" ref={emailText} value='brandonhrainey@gmail.com' onClick={() => {navigator.clipboard.writeText(emailText.current.value)}}>brandonhrainey@gmail.com</p>
-      <Form />
+      <Form 
+        lightMode={props.lightMode}
+      />
       <div className="flex justify-center mt-4">
         <a href="https://github.com/Genlord">
           <img src="/githubIcon.png" className="h-10 w-10" alt='github icon'/>
