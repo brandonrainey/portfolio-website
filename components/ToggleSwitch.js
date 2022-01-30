@@ -21,6 +21,7 @@ export default function ToggleSwitch({ lightMode, setLightMode }) {
         <div className="iconWrapper">
           <FaMoon className="moonIcon" />
           <FaSun className="sunIcon" /> 
+          
         </div>
       </label>
     </div>

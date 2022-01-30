@@ -453,12 +453,12 @@ html {
 
 input:focus {
   outline: 3px solid rgb(76, 76, 252);
-  border: 1px solid white;
+  
 }
 
 textarea:focus {
   outline: 3px solid rgb(76, 76, 252);
-  border: 1px solid white;
+  
 }
 
 .toggleInput[type=checkbox]{
@@ -492,10 +492,11 @@ textarea:focus {
 
 .toggleInput:checked + .toggleLabel {
 	background: #55a5da;
+  
 }
 
 .toggleInput:checked + .toggleLabel:after {
-	left: calc(100% - 2px);
+	left: calc(100% - 1.5px);
 	transform: translateX(-100%);
 }
 
