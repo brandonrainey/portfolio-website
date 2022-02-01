@@ -357,6 +357,10 @@ html {
   width: 456px;
 }
 
+.aboutProj:hover {
+  
+}
+
 .aboutProj:hover > .descriptionOne {
   line-height: 1.5;
   padding-top: 1em;
@@ -392,10 +396,10 @@ html {
   color: black;
 }
 
-.descriptionOne {
+/* .descriptionOne {
   background: #fff;
   overflow: hidden;
-
+  
   transition: all 0.2s ease-in-out;
   line-height: 0;
   padding: 0 1em;
@@ -440,7 +444,7 @@ html {
   line-height: 0;
   padding: 0 1em;
   color: transparent;
-}
+} */
 
 .submitButton {
   color: black;
@@ -528,3 +532,37 @@ textarea:focus {
   margin-left: 8px;
   margin-top: 4px
 }
+
+
+.aboutProj { 
+  position: relative; 
+  
+}
+
+.description { 
+  visibility: hidden; /* hides description */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  overflow: hidden;
+}
+
+.aboutProj:focus .description,
+.aboutProj:focus-within .description,
+.aboutProj:hover .description {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+.lightModeDescription {
+  background:rgb(129, 160, 216) !important;
+}
+

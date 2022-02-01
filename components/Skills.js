@@ -6,7 +6,12 @@ export default function Skills() {
       <h1 className="font-bold text-5xl">Technologies</h1>
       <div className="flex justify-center">
         <div className="flex justify-center mt-6 gap-x-10 gap-y-6 skills flex-wrap">
-          <img src="/cssLogo.png" className="h-28 w-30" alt='css logo'/>
+          <div>
+            <img src="/cssLogo.png" className="h-28 w-30 cssLogo" alt='css logo'/>
+            <div className="skillsTooltip">Hello</div>
+            
+          </div>            
+          
           <img src="/htmlLogo.png" className="h-24 w-30 mt-2" alt='html logo'/>
           <img src="/jsIcon.png" className="h-20 w-26 mt-6" alt='javascript logo'/>
           <img src="/reactIcon.png" className="h-24 w-30 mt-4" alt='react logo'/>
