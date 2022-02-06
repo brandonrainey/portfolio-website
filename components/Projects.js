@@ -192,6 +192,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                 >
                   Github
                 </a>
+                
               </div>
             </div>
 
@@ -217,6 +218,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                 states on the nav and buttons, and cycles through three hero
                 images. Created with Next.js and a basic CSS Grid and Flexbox
                 layout.
+                
               </span>
               About
               <FaChevronDown />

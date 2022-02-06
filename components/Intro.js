@@ -3,14 +3,15 @@ import React from "react";
 export default function Intro() {
   return (
     <div className="flex flex-col justify-center text-center mt-52 intro">
-      <h1 className="font-bold text-2xl">Hi, im Brandon</h1>
+      <h1 className="font-bold text-2xl">Hi, I'm Brandon</h1>
       <div className="flex justify-center mt-4 introContainer">
         <p className="text-6xl w-1/3 text-center font-bold introText">
-          I am an aspiring self-taught frontend developer seeking my first Junior Developer role.
+          I am a self-taught Frontend Developer who enjoys solving problems and creating things people love to use.
         </p>
       </div>
       <p className="mt-4 introSubText">
-        Focusing on the frontend using React, but open to learning new things.
+        I am currently focusing on the Frontend using primarily React, <br/>
+         but I am always open to learning new frameworks and languages.
       </p>
     </div>
   );
