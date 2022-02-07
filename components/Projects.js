@@ -32,7 +32,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <div className="mt-28 ">
                 <a
                   href="https://mal-anime-db.netlify.app"
-                  className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Live
                 </a>
@@ -40,7 +40,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <div className="mt-28">
                 <a
                   href="https://github.com/Genlord/anime-app"
-                  className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
                 </a>
@@ -80,7 +80,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <div className="mt-28 opacity-100">
                 <a
                   href="https://compparts.netlify.app"
-                  className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Live
                 </a>
@@ -88,7 +88,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <div className="mt-28">
                 <a
                   href="https://github.com/Genlord/e-commerce"
-                  className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
                 </a>
@@ -128,7 +128,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <div className="mt-28 opacity-100 ">
                 <a
                   href="https://twitch-top-3.netlify.app/"
-                  className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Live
                 </a>
@@ -136,7 +136,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <div className="mt-28">
                 <a
                   href="https://github.com/Genlord/twitch-top-3"
-                  className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
                 </a>
@@ -180,7 +180,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <div className="mt-28 opacity-100">
                 <a
                   href="https://the-room-homepage.netlify.app"
-                  className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Live
                 </a>
@@ -188,7 +188,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <div className="mt-28">
                 <a
                   href="https://github.com/Genlord/room-homepage"
-                  className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
                 </a>
@@ -216,7 +216,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFour description">
                 Static homepage made from a FrontendMentor challenge. Active
                 states on the nav and buttons, and cycles through three hero
-                images. Created with Next.js and a basic CSS Grid and Flexbox
+                images. Created with Next.js and a CSS Grid and Flexbox
                 layout.
                 
               </span>
@@ -232,7 +232,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                 <div className="mt-28 opacity-100">
                   <a
                     href="https://gpu-comparison.netlify.app"
-                    className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                    className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                   >
                     Live
                   </a>
@@ -240,7 +240,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                 <div className="mt-28">
                   <a
                     href="https://github.com/Genlord/gpu-comparison"
-                    className={`font-bold text-2xl underline hover:text-blue-400 ${lightMode ? 'lightModeProjects' : null}`}
+                    className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                   >
                     Github
                   </a>
