@@ -43,7 +43,10 @@ export default function Home() {
         lightMode={lightMode}
         setLightMode={setLightMode}
       />
-      <Skills />
+      <Skills 
+        lightMode={lightMode}
+        setLightMode={setLightMode}
+      />
       <Contact
         contactScroll={contactScroll}
         setContactScroll={setContactScroll}

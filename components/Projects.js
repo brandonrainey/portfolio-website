@@ -20,7 +20,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
       ref={workDiv}
       className="flex justify-center mt-40 flex-col text-center"
     >
-      <header className="font-bold text-5xl mb-10">Projects</header>
+      <header className="font-bold text-5xl mb-10 tracking-wide">Projects</header>
 
       <div className="flex justify-center mt-6 mb-24 projectContainer">
         <div className="flex flex-row justify-around justify-center absolute"></div>
@@ -47,7 +47,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
             </div>
 
-            <section className="font-bold projectTitle text-xl proj1tt w-full justify-self-center text-center">
+            <section className="font-bold projectTitle text-xl proj1tt w-full justify-self-center text-center tracking-wide">
               Anime DB
             </section>
 
@@ -65,7 +65,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </a>
             </div>
             <div className={`aboutProj flex justify-center flex-col items-center ${lightMode ? 'lightModeAbout' : null}`}>
-              <span className={`tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700  -ml-30 text-sm w-full descriptionOne description ${lightMode ? 'lightModeDescription' : null}`}>
+              <span className={`tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700  -ml-30 text-sm w-full descriptionOne description tracking-wide${lightMode ? 'lightModeDescription' : null}`}>
                 Anime database that takes data from an unofficial MyAnimeList.com API and displays it in 
                 a grid of cards, with basic filters and search functions. Built using Next.js and Tailwind CSS.
               </span>
@@ -95,7 +95,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
             </div>
 
-            <section className="font-bold projectTitle2 text-xl proj1tt w-full justify-self-center">
+            <section className="font-bold projectTitle2 text-xl proj1tt w-full justify-self-center tracking-wide">
               E-Commerce
             </section>
 
@@ -112,8 +112,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </a>
             </div>
             <div className={`aboutProj flex justify-center flex-col items-center ${lightMode ? 'lightModeAbout' : null}`}>
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700  -ml-30 text-sm w-full descriptionTwo description">
-                Basic e-commerce template site built with Create-React-App and
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700  -ml-30 text-sm w-full descriptionTwo description tracking-wide">
+                E-commerce template site built with Create-React-App and
                 Material UI. Uses Firebase Authentication and Firestore Database
                 to also implement simple CRUD functions.
               </span>
@@ -143,7 +143,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
             </div>
 
-            <section className="font-bold projectTitle3 text-xl proj1tt w-full justify-self-center">
+            <section className="font-bold projectTitle3 text-xl proj1tt w-full justify-self-center tracking-wide">
               Twitch Top 3
             </section>
 
@@ -160,7 +160,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </a>
             </div>
             <div className={`aboutProj flex justify-center flex-col items-center ${lightMode ? 'lightModeAbout' : null}`}>
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionThree description">
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionThree description tracking-wide">
                 A Next.js built site using the Twitch API to display data. Users can enter the name of a twitch
                 channel and return the top three clips from the past week of that streamer.
               </span>
@@ -196,7 +196,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
             </div>
 
-            <section className="font-bold projectTitle4 text-xl proj1tt w-full justify-self-center">
+            <section className="font-bold projectTitle4 text-xl proj1tt w-full justify-self-center tracking-wide">
               Room-Homepage
             </section>
 
@@ -213,9 +213,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </a>
             </div>
             <div className={`aboutProj flex justify-center flex-col items-center ${lightMode ? 'lightModeAbout' : null}`}>
-              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFour description">
-                Static homepage made from a FrontendMentor challenge. Active
-                states on the nav and buttons, and cycles through three hero
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFour description tracking-wide">
+                Static homepage recreated from a FrontendMentor challenge. Cycles through three hero
                 images. Created with Next.js and a CSS Grid and Flexbox
                 layout.
                 
@@ -247,7 +246,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                 </div>
               </div>
 
-              <section className="font-bold projectTitle4 text-xl proj1tt w-full justify-self-center">
+              <section className="font-bold projectTitle4 text-xl proj1tt w-full justify-self-center tracking-wide">
                 GPU-Comparison
               </section>
 
@@ -264,7 +263,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                 </a>
               </div>
               <div className={`aboutProj flex justify-center flex-col items-center ${lightMode ? 'lightModeAbout' : null}`}>
-                <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFive description">
+                <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFive description tracking-wide">
                   A site built using Next.js using static data to display recent Nvidia/AMD graphics
                    cards via Recharts and MUI in a data grid and scatter plot chart.
                 </span>

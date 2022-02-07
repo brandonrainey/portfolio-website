@@ -572,3 +572,6 @@ textarea:focus {
   background:rgb(129, 160, 216) !important;
 }
 
+.email:hover {
+  cursor: copy;
+}
