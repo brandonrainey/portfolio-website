@@ -225,6 +225,11 @@ html {
   .projectOverlay {
     height: 240px !important;
   }
+
+  .submitButton {
+    background: white;
+    border-radius: 0.25rem;
+  }
 }
 
 .skills {
