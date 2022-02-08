@@ -467,7 +467,7 @@ input:focus {
 }
 
 textarea:focus {
-  outline: 3px solid rgb(76, 76, 252);
+  /* outline: 3px solid rgb(76, 76, 252); */
   
 }
 
