@@ -227,6 +227,7 @@ html {
   }
 
   .submitButton {
+    -webkit-appearance: none;
     background: white !important;
     border-radius: 0.25rem;
   }
