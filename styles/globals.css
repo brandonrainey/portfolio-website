@@ -227,8 +227,8 @@ html {
   }
 
   .submitButton {
-    -webkit-appearance: none;
-    background: white !important;
+    
+    background-color: rgb(136, 45, 45) !important;
     border-radius: 0.25rem;
   }
 }
@@ -461,6 +461,10 @@ html {
 .submitButton {
   color: black;
   
+}
+
+.darkButton {
+  background-color: white;
 }
 
 .formLabel {
