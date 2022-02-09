@@ -258,7 +258,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                   <img
                     src="gpu-comparisonss.png"
                     className="rounded-t-lg h-60"
-                    alt="room homepage screenshot"
+                    alt="gpu-comparison screenshot"
                   />
                 </a>
               </div>

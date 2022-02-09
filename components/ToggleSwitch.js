@@ -17,7 +17,7 @@ export default function ToggleSwitch({ lightMode, setLightMode }) {
         onChange={handleChange}
       />
 
-      <label htmlFor="switch" className="toggleLabel">
+      <label htmlFor="switch" className="toggleLabel" title="toggle switch for light or dark mode">
         <div className="iconWrapper">
           <FaMoon className="moonIcon" />
           <FaSun className="sunIcon" /> 

@@ -16,7 +16,7 @@ export default function Form({ lightMode }) {
         <label htmlFor="message" className={`${lightMode ? 'lightModeLabel' : null}`}>Message</label> <br />
         <textarea id="message" name="message" required className={`rounded text-black p-1 w-72 ${lightMode ? 'lightModeBorder' : null}`}></textarea>
       </p>
-      <button className="submitButton mt-2">
+      <button className="submitButton mt-2" type="button">
         <input type="submit" value="Submit"  className={`p-1 rounded font-bold ${lightMode ? 'lightModeButton' : 'darkButton'}`}/>
       </button>
     </form>
