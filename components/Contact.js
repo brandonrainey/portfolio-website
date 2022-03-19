@@ -31,7 +31,7 @@ export default function Contact(props) {
         lightMode={props.lightMode}
       />
       <div className="flex justify-center mt-4">
-        <a href="https://github.com/Genlord">
+        <a href="https://github.com/brandonrainey">
           <img src={`${props.lightMode ? '/githubIcon.png' : '/githubIconWhite.png'}`} className="h-10 w-10" alt='github icon'/>
         </a>
       </div>
