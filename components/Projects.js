@@ -224,6 +224,56 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
             </div>
           </div>
 
+
+          {/* tile-memory-game */}
+        <div className="flex flex-col w-96 projectFourWrapper relative">
+            <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
+              <div className="mt-28 opacity-100">
+                <a
+                  href="https://tile-memory-game.netlify.app"
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
+                >
+                  Live
+                </a>
+              </div>
+              <div className="mt-28">
+                <a
+                  href="https://github.com/Genlord/tile-game"
+                  className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
+                >
+                  Github
+                </a>
+                
+              </div>
+            </div>
+
+            <section className="font-bold projectTitle4 text-xl proj1tt w-full justify-self-center tracking-wide">
+              Tile-memory-game
+            </section>
+
+            <div className="flex justify-center">
+              <a
+                className="w-full projectTwo"
+                href="https://tile-memory-game.netlify.app"
+              >
+                <img
+                  src="/tilegamess.png"
+                  className="rounded-t-lg h-60"
+                  alt="room homepage screenshot"
+                />
+              </a>
+            </div>
+            <div className={`aboutProj flex justify-center flex-col items-center ${lightMode ? 'lightModeAbout' : null}`}>
+              <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFour description tracking-wide">
+                A memory game with different difficulties where you memorize lit tiles in 5 seconds then have 10 seconds to recall and click the tiles.
+                Made with Next.js and Tailwind CSS.
+                
+              </span>
+              About
+              <FaChevronDown />
+            </div>
+          </div>
+
         {/* gpu-comparison */}
         <div className="projectContainer2">
             <div className="flex flex-col w-96 projectFiveWrapper relative">
