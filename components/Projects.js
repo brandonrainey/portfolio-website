@@ -274,13 +274,13 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
             </div>
           </div>
 
-        {/* gpu-comparison */}
+        {/* easybank landing page */}
         <div className="projectContainer2">
             <div className="flex flex-col w-96 projectFiveWrapper relative">
               <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
                 <div className="mt-28 opacity-100">
                   <a
-                    href="https://gpu-comparison.netlify.app"
+                    href="https://eb-landing-page.netlify.app"
                     className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                   >
                     Live
@@ -288,7 +288,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                 </div>
                 <div className="mt-28">
                   <a
-                    href="https://github.com/Genlord/gpu-comparison"
+                    href="https://github.com/Genlord/easybank-landing-page"
                     className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                   >
                     Github
@@ -297,25 +297,24 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
 
               <section className="font-bold projectTitle4 text-xl proj1tt w-full justify-self-center tracking-wide">
-                GPU-Comparison
+                Easybank-Landing-Page
               </section>
 
               <div className="flex justify-center">
                 <a
                   className="w-full projectTwo"
-                  href="https://gpu-comparison.netlify.app"
+                  href="https://eb-landing-page.netlify.app"
                 >
                   <img
-                    src="gpu-comparisonss.png"
+                    src="eblandingpagess.png"
                     className="rounded-t-lg h-60"
-                    alt="gpu-comparison screenshot"
+                    alt="easybank landing page screenshot"
                   />
                 </a>
               </div>
               <div className={`aboutProj flex justify-center flex-col items-center ${lightMode ? 'lightModeAbout' : null}`}>
                 <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFive description tracking-wide">
-                  A site built using Next.js using static data to display recent Nvidia/AMD graphics
-                   cards via Recharts and MUI in a data grid and scatter plot chart.
+                  A site built on Nextjs replicating a design from a FrontendMentor challenge. Simple bank landing page with header/footer and multiple sections.
                 </span>
                 About
                 <FaChevronDown />
