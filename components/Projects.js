@@ -39,7 +39,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
               <div className="mt-28">
                 <a
-                  href="https://github.com/Genlord/anime-app"
+                  href="https://github.com/brandonrainey/anime-app"
                   className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
@@ -79,7 +79,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
             <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 opacity-100">
                 <a
-                  href="https://compparts.netlify.app"
+                  href="https://brainey-product-page.netlify.app/"
                   className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Live
@@ -87,7 +87,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
               <div className="mt-28">
                 <a
-                  href="https://github.com/Genlord/e-commerce"
+                  href="https://github.com/brandonrainey/eCommerce-product-page"
                   className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
@@ -96,26 +96,25 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
             </div>
 
             <section className="font-bold projectTitle2 text-xl proj1tt w-full justify-self-center tracking-wide">
-              E-Commerce
+              eCommerce Product Page
             </section>
 
             <div className="flex justify-center">
               <a
                 className="w-full projectTwo"
-                href="https://compparts.netlify.app"
+                href="https://brainey-product-page.netlify.app/"
               >
                 <img
-                  src="/e-commercess.png"
+                  src="/productpagess.png"
                   className="rounded-t-lg h-60"
-                  alt="e-commerse screenshot"
+                  alt="e-commerce product page screenshot"
                 />
               </a>
             </div>
             <div className={`aboutProj flex justify-center flex-col items-center ${lightMode ? 'lightModeAbout' : null}`}>
               <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700  -ml-30 text-sm w-full descriptionTwo description tracking-wide">
-                E-commerce template site built with Create-React-App and
-                Material UI. Uses Firebase Authentication and Firestore Database
-                to also implement simple CRUD functions.
+                E-commerce product page site built with Next.js and desgin from Frontendmentor.com.
+                Uses Firebase Authentication to allow creating and logging into an account.
               </span>
               About
               <FaChevronDown />
@@ -135,7 +134,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
               <div className="mt-28">
                 <a
-                  href="https://github.com/Genlord/twitch-top-3"
+                  href="https://github.com/brandonrainey/twitch-top-3"
                   className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
@@ -187,7 +186,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
               <div className="mt-28">
                 <a
-                  href="https://github.com/Genlord/room-homepage"
+                  href="https://github.com/brandonrainey/room-homepage"
                   className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
@@ -238,7 +237,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
               </div>
               <div className="mt-28">
                 <a
-                  href="https://github.com/Genlord/tile-game"
+                  href="https://github.com/brandonrainey/tile-game"
                   className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                 >
                   Github
@@ -288,7 +287,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode}) {
                 </div>
                 <div className="mt-28">
                   <a
-                    href="https://github.com/Genlord/easybank-landing-page"
+                    href="https://github.com/brandonrainey/easybank-landing-page"
                     className={`font-bold text-2xl underline hover:text-blue-600 ${lightMode ? 'lightModeProjects' : null}`}
                   >
                     Github
