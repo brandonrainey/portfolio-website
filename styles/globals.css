@@ -51,11 +51,45 @@ html {
   border-left: 1px solid black;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
+  .projWrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .projWrapper2 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  
+
+  .projectThreeWrapper {
+    margin-top: 100px;
+  }
+
+  .projectFiveWrapper {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 900px) {
   html,
   body {
     overflow-x: hidden;
   }
+
+  .projectThreeWrapper {
+    margin-top: 0px;
+  }
+
+  .projectFiveWrapper {
+    margin-top: 0px;
+  }
+  
 
   .intro {
     align-items: center;
@@ -155,11 +189,13 @@ html {
   .projWrapper {
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
   }
 
   .projWrapper2 {
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
   }
 
   .descriptionOne {
