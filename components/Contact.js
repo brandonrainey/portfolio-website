@@ -1,0 +1,40 @@
+import React, { useRef, useEffect } from "react";
+import Form from "./Form";
+
+export default function Contact(props) {
+  const contactDiv = useRef();
+
+  const emailText = useRef();
+
+  
+
+  useEffect(() => {
+    if (props.contactScroll === true) {
+      contactDiv.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+      props.setContactScroll(false);
+    }
+  }, [props.contactScroll]);
+
+  console.log(emailText.current)
+  return (
+    <div
+      ref={contactDiv}
+      className="flex justify-center mt-40 flex-col text-center"
+    >
+      <header className="font-bold text-5xl tracking-wide">Contact</header>
+      <p className="font-bold underline mt-6 tracking-wide email" ref={emailText} value='brandonhrainey@gmail.com' onClick={() => {navigator.clipboard.writeText('brandonhrainey@gmail.com')}}>brandonhrainey@gmail.com</p>
+      <Form 
+        lightMode={props.lightMode}
+      />
+      <div className="flex justify-center mt-4">
+        <a href="https://github.com/brandonrainey">
+          <img src={`${props.lightMode ? '/githubIcon.png' : '/githubIconWhite.png'}`} className="h-10 w-10" alt='github icon'/>
+        </a>
+      </div>
+    </div>
+  );
+}

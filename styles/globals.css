@@ -1,0 +1,592 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+
+
+:root {
+  --tw-bg-opacity: 1;
+  color: white;
+}
+
+html {
+  background: linear-gradient(
+    0deg,
+    rgba(17, 24, 36, 1) 0%,
+    rgba(13, 29, 62, 1) 100%
+  );
+  
+}
+
+.lightModeText {
+  color: black;
+}
+
+.lightModeProjects {
+  color: white;
+}
+
+.lightModeBackground {
+  background: rgb(243, 238, 255);
+}
+
+.lightModeBorder {
+  border: 1px solid black;
+}
+
+.lightModeLabel {
+  color: black;
+}
+
+.lightModeButton {
+  background-color: white;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.lightModeAbout {
+  background: rgb(176, 178, 199) !important;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .intro {
+    align-items: center;
+  }
+
+  .introText {
+    width: 85%;
+    font-size: 50px;
+  }
+
+  .introSubText {
+    width: 75%;
+  }
+
+  .projectOne {
+    width: 75%;
+  }
+
+  .projectTwo {
+    width: 75%;
+  }
+
+  .projectThree {
+    width: 75%;
+  }
+
+  .projectContainer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .projectContainer2 {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+  }
+
+  .aboutMeText {
+    width: 75%;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    flex: 1 0 25%;
+  }
+
+  .overlayOne {
+    display: none;
+  }
+
+  .overlayTwo {
+    display: none;
+  }
+
+  .overlayThree {
+    display: none;
+  }
+
+  .projectTitle {
+    height: 50px;
+  }
+
+  .projectTitle2 {
+    margin-top: 120px;
+    height: 50px;
+  }
+
+  .projectTitle3 {
+    margin-top: 120px;
+    height: 50px;
+  }
+
+  .projectTitle4 {
+    margin-top: 120px;
+    height: 50px;
+  }
+
+  .projectTitle5 {
+    margin-top: 120px;
+    height: 50px;
+  }
+
+  .mobileTitle1 {
+    margin-bottom: -20px;
+  }
+
+  .mobileTitle2 {
+    margin-bottom: -20px;
+  }
+
+  .mobileTitle3 {
+    margin-bottom: -20px;
+  }
+
+  .projWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projWrapper2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descriptionOne {
+    width: 90%;
+    margin-top: 0 !important;
+    
+  }
+
+  .descriptionTwo {
+    width: 90%;
+
+    margin-top: 0 !important;
+  }
+
+  .descriptionThree {
+    width: 90%;
+
+    margin-top: 0 !important;
+  }
+
+  .descriptionFour {
+    width: 90%;
+
+    margin-top: 0 !important;
+  }
+
+  .descriptionFive {
+    width: 90%;
+
+    margin-top: 0 !important;
+  }
+
+  .projectOverlay {
+    width: 75% !important;
+    height: 67.7% !important;
+    left: 57px !important;
+  }
+
+  .descriptionFour {
+    align-self: center;
+    margin-top: 22px;
+  }
+
+  .descriptionOne {
+    align-self: center;
+    margin-top: 22px;
+  }
+
+  .descriptionTwo {
+    align-self: center;
+    margin-top: 22px;
+  }
+
+  .descriptionThree {
+    align-self: center;
+    margin-top: 22px;
+  }
+
+  .aboutProj {
+    align-self: center;
+    width: 75% !important;
+  }
+
+  .projectOverlay {
+    height: 240px !important;
+  }
+
+  .submitButton {
+    
+    background-color: rgb(136, 45, 45) !important;
+    border-radius: 0.25rem;
+  }
+}
+
+.skills {
+  flex-basis: 30%;
+}
+
+.overlayOne {
+  opacity: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 456px;
+}
+
+.overlayOne:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.mobileTitle1 {
+  display: none;
+}
+
+.mobileTitle2 {
+  display: none;
+}
+
+.mobileTitle3 {
+  display: none;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+}
+
+.proj1tt:hover .tooltip {
+  visibility: visible;
+  z-index: 50;
+}
+
+.aboutProj:hover .tooltip {
+  visibility: visible;
+  z-index: 50;
+}
+
+.aboutProj {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.animeDB {
+  left: 10px;
+  top: 28px;
+}
+
+.animeDBOverlay {
+  top: 28px;
+  left: 200px;
+  z-index: 10;
+}
+
+.eCommerce {
+  top: 28px;
+  left: 486px;
+}
+
+.nftTracker {
+  top: 28px;
+  right: 486px;
+}
+
+.roomHomepage {
+  top: 28px;
+  right: 10px;
+}
+
+.projectOneWrapper {
+  width: 456px !important;
+}
+
+.projectOneWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.projectTwoWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.projectThreeWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.projectFourWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.projectFiveWrapper:hover > .projectOverlay {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.projectTwoWrapper {
+  width: 456px;
+}
+
+.projectThreeWrapper {
+  width: 456px;
+}
+
+.projectFourWrapper {
+  width: 456px;
+}
+
+.projectFiveWrapper {
+  width: 456px;
+}
+
+.projectOverlay {
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  height: 78%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  opacity: 0;
+  align-self: center;
+}
+
+.projectOneImage {
+  width: 456px;
+}
+
+.aboutProj:hover {
+  
+}
+
+.aboutProj:hover > .descriptionOne {
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+
+.aboutProj:hover > .descriptionTwo {
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+
+.aboutProj:hover > .descriptionThree {
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+
+.aboutProj:hover > .descriptionFour {
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+
+.aboutProj:hover > .descriptionFive {
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+
+/* .descriptionOne {
+  background: #fff;
+  overflow: hidden;
+  
+  transition: all 0.2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
+}
+
+.descriptionTwo {
+  background: #fff;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
+}
+
+.descriptionThree {
+  background: #fff;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
+}
+
+.descriptionFour {
+  background: #fff;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
+}
+
+.descriptionFive {
+  background: #fff;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
+} */
+
+.submitButton {
+  color: black;
+  
+}
+
+.darkButton {
+  background-color: white;
+}
+
+.formLabel {
+  color: white;
+}
+
+input:focus {
+  /* outline: 3px solid rgb(76, 76, 252); */
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(76, 76, 252) 0px 0px 0px 3px;
+}
+
+textarea:focus {
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(76, 76, 252) 0px 0px 0px 3px;
+  
+}
+
+.toggleInput[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.toggleLabel {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 60px;
+	height: 30px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+.toggleLabel:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 28px;
+	height: 28px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.toggleInput:checked + .toggleLabel {
+	background: #55a5da;
+  
+}
+
+.toggleInput:checked + .toggleLabel:after {
+	left: calc(100% - 1.5px);
+	transform: translateX(-100%);
+}
+
+.toggleLabel:active:after {
+	width: 36px;
+}
+
+.toggleWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  margin-bottom: -60px;
+  margin-right: 14px;
+}
+
+.iconWrapper {
+  display: flex;
+}
+
+.moonIcon {
+  font-size: 22px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.sunIcon {
+  display: flex;
+  font-size: 22px;
+  margin-left: 8px;
+  margin-top: 4px
+}
+
+
+.aboutProj { 
+  position: relative; 
+  
+}
+
+.description { 
+  visibility: hidden; /* hides description */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  overflow: hidden;
+}
+
+.aboutProj:focus .description,
+.aboutProj:focus-within .description,
+.aboutProj:hover .description {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+.lightModeDescription {
+  background:rgb(129, 160, 216) !important;
+}
+
+.email:hover {
+  cursor: copy;
+}
