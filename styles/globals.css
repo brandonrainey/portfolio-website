@@ -51,12 +51,53 @@ html {
   border-left: 1px solid black;
 }
 
+<<<<<<< HEAD
 @media (max-width: 500px) {
+=======
+@media (max-width: 1300px) {
+  .projWrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .projWrapper2 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  
+
+  .projectThreeWrapper {
+    margin-top: 100px;
+  }
+
+  .projectFiveWrapper {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+>>>>>>> e8135675bb94c960c61990985549edb54ed54819
   html,
   body {
     overflow-x: hidden;
   }
 
+<<<<<<< HEAD
+=======
+  .projectThreeWrapper {
+    margin-top: 0px;
+  }
+
+  .projectFiveWrapper {
+    margin-top: 0px;
+  }
+  
+
+>>>>>>> e8135675bb94c960c61990985549edb54ed54819
   .intro {
     align-items: center;
   }
@@ -155,11 +196,19 @@ html {
   .projWrapper {
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
+=======
+    flex-wrap: nowrap;
+>>>>>>> e8135675bb94c960c61990985549edb54ed54819
   }
 
   .projWrapper2 {
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
+=======
+    flex-wrap: nowrap;
+>>>>>>> e8135675bb94c960c61990985549edb54ed54819
   }
 
   .descriptionOne {
