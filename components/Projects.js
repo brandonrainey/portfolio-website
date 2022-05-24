@@ -65,7 +65,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 >
                   <img
                     src="/animedbss.png"
-                    className="rounded-t-lg h-60 projectOneImage"
+                    className="rounded-t-lg h-60 projectOneImage w-full"
                     alt="anime db screenshot"
                   />
                 </a>
@@ -127,7 +127,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 >
                   <img
                     src="/productpagess.png"
-                    className="rounded-t-lg h-60"
+                    className="rounded-t-lg h-60 w-full"
                     alt="e-commerce product page screenshot"
                   />
                 </a>
@@ -185,7 +185,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 >
                   <img
                     src="/twitchss.png"
-                    className="rounded-t-lg h-60"
+                    className="rounded-t-lg h-60 w-full"
                     alt="twitch top 3 screenshot"
                   />
                 </a>
@@ -245,7 +245,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               >
                 <img
                   src="/roomHomepageSS.png"
-                  className="rounded-t-lg h-60"
+                  className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
                 />
               </a>
@@ -303,7 +303,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               >
                 <img
                   src="/tilegamess.png"
-                  className="rounded-t-lg h-60"
+                  className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
                 />
               </a>
@@ -362,7 +362,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 >
                   <img
                     src="eblandingpagess.png"
-                    className="rounded-t-lg h-60"
+                    className="rounded-t-lg h-60 w-full"
                     alt="easybank landing page screenshot"
                   />
                 </a>

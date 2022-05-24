@@ -32,7 +32,7 @@ body {
 }
 
 .lightModeTitle {
-  background: #9AB7CC !important;
+  background: #9ab7cc !important;
 }
 
 .lightModeProjects {
@@ -60,9 +60,7 @@ body {
 }
 
 .lightModeAbout {
-  background: #C9D1E7 !important;
-  
-  
+  background: #c9d1e7 !important;
 }
 
 .navButton:hover {
@@ -70,32 +68,39 @@ body {
 }
 
 .imageOneWraper {
-  
   border-radius: 0.5rem;
 }
 
-.projectTitle, .projectTitle2, .projectTitle3, .projectTitle4, .projectTitle5 {
+.projectTitle,
+.projectTitle2,
+.projectTitle3,
+.projectTitle4,
+.projectTitle5 {
   margin-top: -8px;
-  background: #2E3B57;
+  background: #2e3b57;
   width: auto;
   border-radius: 0.5rem;
   align-self: center;
   padding-right: 10px;
   padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .liveLink {
-  background: #5B587B;
+  background: #5b587b;
   padding: 6px;
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .liveLink:active {
-  background: #8C759C;
+  background: #8c759c;
 }
-
 
 /* tablet */
 @media (max-width: 1300px) {
@@ -128,29 +133,39 @@ body {
   }
 
   .projectBorder {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     width: 75%;
     justify-self: center;
     border-radius: 0.5rem;
   }
 
-  .projectTitle, .projectTitle2, .projectTitle3, .projectTitle4, .projectTitle5 {
-    
+  .projectTitle,
+  .projectTitle2,
+  .projectTitle3,
+  .projectTitle4,
+  .projectTitle5 {
     margin-top: 0;
   }
 
-  .projectOneWrapper, .projectTwoWrapper, .projectThreeWrapper, .projectFourWrapper, .projectFiveWrapper {
-    
+  .projectOneWrapper,
+  .projectTwoWrapper,
+  .projectThreeWrapper,
+  .projectFourWrapper,
+  .projectFiveWrapper {
     align-items: center;
   }
 
-   
-
-  .imageOneWraper, .imageTwoWrapper, .imageThreeWrapper, .imageFourWrapper, .imageFiveWrapper, .imageSixWrapper{
+  .imageOneWraper,
+  .imageTwoWrapper,
+  .imageThreeWrapper,
+  .imageFourWrapper,
+  .imageFiveWrapper,
+  .imageSixWrapper {
     box-shadow: none;
     margin-top: 0;
   }
-
 
   .projectThreeWrapper {
     margin-top: 0px;
@@ -185,9 +200,6 @@ body {
     width: 100%;
   }
 
-  .projectFour {
-
-  }
 
   .projectContainer {
     flex-direction: column;
@@ -386,7 +398,7 @@ body {
 
 .aboutProj {
   width: 100%;
-  background: #30475C;
+  background: #30475c;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
