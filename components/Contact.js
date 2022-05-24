@@ -30,9 +30,12 @@ export default function Contact(props) {
       <Form 
         lightMode={props.lightMode}
       />
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-4 gap-x-6">
         <a href="https://github.com/brandonrainey">
           <img src={`${props.lightMode ? '/githubIcon.png' : '/githubIconWhite.png'}`} className="h-10 w-10" alt='github icon'/>
+        </a>
+        <a href="https://www.linkedin.com/in/brandon-rainey/">
+          <img src={`${props.lightMode ? '/linkedinIconBlack.png' : '/linkedinIcon.png'}`} className="h-10 w-10 rounded-full"/>
         </a>
       </div>
     </div>
