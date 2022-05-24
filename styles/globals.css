@@ -98,7 +98,10 @@ body {
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.liveLink:active {
+.liveLink:focus {
+}
+
+.liveLink:hover {
   background: #8c759c;
 }
 
@@ -199,7 +202,6 @@ body {
   .projectThree {
     width: 100%;
   }
-
 
   .projectContainer {
     flex-direction: column;

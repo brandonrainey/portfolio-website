@@ -53,7 +53,11 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               </div>
             </div>
 
-            <section className={`font-bold projectTitle text-xl proj1tt w-full justify-self-center text-center tracking-wide ${lightMode ? 'lightModeTitle' : ''}`}>
+            <section
+              className={`font-bold projectTitle text-xl proj1tt w-full justify-self-center text-center tracking-wide ${
+                lightMode ? 'lightModeTitle' : ''
+              }`}
+            >
               Anime DB
             </section>
 
@@ -116,7 +120,11 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               </div>
             </div>
 
-            <section className={`font-bold projectTitle2 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${lightMode ? 'lightModeTitle' : ''}`}>
+            <section
+              className={`font-bold projectTitle2 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${
+                lightMode ? 'lightModeTitle' : ''
+              }`}
+            >
               eCommerce Product Page
             </section>
             <div className="flex flex-col projectBorder">
@@ -173,7 +181,11 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               </div>
             </div>
 
-            <section className={`font-bold projectTitle3 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${lightMode ? 'lightModeTitle' : ''}`}>
+            <section
+              className={`font-bold projectTitle3 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${
+                lightMode ? 'lightModeTitle' : ''
+              }`}
+            >
               Twitch Top 3
             </section>
 
@@ -233,7 +245,11 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             </div>
           </div>
 
-          <section className={`font-bold projectTitle4 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${lightMode ? 'lightModeTitle' : ''}`}>
+          <section
+            className={`font-bold projectTitle4 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${
+              lightMode ? 'lightModeTitle' : ''
+            }`}
+          >
             Room-Homepage
           </section>
 
@@ -291,7 +307,11 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             </div>
           </div>
 
-          <section className={`font-bold projectTitle4 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${lightMode ? 'lightModeTitle' : ''}`}>
+          <section
+            className={`font-bold projectTitle4 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${
+              lightMode ? 'lightModeTitle' : ''
+            }`}
+          >
             Tile-memory-game
           </section>
 
@@ -331,7 +351,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               <div className="mt-28 opacity-100">
                 <a
                   href="https://eb-landing-page.netlify.app"
-                  className={`font-bold text-2xl underline liveLink ${
+                  className={`font-bold text-2xl liveLink ${
                     lightMode ? 'lightModeProjects' : null
                   }`}
                 >
@@ -341,7 +361,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               <div className="mt-28">
                 <a
                   href="https://github.com/brandonrainey/easybank-landing-page"
-                  className={`font-bold text-2xl underline liveLink ${
+                  className={`font-bold text-2xl liveLink ${
                     lightMode ? 'lightModeProjects' : null
                   }`}
                 >
@@ -350,7 +370,11 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               </div>
             </div>
 
-            <section className={`font-bold projectTitle4 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${lightMode ? 'lightModeTitle' : ''}`}>
+            <section
+              className={`font-bold projectTitle4 text-xl proj1tt w-full justify-self-center text-center tracking-wide ${
+                lightMode ? 'lightModeTitle' : ''
+              }`}
+            >
               Easybank-Landing-Page
             </section>
 

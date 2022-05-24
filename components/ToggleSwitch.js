@@ -1,11 +1,11 @@
-import React from "react";
-import { FaSun } from "react-icons/fa";
-import { FaMoon } from "react-icons/fa";
+import React from 'react'
+import { FaSun } from 'react-icons/fa'
+import { FaMoon } from 'react-icons/fa'
 
 export default function ToggleSwitch({ lightMode, setLightMode }) {
   const handleChange = () => {
-    setLightMode(!lightMode);
-  };
+    setLightMode(!lightMode)
+  }
 
   return (
     <div className="toggleWrapper">
@@ -17,13 +17,16 @@ export default function ToggleSwitch({ lightMode, setLightMode }) {
         onChange={handleChange}
       />
 
-      <label htmlFor="switch" className="toggleLabel" title="toggle switch for light or dark mode">
+      <label
+        htmlFor="switch"
+        className="toggleLabel"
+        title="toggle switch for light or dark mode"
+      >
         <div className="iconWrapper">
           <FaMoon className="moonIcon" />
-          <FaSun className="sunIcon" /> 
-          
+          <FaSun className="sunIcon" />
         </div>
       </label>
     </div>
-  );
+  )
 }
