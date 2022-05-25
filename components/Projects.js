@@ -25,9 +25,9 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       </header>
 
       <div className="flex justify-center mt-6 mb-24 projectContainer">
-        <div className="flex flex-row justify-around justify-center absolute"></div>
+        <div className="flex flex-row justify-around  absolute"></div>
         {/* projects */}
-        <div className="flex flex-row justify-center w-full justify-around projWrapper relative">
+        <div className="flex flex-row  w-full justify-around projWrapper relative">
           {/* anime DB */}
           <div className="flex w-96 flex-col projectOneWrapper relative ">
             <div className=" absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
@@ -157,7 +157,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </div>
 
           {/* twitch-top-3 */}
-          <div className="flex w-24 flex-col w-96 projectThreeWrapper relative">
+          <div className="flex flex-col w-96 projectThreeWrapper relative">
             <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 opacity-100 ">
                 <a
@@ -219,7 +219,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center w-full justify-around projWrapper2 relative">
+      <div className="flex flex-row w-full justify-around projWrapper2 relative">
         {/* room-homepage */}
         <div className="flex flex-col w-96 projectFourWrapper relative">
           <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
