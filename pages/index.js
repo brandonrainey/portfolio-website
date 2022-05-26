@@ -14,11 +14,6 @@ export default function Home() {
 
   const [lightMode, setLightMode] = useState(false);
 
-<<<<<<< HEAD
-//rfr3fff
-  // test test
-=======
->>>>>>> e8135675bb94c960c61990985549edb54ed54819
   return (
     <div className={`font-custom ${lightMode ? 'lightModeBackground lightModeText' : null}`}>
       <ToggleSwitch 
