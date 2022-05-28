@@ -73,7 +73,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                     className="rounded-t-lg projectOneImage w-full"
                     alt="anime db screenshot"
                     layout='fill'
-                    
+                    priority={true}
                   />
                 </a>
               </div>
@@ -141,6 +141,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                     className="rounded-t-lg  w-full"
                     alt="e-commerce product page screenshot"
                     layout='fill'
+                    priority={true}
                   />
                 </a>
               </div>
@@ -204,6 +205,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                     className="rounded-t-lg h-60 w-full"
                     alt="twitch top 3 screenshot"
                     layout='fill'
+                    priority={true}
                   />
                 </a>
               </div>
@@ -269,6 +271,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
                   layout='fill'
+                  priority={true}
                 />
               </a>
             </div>
@@ -332,6 +335,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
                   layout='fill'
+                  priority={true}
                 />
               </a>
             </div>
@@ -396,6 +400,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                     className="rounded-t-lg h-60 w-full"
                     alt="easybank landing page screenshot"
                     layout='fill'
+                    priority={true}
                   />
                 </a>
               </div>

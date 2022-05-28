@@ -51,6 +51,7 @@ export default function Contact(props) {
               props.lightMode ? '/linkedinIconBlack.png' : '/linkedinIcon.png'
             }`}
             className="h-10 w-10 rounded-full"
+            alt='linkedin icon'
           />
         </a>
       </div>
