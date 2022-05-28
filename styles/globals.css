@@ -97,6 +97,11 @@ body {
   height: 255px;
 }
 
+.tailwindIcon {
+  aspect-ratio: 5 / 3;
+  max-height: 80px;
+}
+
 /* tablet */
 @media (max-width: 1300px) {
   .projWrapper {

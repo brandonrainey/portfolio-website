@@ -29,7 +29,7 @@ export default function Skills({ lightMode }) {
           />
           <img
             src="/tailwindIcon.png"
-            className="h-20 w-28"
+            className=" tailwindIcon"
             alt="tailwind css logo"
           />
         </div>
