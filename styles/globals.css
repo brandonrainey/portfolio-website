@@ -144,6 +144,28 @@ body {
     
   }
 
+  .headerContainer {
+    flex-direction: column;
+  }
+
+  .headerTitle {
+    margin-top: 30px;
+  }
+
+  .headerNav {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    gap: 10%;
+  }
+
+  .navButton{
+    margin-right: 0;
+    background: #0a4a7446;
+    padding: 4px;
+    border-radius: 5px;
+  }
+
   .projectTitle,
   .projectTitle2,
   .projectTitle3,
