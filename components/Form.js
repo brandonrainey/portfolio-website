@@ -67,7 +67,7 @@ export default function Form({ lightMode }) {
         <input
           type="submit"
           value="Submit"
-          className={`p-1 rounded font-bold ${
+          className={`p-1 rounded font-bold cursor-pointer ${
             lightMode ? 'lightModeButton' : 'darkButton'
           }`}
         />
