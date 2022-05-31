@@ -54,11 +54,7 @@ body {
   background: #c9d1e7 !important;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-@media (max-width: 500px) {
-=======
-=======
+
 .navButton:hover {
   color: rgb(145, 150, 204);
 }
@@ -99,7 +95,7 @@ body {
 }
 
 /* tablet */
->>>>>>> 2d3e43320c9ab04744e1be70d70a12c1bcc106df
+
 @media (max-width: 1300px) {
   .projWrapper {
     flex-wrap: wrap;
@@ -124,16 +120,12 @@ body {
 
 /* mobile view */
 @media (max-width: 900px) {
->>>>>>> e8135675bb94c960c61990985549edb54ed54819
   html,
   body {
     overflow-x: hidden;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
+
   .projectBorder {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
       rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
@@ -169,7 +161,7 @@ body {
     margin-top: 0;
   }
 
->>>>>>> 2d3e43320c9ab04744e1be70d70a12c1bcc106df
+
   .projectThreeWrapper {
     margin-top: 0px;
   }
@@ -178,7 +170,7 @@ body {
     margin-top: 0px;
   }
 
->>>>>>> e8135675bb94c960c61990985549edb54ed54819
+
   .intro {
     align-items: center;
   }
@@ -277,19 +269,13 @@ body {
   .projWrapper {
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
-=======
     flex-wrap: nowrap;
->>>>>>> e8135675bb94c960c61990985549edb54ed54819
   }
 
   .projWrapper2 {
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
-=======
     flex-wrap: nowrap;
->>>>>>> e8135675bb94c960c61990985549edb54ed54819
   }
 
   .descriptionOne {
