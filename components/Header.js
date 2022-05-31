@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export default function Header(props) {
   return (
-    <div className="flex h-40">
+    <div className="flex h-40 headerContainer">
       <Head>
         <meta
           name="description"
@@ -11,9 +11,9 @@ export default function Header(props) {
         />
         <title>My Portfolio</title>
       </Head>
-      <h1 className="mt-auto ml-8 font-bold tracking-wide">My Portfolio</h1>
+      <h1 className="mt-auto ml-8 font-bold tracking-wide headerTitle">My Portfolio</h1>
 
-      <nav className="ml-auto mt-auto">
+      <nav className="ml-auto mt-auto headerNav">
         <button
           onClick={() => props.setWorkScroll(true)}
           className="mr-6 tracking-wide navButton"

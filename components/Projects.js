@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { FaChevronDown } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Work({ workScroll, setWorkScroll, lightMode }) {
   const workDiv = useRef()
@@ -64,13 +65,15 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             <div className="flex flex-col projectBorder">
               <div className="flex justify-center imageOneWraper mt-2">
                 <a
-                  className="w-full relative projectOne"
+                  className="w-full relative projectOne h-60"
                   href="https://mal-anime-db.netlify.app"
                 >
-                  <img
+                  <Image
                     src="/animedbss.png"
-                    className="rounded-t-lg h-60 projectOneImage w-full"
+                    className="rounded-t-lg projectOneImage w-full"
                     alt="anime db screenshot"
+                    layout='fill'
+                    
                   />
                 </a>
               </div>
@@ -130,13 +133,15 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             <div className="flex flex-col projectBorder">
               <div className="flex justify-center mt-2 imageTwoWrapper">
                 <a
-                  className="w-full projectTwo"
+                  className="w-full projectTwo relative h-60"
                   href="https://brainey-product-page.netlify.app/"
                 >
-                  <img
+                  <Image
                     src="/productpagess.png"
-                    className="rounded-t-lg h-60 w-full"
+                    className="rounded-t-lg  w-full"
                     alt="e-commerce product page screenshot"
+                    layout='fill'
+                    
                   />
                 </a>
               </div>
@@ -192,13 +197,15 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             <div className="flex flex-col projectBorder">
               <div className="flex justify-center mt-2 imageThreeWrapper">
                 <a
-                  className="w-full projectThree"
+                  className="w-full projectThree relative h-60"
                   href="https://twitch-top-3.netlify.app/"
                 >
-                  <img
+                  <Image
                     src="/twitchss.png"
                     className="rounded-t-lg h-60 w-full"
                     alt="twitch top 3 screenshot"
+                    layout='fill'
+                    
                   />
                 </a>
               </div>
@@ -256,13 +263,15 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           <div className="flex flex-col projectBorder">
             <div className="flex justify-center mt-2 imageFourWrapper">
               <a
-                className="w-full projectTwo"
+                className="w-full projectTwo h-60 relative"
                 href="https://the-room-homepage.netlify.app"
               >
-                <img
+                <Image
                   src="/roomHomepageSS.png"
                   className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
+                  layout='fill'
+                  
                 />
               </a>
             </div>
@@ -318,13 +327,15 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           <div className="flex flex-col projectBorder">
             <div className="flex justify-center mt-2 imageFiveWrapper">
               <a
-                className="w-full projectTwo"
+                className="w-full projectTwo h-60 relative"
                 href="https://tile-memory-game.netlify.app"
               >
-                <img
+                <Image
                   src="/tilegamess.png"
                   className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
+                  layout='fill'
+                  
                 />
               </a>
             </div>
@@ -381,13 +392,15 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             <div className="flex flex-col projectBorder">
               <div className="flex justify-center mt-2 imageSixWrapper">
                 <a
-                  className="w-full projectTwo"
+                  className="w-full projectTwo h-60 relative"
                   href="https://eb-landing-page.netlify.app"
                 >
-                  <img
-                    src="eblandingpagess.png"
+                  <Image
+                    src="/eblandingpagess.png"
                     className="rounded-t-lg h-60 w-full"
                     alt="easybank landing page screenshot"
+                    layout='fill'
+                    
                   />
                 </a>
               </div>
