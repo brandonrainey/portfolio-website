@@ -227,12 +227,12 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
         </div>
       </div>
       <div className="flex flex-row w-full justify-around projWrapper2 relative">
-        {/* room-homepage */}
+        {/* reddit-clone */}
         <div className="flex flex-col w-96 projectFourWrapper relative">
           <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
             <div className="mt-28 opacity-100">
               <a
-                href="https://the-room-homepage.netlify.app"
+                href="https://brainey-reddit-clone.netlify.app/"
                 className={`font-bold text-2xl liveLink ${
                   lightMode ? 'lightModeProjects' : null
                 }`}
@@ -242,7 +242,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             </div>
             <div className="mt-28">
               <a
-                href="https://github.com/brandonrainey/room-homepage"
+                href="https://github.com/brandonrainey/reddit-clone"
                 className={`font-bold text-2xl liveLink ${
                   lightMode ? 'lightModeProjects' : null
                 }`}
@@ -257,17 +257,17 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               lightMode ? 'lightModeTitle' : ''
             }`}
           >
-            Room-Homepage
+            Reddit-Clone
           </section>
 
           <div className="flex flex-col projectBorder">
             <div className="flex justify-center mt-2 imageFourWrapper">
               <a
                 className="w-full projectTwo h-60 relative"
-                href="https://the-room-homepage.netlify.app"
+                href="https://brainey-reddit-clone.netlify.app/"
               >
                 <Image
-                  src="/roomHomepageSS.png"
+                  src="/redditCloneSS.png"
                   className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
                   layout='fill'
@@ -281,9 +281,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               }`}
             >
               <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionFour description tracking-wide">
-                Static homepage recreated from a FrontendMentor challenge.
-                Cycles through three hero images. Created with Next.js and a CSS
-                Grid and Flexbox layout.
+                Reddit clone built with NextJs with Next Authentication. Uses firebase firestore as 
+                a database for the CRUD functions of post data.
               </span>
               About
               <FaChevronDown />
