@@ -138,7 +138,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 >
                   <img
                     src="/productpagess.png"
-                    className="rounded-t-lg  w-full"
+                    className="rounded-t-lg h-full w-full"
                     alt="e-commerce product page screenshot"
                     layout='fill'
                     
