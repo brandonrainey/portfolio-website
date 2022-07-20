@@ -68,7 +68,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   className="w-full relative projectOne h-60"
                   href="https://mal-anime-db.netlify.app"
                 >
-                  <Image
+                  <img
                     src="/animedbss.png"
                     className="rounded-t-lg projectOneImage w-full"
                     alt="anime db screenshot"
@@ -136,7 +136,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   className="w-full projectTwo relative h-60"
                   href="https://brainey-product-page.netlify.app/"
                 >
-                  <Image
+                  <img
                     src="/productpagess.png"
                     className="rounded-t-lg  w-full"
                     alt="e-commerce product page screenshot"
@@ -200,7 +200,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   className="w-full projectThree relative h-60"
                   href="https://twitch-top-3.netlify.app/"
                 >
-                  <Image
+                  <img
                     src="/twitchss.png"
                     className="rounded-t-lg h-60 w-full"
                     alt="twitch top 3 screenshot"
@@ -266,7 +266,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 className="w-full projectTwo h-60 relative"
                 href="https://brainey-reddit-clone.netlify.app/"
               >
-                <Image
+                <img
                   src="/redditCloneSS.png"
                   className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
@@ -329,7 +329,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 className="w-full projectTwo h-60 relative"
                 href="https://tile-memory-game.netlify.app"
               >
-                <Image
+                <img
                   src="/tilegamess.png"
                   className="rounded-t-lg h-60 w-full"
                   alt="room homepage screenshot"
@@ -394,7 +394,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   className="w-full projectTwo h-60 relative"
                   href="https://eb-landing-page.netlify.app"
                 >
-                  <Image
+                  <img
                     src="/eblandingpagess.png"
                     className="rounded-t-lg h-60 w-full"
                     alt="easybank landing page screenshot"
