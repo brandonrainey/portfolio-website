@@ -202,7 +202,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 >
                   <img
                     src="/twitchss.png"
-                    className="rounded-t-lg h-60 w-full"
+                    className="rounded-t-lg h-full w-full"
                     alt="twitch top 3 screenshot"
                     layout='fill'
                     
@@ -268,7 +268,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               >
                 <img
                   src="/redditCloneSS.png"
-                  className="rounded-t-lg h-60 w-full"
+                  className="rounded-t-lg h-full w-full"
                   alt="room homepage screenshot"
                   layout='fill'
                   
@@ -331,7 +331,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               >
                 <img
                   src="/tilegamess.png"
-                  className="rounded-t-lg h-60 w-full"
+                  className="rounded-t-lg h-full w-full"
                   alt="room homepage screenshot"
                   layout='fill'
                   
@@ -396,7 +396,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 >
                   <img
                     src="/eblandingpagess.png"
-                    className="rounded-t-lg h-60 w-full"
+                    className="rounded-t-lg h-full w-full"
                     alt="easybank landing page screenshot"
                     layout='fill'
                     
