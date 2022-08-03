@@ -257,7 +257,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               lightMode ? 'lightModeTitle' : ''
             }`}
           >
-            Reddit-Clone
+            Reddit Clone
           </section>
 
           <div className="flex flex-col projectBorder">
@@ -320,7 +320,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               lightMode ? 'lightModeTitle' : ''
             }`}
           >
-            Tile-memory-game
+            Tile Memory Game
           </section>
 
           <div className="flex flex-col projectBorder">
@@ -385,7 +385,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 lightMode ? 'lightModeTitle' : ''
               }`}
             >
-              Easybank-Landing-Page
+              Easybank Landing Page
             </section>
 
             <div className="flex flex-col projectBorder">
