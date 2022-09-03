@@ -54,6 +54,7 @@ body {
   background: #c9d1e7 !important;
 }
 
+
 .navButton:hover {
   color: rgb(145, 150, 204);
 }
@@ -103,6 +104,7 @@ body {
 }
 
 /* tablet */
+
 @media (max-width: 1300px) {
   .projWrapper {
     flex-wrap: wrap;
@@ -131,6 +133,7 @@ body {
   body {
     overflow-x: hidden;
   }
+
 
   .projectBorder {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -193,6 +196,7 @@ body {
     margin-top: 0;
   }
 
+
   .projectThreeWrapper {
     margin-top: 0px;
   }
@@ -200,6 +204,7 @@ body {
   .projectFiveWrapper {
     margin-top: 0px;
   }
+
 
   .intro {
     align-items: center;
