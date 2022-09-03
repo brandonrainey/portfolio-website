@@ -201,7 +201,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   href="https://mytwitchfollows.netlify.app/"
                 >
                   <img
-                    src="/twitchss.png"
+                    src="/twitchfollowsSS.png"
                     className="rounded-t-lg h-full w-full"
                     alt="twitch top 3 screenshot"
                     layout='fill'
