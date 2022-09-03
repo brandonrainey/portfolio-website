@@ -161,12 +161,12 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             </div>
           </div>
 
-          {/* twitch-top-3 */}
+          {/* twitch-follows */}
           <div className="flex flex-col w-96 projectThreeWrapper relative">
             <div className="w-96 absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 opacity-100 ">
                 <a
-                  href="https://twitch-top-3.netlify.app/"
+                  href="https://mytwitchfollows.netlify.app/"
                   className={`font-bold text-2xl liveLink ${
                     lightMode ? 'lightModeProjects' : null
                   }`}
@@ -176,7 +176,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               </div>
               <div className="mt-28">
                 <a
-                  href="https://github.com/brandonrainey/twitch-top-3"
+                  href="https://github.com/brandonrainey/twitch-vip-tracker"
                   className={`font-bold text-2xl liveLink ${
                     lightMode ? 'lightModeProjects' : null
                   }`}
@@ -191,17 +191,17 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 lightMode ? 'lightModeTitle' : ''
               }`}
             >
-              Twitch Top 3
+              Twitch Following Tracker
             </section>
 
             <div className="flex flex-col projectBorder">
               <div className="flex justify-center mt-2 imageThreeWrapper">
                 <a
                   className="w-full projectThree relative h-60"
-                  href="https://twitch-top-3.netlify.app/"
+                  href="https://mytwitchfollows.netlify.app/"
                 >
                   <Image
-                    src="/twitchss.png"
+                    src="/twitchfollowsSS.png"
                     className="rounded-t-lg h-60 w-full"
                     alt="twitch top 3 screenshot"
                     layout='fill'
@@ -215,9 +215,9 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 }`}
               >
                 <span className="tooltip rounded shadow-lg p-2 bg-gray-100 text-gray-700 -ml-30 text-sm w-full descriptionThree description tracking-wide">
-                  A Next.js built site using the Twitch API to display data.
-                  Users can enter the name of a twitch channel and return the
-                  top three clips from the past week of that streamer.
+                  A Next.js built site using the Twitch API to streams you follow.
+                  Users can search through a grid of thier followed streamers and 
+                  view thier 3 most recent VODs.
                 </span>
                 About
                 <FaChevronDown />
