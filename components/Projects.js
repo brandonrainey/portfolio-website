@@ -70,7 +70,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 >
                   <img
                     src="/animedbss.png"
-                    className="rounded-t-lg projectOneImage w-full"
+                    className="rounded-t-lg projectOneImage h-full w-full"
                     alt="anime db screenshot"
                     layout='fill'
                     
