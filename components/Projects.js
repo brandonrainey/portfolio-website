@@ -5,6 +5,51 @@ import Image from 'next/image'
 export default function Work({ workScroll, setWorkScroll, lightMode }) {
   const workDiv = useRef()
 
+  const [projects, setProjects] = useState([
+    {
+    title: 'Anime DB',
+    image: '/animedbss.png',
+    github: 'https://github.com/brandonrainey/anime-app',
+    live: 'https://mal-anime-db.netlify.app/',
+    description: ''
+    },
+    {
+      title: 'eCommerce Product Page',
+      image: '/e-commercess.png',
+      github: 'https://github.com/brandonrainey/eCommerce-product-page',
+      live: 'https://brainey-product-page.netlify.app/',
+      description: ''
+      },
+      {
+        title: 'Twitch Follow Tracker',
+        image: '/twitchfollowsSS.png',
+        github: 'https://github.com/brandonrainey/twitch-vip-tracker',
+        live: 'https://mytwitchfollows.netlify.app/',
+        description: ''
+        },
+        {
+          title: 'Reddit Clone',
+          image: '/redditCloneSS.png',
+          github: 'https://github.com/brandonrainey/reddit-clone',
+          live: 'https://brainey-reddit-clone.netlify.app/',
+          description: ''
+          },
+          {
+            title: 'Tile Memory Game',
+            image: 'tilegamess.png',
+            github: 'https://github.com/brandonrainey/tile-game',
+            live: 'https://tile-memory-game.netlify.app/',
+            description: ''
+            },
+            {
+              title: 'Easybank Laning Page',
+              image: '/eblandingpagess.png',
+              github: 'https://github.com/brandonrainey/easybank-landing-page',
+              live: 'https://eb-landing-page.netlify.app/',
+              description: ''
+              }
+])
+
   useEffect(() => {
     if (workScroll === true) {
       workDiv.current.scrollIntoView({
@@ -30,7 +75,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
         {/* projects */}
         <div className="flex flex-row  w-full justify-around projWrapper relative">
           {/* anime DB */}
-          <div className="flex w-96 flex-col projectOneWrapper relative ">
+          <div className="flex w-full flex-col projectOneWrapper relative ">
             <div className=" absolute h-60 flex justify-center gap-x-10 projectOverlay rounded-t-lg">
               <div className="mt-28 linkButton">
                 <a

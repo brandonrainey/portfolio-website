@@ -54,7 +54,6 @@ body {
   background: #c9d1e7 !important;
 }
 
-
 .navButton:hover {
   color: rgb(145, 150, 204);
 }
@@ -94,7 +93,12 @@ body {
   background: #8c759c;
 }
 
-.projectOne, .projectTwo, .projectThree, .projectFour, .projectFive, .projectSix {
+.projectOne,
+.projectTwo,
+.projectThree,
+.projectFour,
+.projectFive,
+.projectSix {
   height: 255px;
 }
 
@@ -134,17 +138,15 @@ body {
     overflow-x: hidden;
   }
 
-
   .projectBorder {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
       rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
       rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-      
+
     width: 100%;
     max-width: 90vw;
     justify-self: center;
     border-radius: 0.5rem;
-    
   }
 
   .headerContainer {
@@ -162,7 +164,7 @@ body {
     gap: 10%;
   }
 
-  .navButton{
+  .navButton {
     margin-right: 0;
     background: #0a4a7446;
     padding: 4px;
@@ -196,7 +198,6 @@ body {
     margin-top: 0;
   }
 
-
   .projectThreeWrapper {
     margin-top: 0px;
   }
@@ -204,7 +205,6 @@ body {
   .projectFiveWrapper {
     margin-top: 0px;
   }
-
 
   .intro {
     align-items: center;
@@ -346,12 +346,7 @@ body {
     width: 100% !important;
     max-width: 90vw;
     height: 67.7% !important;
-    
-    
-    
   }
-
-  
 
   .descriptionFour {
     align-self: center;
@@ -386,8 +381,6 @@ body {
     background-color: rgb(136, 45, 45) !important;
     border-radius: 0.25rem;
   }
-
-  
 }
 
 .skills {
@@ -468,7 +461,6 @@ body {
 
 .projectOneWrapper {
   width: 450px !important;
-  
 }
 
 .projectOneWrapper:hover > .projectOverlay {
@@ -564,7 +556,6 @@ body {
 
 .submitButton {
   color: black;
-  
 }
 
 .darkButton {
