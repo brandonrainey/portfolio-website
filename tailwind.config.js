@@ -13,9 +13,13 @@ module.exports = {
     fontFamily: {
       'custom': ['ABeeZee']
     },
+    minWidth: {
+      'project': '400px',
+    }
   },
   variants: {
     extend: {},
+    width: ["responsive", "hover", "focus"]
   },
   plugins: [],
 }
