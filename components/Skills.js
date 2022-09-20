@@ -23,6 +23,16 @@ export default function Skills({ lightMode }) {
             alt="react logo"
           />
           <img
+            src="/reduxIcon.png"
+            className="h-24 w-30 mt-4"
+            alt="redux logo"
+          />
+          <img
+            src="/gitIcon.png"
+            className="h-24 w-30 mt-4"
+            alt="git logo"
+          />
+          <img
             src={`${lightMode ? '/nextjsIcon.png' : '/nextjsIconWhite.png'}`}
             className="h-24 w-30"
             alt="next js logo"
