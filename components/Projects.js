@@ -240,14 +240,12 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </p>
 
           <div className="flex flex-col relative  h-full" ref={testRef}>
-            <Image
+            <img
               className="h-full rounded "
               src={project.image}
               alt="project thumbnail"
               layout='responsive'
-              width={`100%`}
-              height={`60%`}
-              priority={true}
+              
             />
             <Transition
               show={isShowing[index]}
