@@ -115,8 +115,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             followed streams in a grid of cards.
           </li>
           <li className="mb-1">
-            Displays the up to the 3 latest VOD&apos;s from a streamer when clicking
-            on a card, also allowing search by name.
+            Displays the up to the 3 latest VOD&apos;s from a streamer when
+            clicking on a card, also allowing search by name.
           </li>
           <li className="mb-1">
             Created using Next.js with Redux Toolkit state management, and
@@ -171,7 +171,21 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       image: '/eblandingpagess.png',
       github: 'https://github.com/brandonrainey/easybank-landing-page',
       live: 'https://eb-landing-page.netlify.app/',
-      description: '',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1s">
+          <li className="mb-1">
+            Landing page with multiple sections including a header nav, hero
+            image, articles and footer.
+          </li>
+          <li className="mb-1">
+            Desgin is from a Frontend Mentor challenge, and was recreated
+            visually only.
+          </li>
+          <li className="mb-1">
+            Created using Next.js React framework, styled with vanilla CSS
+          </li>
+        </ul>
+      ),
     },
   ])
 
@@ -226,7 +240,12 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </p>
 
           <div className="flex flex-col relative  h-full" ref={testRef}>
-            <img className="h-full rounded peer " src={project.image} alt='project thumbnail' loading="lazy"/>
+            <img
+              className="h-full rounded peer "
+              src={project.image}
+              alt="project thumbnail"
+              loading="lazy"
+            />
             <Transition
               show={isShowing[index]}
               enter="transition-all duration-150"
@@ -243,29 +262,28 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               >
                 <a href={project.live}>
                   <button
-                  className={`bg-blue-600 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
-                    lightMode ? 'text-white' : ''
-                  }`}
-                >
-                  Live
-                </button>
+                    className={`bg-blue-900 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
+                      lightMode ? 'text-white' : ''
+                    }`}
+                  >
+                    Live
+                  </button>
                 </a>
-                
+
                 <a href={project.github}>
                   <button
-                  className={`bg-blue-600 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
-                    lightMode ? 'text-white' : ''
-                  }`}
-                >
-                  Github
-                </button>
+                    className={`bg-blue-900 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
+                      lightMode ? 'text-white' : ''
+                    }`}
+                  >
+                    Github
+                  </button>
                 </a>
-                
               </Transition>
               <Transition
                 className={`${
                   showDescription ? 'h-full' : 'h-6'
-                } bg-blue-300	 transition-all duration-300 rounded text-black text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-sm sm:text-base`}
+                } bg-sky-900	 transition-all duration-300 rounded text-white text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-xs lg:text-base`}
                 show={isShowing[index]}
                 leave="transition-all"
                 leaveFrom="h-0 w-0"
