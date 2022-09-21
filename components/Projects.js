@@ -147,7 +147,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     },
     {
       title: 'Tile Memory Game',
-      image: 'tilegamess.png',
+      image: '/tilegamess.png',
       github: 'https://github.com/brandonrainey/tile-game',
       live: 'https://tile-memory-game.netlify.app/',
       description: (
@@ -240,11 +240,13 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </p>
 
           <div className="flex flex-col relative  h-full" ref={testRef}>
-            <img
-              className="h-full rounded peer "
+            <Image
+              className="h-full rounded "
               src={project.image}
               alt="project thumbnail"
-              loading="lazy"
+              layout='responsive'
+              width={`100%`}
+              height={`60%`}
             />
             <Transition
               show={isShowing[index]}
