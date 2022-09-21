@@ -14,7 +14,7 @@ module.exports = {
       'custom': ['ABeeZee']
     },
     minWidth: {
-      'project': '400px',
+      'project': '350px',
     }
   },
   variants: {

@@ -167,7 +167,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       ),
     },
     {
-      title: 'Easybank Laning Page',
+      title: 'Easybank Landing Page',
       image: '/eblandingpagess.png',
       github: 'https://github.com/brandonrainey/easybank-landing-page',
       live: 'https://eb-landing-page.netlify.app/',
@@ -240,25 +240,31 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 className="flex gap-12 justify-center items-center w-full mt-auto mb-auto py-1"
                 show={isShowing[index]}
               >
-                <button
+                <a href={project.live}>
+                  <button
                   className={`bg-blue-600 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
                     lightMode ? 'text-white' : ''
                   }`}
                 >
                   Live
                 </button>
-                <button
+                </a>
+                
+                <a href={project.github}>
+                  <button
                   className={`bg-blue-600 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
                     lightMode ? 'text-white' : ''
                   }`}
                 >
                   Github
                 </button>
+                </a>
+                
               </Transition>
               <Transition
                 className={`${
                   showDescription ? 'h-full' : 'h-6'
-                } bg-blue-300	 transition-all duration-300 rounded text-black text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl`}
+                } bg-blue-300	 transition-all duration-300 rounded text-black text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-sm sm:text-base`}
                 show={isShowing[index]}
                 leave="transition-all"
                 leaveFrom="h-0 w-0"

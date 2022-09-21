@@ -58,50 +58,6 @@ body {
   color: rgb(145, 150, 204);
 }
 
-.imageOneWraper {
-  border-radius: 0.5rem;
-}
-
-.projectTitle,
-.projectTitle2,
-.projectTitle3,
-.projectTitle4,
-.projectTitle5 {
-  margin-top: -8px;
-  background: #2e3b57;
-  width: auto;
-  border-radius: 0.5rem;
-  align-self: center;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-.liveLink {
-  background: #5b587b;
-  padding: 6px;
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.liveLink:hover {
-  background: #8c759c;
-}
-
-.projectOne,
-.projectTwo,
-.projectThree,
-.projectFour,
-.projectFive,
-.projectSix {
-  height: 255px;
-}
-
 .tailwindIcon {
   aspect-ratio: 5 / 3;
   max-height: 80px;
@@ -110,25 +66,6 @@ body {
 /* tablet */
 
 @media (max-width: 1300px) {
-  .projWrapper {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .projWrapper2 {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .projectThreeWrapper {
-    margin-top: 100px;
-  }
-
-  .projectFiveWrapper {
-    margin-top: 100px;
-  }
 }
 
 /* mobile view */
@@ -136,17 +73,6 @@ body {
   html,
   body {
     overflow-x: hidden;
-  }
-
-  .projectBorder {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-    width: 100%;
-    max-width: 90vw;
-    justify-self: center;
-    border-radius: 0.5rem;
   }
 
   .headerContainer {
@@ -166,44 +92,11 @@ body {
 
   .navButton {
     margin-right: 0;
-    background: #0a4a7446;
+    background: #0f69a546;
     padding: 4px;
-    border-radius: 5px;
-  }
-
-  .projectTitle,
-  .projectTitle2,
-  .projectTitle3,
-  .projectTitle4,
-  .projectTitle5 {
-    margin-top: 0;
-  }
-
-  .projectOneWrapper,
-  .projectTwoWrapper,
-  .projectThreeWrapper,
-  .projectFourWrapper,
-  .projectFiveWrapper {
-    align-items: center;
-    max-width: 90vw;
-  }
-
-  .imageOneWraper,
-  .imageTwoWrapper,
-  .imageThreeWrapper,
-  .imageFourWrapper,
-  .imageFiveWrapper,
-  .imageSixWrapper {
-    box-shadow: none;
-    margin-top: 0;
-  }
-
-  .projectThreeWrapper {
-    margin-top: 0px;
-  }
-
-  .projectFiveWrapper {
-    margin-top: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 20px;
   }
 
   .intro {
@@ -219,31 +112,6 @@ body {
     width: 75%;
   }
 
-  .projectOne {
-    width: 100%;
-  }
-
-  .projectTwo {
-    width: 100%;
-  }
-
-  .projectThree {
-    width: 100%;
-  }
-
-  .projectContainer {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2.5rem;
-    margin-bottom: 20px;
-  }
-
-  .projectContainer2 {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2.5rem;
-  }
-
   .aboutMeText {
     width: 75%;
   }
@@ -251,130 +119,6 @@ body {
   .skills {
     flex-wrap: wrap;
     flex: 1 0 25%;
-  }
-
-  .overlayOne {
-    display: none;
-  }
-
-  .overlayTwo {
-    display: none;
-  }
-
-  .overlayThree {
-    display: none;
-  }
-
-  .projectTitle {
-    margin-bottom: 8px;
-  }
-
-  .projectTitle2 {
-    margin-top: 120px;
-    margin-bottom: 8px;
-  }
-
-  .projectTitle3 {
-    margin-top: 120px;
-    margin-bottom: 8px;
-  }
-
-  .projectTitle4 {
-    margin-top: 120px;
-    margin-bottom: 8px;
-  }
-
-  .projectTitle5 {
-    margin-top: 120px;
-    margin-bottom: 8px;
-  }
-
-  .mobileTitle1 {
-    margin-bottom: -20px;
-  }
-
-  .mobileTitle2 {
-    margin-bottom: -20px;
-  }
-
-  .mobileTitle3 {
-    margin-bottom: -20px;
-  }
-
-  .projWrapper {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .projWrapper2 {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .descriptionOne {
-    width: 90%;
-    margin-top: 0 !important;
-  }
-
-  .descriptionTwo {
-    width: 90%;
-
-    margin-top: 0 !important;
-  }
-
-  .descriptionThree {
-    width: 90%;
-
-    margin-top: 0 !important;
-  }
-
-  .descriptionFour {
-    width: 90%;
-
-    margin-top: 0 !important;
-  }
-
-  .descriptionFive {
-    width: 90%;
-
-    margin-top: 0 !important;
-  }
-
-  .projectOverlay {
-    width: 100% !important;
-    max-width: 90vw;
-    height: 67.7% !important;
-  }
-
-  .descriptionFour {
-    align-self: center;
-    margin-top: 22px;
-  }
-
-  .descriptionOne {
-    align-self: center;
-    margin-top: 22px;
-  }
-
-  .descriptionTwo {
-    align-self: center;
-    margin-top: 22px;
-  }
-
-  .descriptionThree {
-    align-self: center;
-    margin-top: 22px;
-  }
-
-  .aboutProj {
-    align-self: center;
-    width: 100% !important;
-  }
-
-  .projectOverlay {
-    height: 255px !important;
   }
 
   .submitButton {
@@ -387,171 +131,9 @@ body {
   flex-basis: 30%;
 }
 
-.overlayOne {
-  opacity: 0;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 456px;
-}
-
-.overlayOne:hover {
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.mobileTitle1 {
-  display: none;
-}
-
-.mobileTitle2 {
-  display: none;
-}
-
-.mobileTitle3 {
-  display: none;
-}
-
 .tooltip {
   visibility: hidden;
   position: absolute;
-}
-
-.proj1tt:hover .tooltip {
-  visibility: visible;
-  z-index: 50;
-}
-
-.aboutProj:hover .tooltip {
-  visibility: visible;
-  z-index: 50;
-}
-
-.aboutProj {
-  width: 100%;
-  background: #30475c;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.animeDB {
-  left: 10px;
-  top: 28px;
-}
-
-.animeDBOverlay {
-  top: 28px;
-  left: 200px;
-  z-index: 10;
-}
-
-.eCommerce {
-  top: 28px;
-  left: 486px;
-}
-
-.nftTracker {
-  top: 28px;
-  right: 486px;
-}
-
-.roomHomepage {
-  top: 28px;
-  right: 10px;
-}
-
-.projectOneWrapper {
-  width: 450px !important;
-}
-
-.projectOneWrapper:hover > .projectOverlay {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.projectTwoWrapper:hover > .projectOverlay {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.projectThreeWrapper:hover > .projectOverlay {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.projectFourWrapper:hover > .projectOverlay {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.projectFiveWrapper:hover > .projectOverlay {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.projectTwoWrapper {
-  width: 450px;
-}
-
-.projectThreeWrapper {
-  width: 450px;
-}
-
-.projectFourWrapper {
-  width: 450px;
-}
-
-.projectFiveWrapper {
-  width: 450px;
-}
-
-.projectOverlay {
-  left: 0;
-  bottom: 40px;
-  width: 100%;
-  height: 255px;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 10;
-  opacity: 0;
-  align-self: center;
-}
-
-.projectOneImage {
-  width: 456px;
-}
-
-.aboutProj:hover > .descriptionOne {
-  line-height: 1.5;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: black;
-}
-
-.aboutProj:hover > .descriptionTwo {
-  line-height: 1.5;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: black;
-}
-
-.aboutProj:hover > .descriptionThree {
-  line-height: 1.5;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: black;
-}
-
-.aboutProj:hover > .descriptionFour {
-  line-height: 1.5;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: black;
-}
-
-.aboutProj:hover > .descriptionFive {
-  line-height: 1.5;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: black;
 }
 
 .submitButton {
@@ -644,34 +226,6 @@ textarea:focus {
   font-size: 22px;
   margin-left: 8px;
   margin-top: 4px;
-}
-
-.aboutProj {
-  position: relative;
-}
-
-.description {
-  visibility: hidden; /* hides description */
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-2em);
-  z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 0.01s;
-  overflow: hidden;
-}
-
-.aboutProj:focus .description,
-.aboutProj:focus-within .description,
-.aboutProj:hover .description {
-  visibility: visible; /* shows sub-menu */
-  opacity: 1;
-
-  transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
 .lightModeDescription {

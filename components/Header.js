@@ -16,7 +16,7 @@ export default function Header(props) {
       <nav className="ml-auto mt-auto headerNav">
         <button
           onClick={() => props.setWorkScroll(true)}
-          className="mr-6 tracking-wide navButton"
+          className="mr-6 tracking-wide navButton "
         >
           Projects
         </button>
