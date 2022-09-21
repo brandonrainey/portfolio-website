@@ -7,6 +7,10 @@ import { useInView } from 'react-intersection-observer'
 export default function Work({ workScroll, setWorkScroll, lightMode }) {
   const workDiv = useRef()
 
+  const testRef = useRef()
+
+ 
+
   const [ref, inView] = useInView({
     /* Optional options */
     threshold: 0,
@@ -57,6 +61,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     let copy = [...isShowing]
     copy[index] ? (copy[index] = false) : (copy[index] = true)
     setIsShowing(copy)
+    
+
   }
 
   const [showDescription, setShowDescription] = useState(false)
@@ -67,35 +73,102 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       image: '/animedbss.png',
       github: 'https://github.com/brandonrainey/anime-app',
       live: 'https://mal-anime-db.netlify.app/',
-      description: '',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1">
+          <li className="mb-1">
+            Fetches data from an API to display in a grid of cards.
+          </li>
+          <li className="mb-1">Paginated results with search functionality</li>
+          <li className="mb-1">
+            Created using Create-React-App and styled with Tailwind CSS
+          </li>
+        </ul>
+      ),
     },
     {
       title: 'eCommerce Product Page',
-      image: '/e-commercess.png',
+      image: '/productpagess.png',
       github: 'https://github.com/brandonrainey/eCommerce-product-page',
       live: 'https://brainey-product-page.netlify.app/',
-      description: '',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1">
+          <li className="mb-1">
+            Displays product image gallery/lightbox, with state to add and track
+            items in cart.
+          </li>
+          <li className="mb-1">
+            Ability to create and log in to account using Firebase
+            Authentication.
+          </li>
+          <li className="mb-1">
+            Created using Next.js React framework, recreated visually following
+            Frontend Mentor design challenge.
+          </li>
+        </ul>
+      ),
     },
     {
       title: 'Twitch Follow Tracker',
       image: '/twitchfollowsSS.png',
       github: 'https://github.com/brandonrainey/twitch-vip-tracker',
       live: 'https://mytwitchfollows.netlify.app/',
-      description: '',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1">
+          <li className="mb-1">
+            Fetches data from the Twitch API to display connected user's
+            followed streams in a grid of cards.
+          </li>
+          <li className="mb-1">
+            Displays the up to the 3 latest VOD's from a streamer when clicking
+            on a card, also allowing search by name.
+          </li>
+          <li className="mb-1">
+            Created using Next.js with Redux Toolkit state management, and
+            styled with Tailwind CSS.
+          </li>
+        </ul>
+      ),
     },
     {
       title: 'Reddit Clone',
       image: '/redditCloneSS.png',
       github: 'https://github.com/brandonrainey/reddit-clone',
       live: 'https://brainey-reddit-clone.netlify.app/',
-      description: '',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1">
+          <li className="mb-1">
+            Implements CRUD functionality of posts with comments on specific
+            reddits
+          </li>
+          <li className="mb-1">
+            Stores and fetches data using Firebase Firestore as a backend
+          </li>
+          <li className="mb-1">
+            Created using Next.js React framework and styled with Tailwind CSS
+          </li>
+        </ul>
+      ),
     },
     {
       title: 'Tile Memory Game',
       image: 'tilegamess.png',
       github: 'https://github.com/brandonrainey/tile-game',
       live: 'https://tile-memory-game.netlify.app/',
-      description: '',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1s">
+          <li className="mb-1">
+            Displays square grid of tiles where user memorizes a pattern and
+            recalls that pattern in a time limit.
+          </li>
+          <li className="mb-1">
+            User can choose several grid sizes, with visual animations and
+            progress bar
+          </li>
+          <li className="mb-1">
+            Created using Next.js React framework, styled with Tailwind CSS
+          </li>
+        </ul>
+      ),
     },
     {
       title: 'Easybank Laning Page',
@@ -105,6 +178,18 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       description: '',
     },
   ])
+
+  function handleMoveOut() {
+    console.log('hello')
+    setIsShowing([
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+    ])
+  }
 
   useEffect(() => {
     if (workScroll === true) {
@@ -117,8 +202,16 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     }
   }, [workScroll])
 
+  useEffect(() => {
+
+  })
+
+  
+
+  
+
   return (
-    <div className="flex flex-wrap gap-y-16 gap-x-20 justify-center mt-32 ">
+    <div className="flex flex-wrap gap-y-16 gap-x-20 justify-center mt-32 " onScroll={handleMoveOut}>
       <div
         className="w-full text-center font-bold text-5xl tracking-wide"
         ref={workDiv}
@@ -127,7 +220,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       </div>
       {projects.map((project, index) => (
         <div
-          className={`flex flex-col w-1/3 min-w-project group `}
+          className={`flex flex-col w-1/3 min-w-project group shadow-xl`}
           onMouseEnter={() => handleChange(index)}
           onMouseLeave={() => handleChange(index)}
           ref={projectRefs[index]}
@@ -143,7 +236,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             {project.title}
           </p>
 
-          <div className="flex flex-col relative  h-full">
+          <div className="flex flex-col relative  h-full" ref={testRef} >
             <img className="h-full rounded peer " src={project.image} />
             <Transition
               show={isShowing[index]}
@@ -159,34 +252,34 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 className="flex gap-12 justify-center items-center w-full mt-auto mb-auto py-1"
                 show={isShowing[index]}
               >
-                <button className="bg-blue-600 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl">
+                <button
+                  className={`bg-blue-600 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
+                    lightMode ? 'text-white' : ''
+                  }`}
+                >
                   Live
                 </button>
-                <button className="bg-blue-600 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl">
+                <button
+                  className={`bg-blue-600 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
+                    lightMode ? 'text-white' : ''
+                  }`}
+                >
                   Github
                 </button>
               </Transition>
               <Transition
                 className={`${
                   showDescription ? 'h-full' : 'h-6'
-                } bg-blue-300	 transition-all duration-300 rounded text-black text-center font-extrabold overflow-hidden`}
+                } bg-blue-300	 transition-all duration-300 rounded text-black text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl`}
                 show={isShowing[index]}
                 leave="transition-all"
-                leaveFrom="h-full w-full"
+                leaveFrom="h-0 w-0"
                 leaveTo="h-0 w-0"
                 onMouseEnter={() => setShowDescription(true)}
                 onMouseLeave={() => setShowDescription(false)}
               >
-                Description
-                {showDescription ? (
-                  <ul className="transition-all">
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                  </ul>
-                ) : (
-                  ''
-                )}
+                {showDescription ? '' : 'Description'}
+                {showDescription ? project.description : ''}
               </Transition>
             </Transition>
           </div>
