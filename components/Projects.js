@@ -111,11 +111,11 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-            Fetches data from the Twitch API to display connected user's
+            Fetches data from the Twitch API to display connected user&apos;s
             followed streams in a grid of cards.
           </li>
           <li className="mb-1">
-            Displays the up to the 3 latest VOD's from a streamer when clicking
+            Displays the up to the 3 latest VOD&apos;s from a streamer when clicking
             on a card, also allowing search by name.
           </li>
           <li className="mb-1">
@@ -219,6 +219,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             transition: `${projectInView[index] ? 'all 1s' : ''}`,
             opacity: `${projectInView[index] ? '1' : '0'}`,
           }}
+          key={index}
         >
           <p className="text-center font-semibold text-2xl mb-2">
             {project.title}
