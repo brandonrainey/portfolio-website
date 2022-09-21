@@ -9,8 +9,6 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
 
   const testRef = useRef()
 
- 
-
   const [ref, inView] = useInView({
     /* Optional options */
     threshold: 0,
@@ -61,8 +59,6 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     let copy = [...isShowing]
     copy[index] ? (copy[index] = false) : (copy[index] = true)
     setIsShowing(copy)
-    
-
   }
 
   const [showDescription, setShowDescription] = useState(false)
@@ -180,15 +176,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
   ])
 
   function handleMoveOut() {
-    console.log('hello')
-    setIsShowing([
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-    ])
+    setIsShowing([false, false, false, false, false, false])
   }
 
   useEffect(() => {
@@ -203,15 +191,15 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
   }, [workScroll])
 
   useEffect(() => {
+    window.addEventListener('scroll', handleMoveOut)
 
-  })
-
-  
-
-  
+    return () => {
+      window.removeEventListener('scroll', handleMoveOut)
+    }
+  }, [])
 
   return (
-    <div className="flex flex-wrap gap-y-16 gap-x-20 justify-center mt-32 " onScroll={handleMoveOut}>
+    <div className="flex flex-wrap gap-y-16 gap-x-20 justify-center mt-32 ">
       <div
         className="w-full text-center font-bold text-5xl tracking-wide"
         ref={workDiv}
@@ -236,7 +224,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             {project.title}
           </p>
 
-          <div className="flex flex-col relative  h-full" ref={testRef} >
+          <div className="flex flex-col relative  h-full" ref={testRef}>
             <img className="h-full rounded peer " src={project.image} />
             <Transition
               show={isShowing[index]}
