@@ -226,7 +226,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </p>
 
           <div className="flex flex-col relative  h-full" ref={testRef}>
-            <img className="h-full rounded peer " src={project.image} />
+            <img className="h-full rounded peer " src={project.image} alt='project thumbnail'/>
             <Transition
               show={isShowing[index]}
               enter="transition-all duration-150"
