@@ -103,15 +103,6 @@ body {
     align-items: center;
   }
 
-  .introText {
-    width: 85%;
-    font-size: 50px;
-  }
-
-  .introSubText {
-    width: 75%;
-  }
-
   .aboutMeText {
     width: 75%;
   }
