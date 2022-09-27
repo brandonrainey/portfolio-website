@@ -11,24 +11,26 @@ export default function Header(props) {
         />
         <title>My Portfolio</title>
       </Head>
-      <h1 className="mt-auto ml-8 font-bold tracking-wide headerTitle">My Portfolio</h1>
+      <h1 className="mt-auto ml-8 font-bold tracking-wide headerTitle">
+        My Portfolio
+      </h1>
 
       <nav className="ml-auto mt-auto headerNav">
         <button
           onClick={() => props.setWorkScroll(true)}
-          className="mr-6 tracking-wide navButton "
+          className="mr-6 tracking-wide hover:text-teal-400"
         >
           Projects
         </button>
         <button
           onClick={() => props.setAboutMeScroll(true)}
-          className="mr-6 tracking-wide navButton"
+          className="mr-6 tracking-wide hover:text-teal-400"
         >
           About
         </button>
         <button
           onClick={() => props.setContactScroll(true)}
-          className="mr-6 tracking-wide navButton"
+          className="mr-6 tracking-wide hover:text-teal-400"
         >
           Contact
         </button>

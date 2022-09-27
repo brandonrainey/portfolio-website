@@ -25,7 +25,7 @@ export default function Contact(props) {
     >
       <header className="font-bold text-5xl tracking-wide">Contact</header>
       <p
-        className="font-bold underline mt-6 tracking-wide email"
+        className="font-bold underline mt-6 tracking-wide cursor-copy"
         ref={emailText}
         value="brandonhrainey@gmail.com"
         onClick={() => {
@@ -51,7 +51,7 @@ export default function Contact(props) {
               props.lightMode ? '/linkedinIconBlack.png' : '/linkedinIcon.png'
             }`}
             className="h-10 w-10 rounded-full"
-            alt='linkedin icon'
+            alt="linkedin icon"
           />
         </a>
       </div>

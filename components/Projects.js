@@ -244,8 +244,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               className="h-full rounded "
               src={project.image}
               alt="project thumbnail"
-              layout='responsive'
-              
+              layout="responsive"
             />
             <Transition
               show={isShowing[index]}

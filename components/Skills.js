@@ -3,9 +3,9 @@ import React from 'react'
 export default function Skills({ lightMode }) {
   return (
     <div className="flex justify-center mt-40 flex-col text-center">
-      <h1 className="font-bold text-5xl tracking-wide">Technologies</h1>
+      <h1 className="font-bold text-5xl tracking-wide">Skills</h1>
       <div className="flex justify-center">
-        <div className="flex justify-center mt-6 gap-x-10 gap-y-6 skills flex-wrap">
+        <div className="flex justify-center items-center mt-6 gap-x-10 gap-y-6 skills flex-wrap">
           <img src="/htmlLogo.png" className="h-24 w-30 mt-2" alt="html logo" />
           <img
             src="/cssLogo.png"
@@ -27,11 +27,7 @@ export default function Skills({ lightMode }) {
             className="h-24 w-30 mt-4"
             alt="redux logo"
           />
-          <img
-            src="/gitIcon.png"
-            className="h-24 w-30 mt-4"
-            alt="git logo"
-          />
+          <img src="/gitIcon.png" className="h-24 w-30 mt-4" alt="git logo" />
           <img
             src={`${lightMode ? '/nextjsIcon.png' : '/nextjsIconWhite.png'}`}
             className="h-24 w-30"
@@ -39,8 +35,13 @@ export default function Skills({ lightMode }) {
           />
           <img
             src="/tailwindIcon.png"
-            className=" tailwindIcon"
+            className=" aspect-5/3 max-h-16"
             alt="tailwind css logo"
+          />
+          <img
+            src="/firebaseIcon.png"
+            className="h-28 w-30 mt-4"
+            alt="firebase logo"
           />
         </div>
       </div>

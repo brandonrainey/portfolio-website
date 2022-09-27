@@ -2,8 +2,12 @@ import React from 'react'
 
 export default function Intro() {
   return (
-    <div className="flex flex-col justify-center text-center mt-24 md:mt-52 intro">
-      <h1 className="font-bold text-4xl tracking-wide">Hi, Im Brandon</h1>
+    <div className="flex flex-col justify-center text-center mt-24 md:mt-44 intro">
+      <h1 className="font-bold text-4xl tracking-wide">Hi, I&apos;m Brandon</h1>
+      
+        <img src='/pfp.png' className='h-52 sm:h-72 w-52 sm:w-72 self-center mt-8'/>
+      
+      
       <div className="flex justify-center mt-4 introContainer">
         <p className="md:text-6xl text-3xl w-3/4 text-center font-bold  tracking-wide">
           I am a Frontend Developer who enjoys solving interesting problems and

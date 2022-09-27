@@ -15,7 +15,11 @@ module.exports = {
     },
     minWidth: {
       'project': '350px',
-    }
+    },
+    aspectRatio: {
+      '5/3': '5 / 3',
+      '1.9/1': '1.9 / 1'
+    },
   },
   variants: {
     extend: {},

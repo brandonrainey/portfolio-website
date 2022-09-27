@@ -54,20 +54,6 @@ body {
   background: #c9d1e7 !important;
 }
 
-.navButton:hover {
-  color: rgb(145, 150, 204);
-}
-
-.tailwindIcon {
-  aspect-ratio: 5 / 3;
-  max-height: 80px;
-}
-
-/* tablet */
-
-@media (max-width: 1300px) {
-}
-
 /* mobile view */
 @media (max-width: 900px) {
   html,
@@ -133,10 +119,6 @@ body {
 
 .darkButton {
   background-color: white;
-}
-
-.formLabel {
-  color: white;
 }
 
 input:focus {
@@ -221,8 +203,4 @@ textarea:focus {
 
 .lightModeDescription {
   background: rgb(129, 160, 216) !important;
-}
-
-.email:hover {
-  cursor: copy;
 }
