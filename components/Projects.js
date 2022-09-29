@@ -65,7 +65,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
 
   const [projects, setProjects] = useState([
     {
-      title: 'Anime DB',
+      title: 'Anime Database',
       image: '/animedbss.png',
       github: 'https://github.com/brandonrainey/anime-app',
       live: 'https://mal-anime-db.netlify.app/',
@@ -218,7 +218,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
         className="w-full text-center font-bold text-5xl tracking-wide "
         ref={workDiv}
       >
-        <p>Projects</p>
+        <p className=''>Projects</p>
       </div>
       {projects.map((project, index) => (
         <div
