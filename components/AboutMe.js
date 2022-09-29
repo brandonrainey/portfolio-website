@@ -20,7 +20,7 @@ export default function AboutMe(props) {
     >
       <h1 className="font-bold text-5xl tracking-wide">About Me</h1>
       <div className="flex justify-center mt-6">
-        <p className="w-1/2 tracking-wide">
+        <p className="sm:w-1/2 w-3/4 tracking-wide">
           I am a 28 year old aspiring developer currently based out of Goose
           Creek, South Carolina. I started my self taught developer journey
           about 1 year ago, focusing on the frontend. My intrests include Tech,
