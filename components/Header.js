@@ -12,7 +12,7 @@ export default function Header(props) {
         <title>My Portfolio</title>
       </Head>
       <h1 className="mt-auto ml-8 font-bold tracking-wide headerTitle">
-        My Portfolio
+        Frontend Developer Portfolio
       </h1>
 
       <nav className="ml-auto mt-auto headerNav">

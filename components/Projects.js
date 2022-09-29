@@ -215,10 +215,10 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
   return (
     <div className="flex flex-wrap gap-y-16 gap-x-20 justify-center mt-32 ">
       <div
-        className="w-full text-center font-bold text-5xl tracking-wide"
+        className="w-full text-center font-bold text-5xl tracking-wide "
         ref={workDiv}
       >
-        Projects
+        <p>Projects</p>
       </div>
       {projects.map((project, index) => (
         <div

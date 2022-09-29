@@ -85,32 +85,10 @@ body {
     border-radius: 20px;
   }
 
-  .intro {
-    align-items: center;
-  }
-
-  .aboutMeText {
-    width: 75%;
-  }
-
-  .skills {
-    flex-wrap: wrap;
-    flex: 1 0 25%;
-  }
-
   .submitButton {
     background-color: rgb(136, 45, 45) !important;
     border-radius: 0.25rem;
   }
-}
-
-.skills {
-  flex-basis: 30%;
-}
-
-.tooltip {
-  visibility: hidden;
-  position: absolute;
 }
 
 .submitButton {
