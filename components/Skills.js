@@ -30,6 +30,9 @@ export default function Skills({ lightMode }) {
   const ref9 = useRef(null)
   const isInView9 = useInView(ref9)
 
+  const ref10 = useRef(null)
+  const isInView10 = useInView(ref9)
+
   return (
     <div className="flex justify-center mt-40 flex-col text-center">
       <h1 className="font-bold text-5xl tracking-wide">Skills</h1>
@@ -88,10 +91,23 @@ export default function Skills({ lightMode }) {
             }}
           />
           <motion.img
+            src="/typescriptIcon.png"
+            className="h-20 w-26 mt-4"
+            alt="typescript logo"
+            ref={ref5}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={isInView4 ? { opacity: 1, scale: 1 } : {}}
+            transition={{
+              delay: 0.2,
+              x: { duration: 1 },
+              default: { ease: 'linear' },
+            }}
+          />
+          <motion.img
             src="/reduxIcon.png"
             className="h-24 w-30 mt-4"
             alt="redux logo"
-            ref={ref5}
+            ref={ref6}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={isInView5 ? { opacity: 1, scale: 1 } : {}}
             transition={{
@@ -104,7 +120,7 @@ export default function Skills({ lightMode }) {
             src="/gitIcon.png"
             className="h-24 w-30 mt-4"
             alt="git logo"
-            ref={ref6}
+            ref={ref7}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={isInView6 ? { opacity: 1, scale: 1 } : {}}
             transition={{
@@ -117,7 +133,7 @@ export default function Skills({ lightMode }) {
             src={`${lightMode ? '/nextjsIcon.png' : '/nextjsIconWhite.png'}`}
             className="h-24 w-30"
             alt="next js logo"
-            ref={ref7}
+            ref={ref8}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={isInView7 ? { opacity: 1, scale: 1 } : {}}
             transition={{
@@ -130,7 +146,7 @@ export default function Skills({ lightMode }) {
             src="/tailwindIcon.png"
             className=" aspect-5/3 max-h-16"
             alt="tailwind css logo"
-            ref={ref8}
+            ref={ref9}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={isInView8 ? { opacity: 1, scale: 1 } : {}}
             transition={{
@@ -143,7 +159,7 @@ export default function Skills({ lightMode }) {
             src="/firebaseIcon.png"
             className="h-28 w-30 mt-4"
             alt="firebase logo"
-            ref={ref9}
+            ref={ref10}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={isInView9 ? { opacity: 1, scale: 1 } : {}}
             transition={{

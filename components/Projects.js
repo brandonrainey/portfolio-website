@@ -67,16 +67,17 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     {
       title: 'Anime Database',
       image: '/animedbss.png',
-      github: 'https://github.com/brandonrainey/anime-app',
-      live: 'https://mal-anime-db.netlify.app/',
+      github: 'https://github.com/brandonrainey/anime-database',
+      live: 'https://anime-calendar.netlify.app/',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-            Fetches data from an API to display in a grid of cards.
+            Fetches data from an API to display in a grid of cards, with paginated
+            results and search functionality
           </li>
-          <li className="mb-1">Paginated results with search functionality</li>
+          <li className="mb-1">Add anime to watchlist calendar using local storage</li>
           <li className="mb-1">
-            Created using Create-React-App and styled with Tailwind CSS
+            Created using Next.js, Typescript and styled with Tailwind CSS
           </li>
         </ul>
       ),
