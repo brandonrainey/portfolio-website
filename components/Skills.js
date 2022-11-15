@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { motion, Variants, useInView } from 'framer-motion'
-import { Transition } from '@headlessui/react'
+
 
 export default function Skills({ lightMode }) {
   const ref = useRef(null)

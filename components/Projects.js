@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FaChevronDown } from 'react-icons/fa'
 import Image from 'next/image'
-import { Transition } from '@headlessui/react'
+
 import { useInView } from 'react-intersection-observer'
 import { motion, Variants } from 'framer-motion'
 
@@ -47,22 +47,27 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
 
   const projectInView = [inView, inView2, inView3, inView4, inView5, inView6]
 
-  const [isShowing, setIsShowing] = useState([
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ])
-
-  function handleChange(index) {
-    let copy = [...isShowing]
-    copy[index] ? (copy[index] = false) : (copy[index] = true)
-    setIsShowing(copy)
+  function handleHoverIn(index) {
+    let copy = [...projects]
+    copy[index].showing = true
+    setProjects(copy)
   }
 
-  const [showDescription, setShowDescription] = useState(false)
+  function handleHoverOut(index) {
+    let copy = [...projects]
+    copy.map((item) => {
+      copy[index].showing = false
+    })
+    setProjects(copy)
+  }
+
+  function handleDescription(index) {
+    let copy = [...projects]
+    projects[index].showingDescription
+      ? (projects[index].showingDescription = false)
+      : (projects[index].showingDescription = true)
+    setProjects(copy)
+  }
 
   const [projects, setProjects] = useState([
     {
@@ -84,6 +89,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </li>
         </ul>
       ),
+      showing: false,
+      showingDescription: false,
     },
     {
       title: 'eCommerce Product Page',
@@ -106,6 +113,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </li>
         </ul>
       ),
+      showing: false,
+      showingDescription: false,
     },
     {
       title: 'Twitch Follow Tracker',
@@ -128,6 +137,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </li>
         </ul>
       ),
+      showing: false,
+      showingDescription: false,
     },
     {
       title: 'Reddit Clone',
@@ -148,6 +159,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </li>
         </ul>
       ),
+      showing: false,
+      showingDescription: false,
     },
     {
       title: 'Tile Memory Game',
@@ -169,6 +182,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </li>
         </ul>
       ),
+      showing: false,
+      showingDescription: false,
     },
     {
       title: 'Easybank Landing Page',
@@ -190,11 +205,17 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </li>
         </ul>
       ),
+      showing: false,
+      showingDescription: false,
     },
   ])
 
   function handleMoveOut() {
-    setIsShowing([false, false, false, false, false, false])
+    let copy = [...projects]
+    copy.map((item) => {
+      item.showingDescription = false
+    })
+    setProjects(copy)
   }
 
   useEffect(() => {
@@ -225,16 +246,17 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
         <p className="">Projects</p>
       </div>
       {projects.map((project, index) => (
-        <div
+        <motion.div
           className={`flex flex-col sm:w-2/3 md:w-1/3 min-w-project group shadow-xl`}
-          onMouseEnter={() => handleChange(index)}
-          onMouseLeave={() => handleChange(index)}
+          onMouseEnter={() => handleHoverIn(index)}
+          onMouseLeave={() => handleHoverOut(index)}
           ref={projectRefs[index]}
+          
           style={{
             transform: `${
               projectInView[index] ? 'translateX(0)' : 'translateX(-50%)'
             }`,
-            transition: `${projectInView[index] ? 'all 1s' : ''}`,
+            transition: `${projectInView[index] ? 'all 1s' : 'none'}`,
             opacity: `${projectInView[index] ? '1' : '0'}`,
           }}
           key={index}
@@ -251,10 +273,10 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               layout="responsive"
             />
             <motion.div
-              style={{ display: isShowing[index] ? 'flex' : 'none' }}
+              style={{ display: projects[index].showing ? 'flex' : 'none' }}
               className="absolute h-full bg-gray-900/[.5]  w-full flex flex-col rounded justify-center "
               animate={{
-                opacity: isShowing[index] ? 1 : 0,
+                opacity: projects[index].showing ? 1 : 0,
               }}
               transition={{
                 duration: 0.2,
@@ -283,7 +305,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               </div>
               <motion.div
                 className={`${
-                  showDescription ? 'h-full' : 'h-10'
+                  projects[index].showingDescription ? 'h-full' : 'h-10'
                 } bg-sky-900	 transition-all duration-300 rounded text-white text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-[3.5vw] sm:text-base 2xl:text-lg`}
                 whileHover={{
                   height: '100%',
@@ -291,22 +313,25 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                     duration: 0.07,
                   },
                 }}
-                onHoverStart={(e) => {}}
-                onHoverEnd={(e) => {}}
-                onMouseEnter={() =>
+                onMouseEnter={(e) => {
                   setTimeout(() => {
-                    setShowDescription(true)
+                    handleDescription(index)
                   }, 70)
-                }
-                onMouseLeave={() => setShowDescription(false)}
+                }}
+                onMouseLeave={(e) => {
+                  handleDescription(index)
+                }}
               >
-                <motion.p>
-                  {showDescription ? project.description : 'Description'}
-                </motion.p>
+                <motion.div>
+                
+                  {projects[index].showingDescription
+                    ? project.description
+                    : 'Description'}
+                </motion.div>
               </motion.div>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   )
