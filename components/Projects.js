@@ -3,6 +3,7 @@ import { FaChevronDown } from 'react-icons/fa'
 import Image from 'next/image'
 import { Transition } from '@headlessui/react'
 import { useInView } from 'react-intersection-observer'
+import { motion, Variants } from 'framer-motion'
 
 export default function Work({ workScroll, setWorkScroll, lightMode }) {
   const workDiv = useRef()
@@ -72,10 +73,12 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-            Fetches data from an API to display in a grid of cards, with paginated
-            results and search functionality
+            Fetches data from an API to display in a grid of cards, with
+            paginated results and search functionality
           </li>
-          <li className="mb-1">Add anime to watchlist calendar using local storage</li>
+          <li className="mb-1">
+            Add anime to watchlist calendar using local storage
+          </li>
           <li className="mb-1">
             Created using Next.js, Typescript and styled with Tailwind CSS
           </li>
@@ -219,11 +222,11 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
         className="w-full text-center font-bold text-5xl tracking-wide "
         ref={workDiv}
       >
-        <p className=''>Projects</p>
+        <p className="">Projects</p>
       </div>
       {projects.map((project, index) => (
         <div
-          className={`flex flex-col w-1/3 min-w-project group shadow-xl`}
+          className={`flex flex-col sm:w-2/3 md:w-1/3 min-w-project group shadow-xl`}
           onMouseEnter={() => handleChange(index)}
           onMouseLeave={() => handleChange(index)}
           ref={projectRefs[index]}
@@ -247,23 +250,20 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               alt="project thumbnail"
               layout="responsive"
             />
-            <Transition
-              show={isShowing[index]}
-              enter="transition-all duration-150"
-              enterFrom="bg-transparent"
-              enterTo="bg-gray-900 bg-opacity-50"
-              leave="transition-all duration-150"
-              leaveFrom="bg-gray-900 bg-opacity-50"
-              leaveTo="bg-transparent"
-              className="absolute h-full bg-gray-900  w-full flex flex-col rounded justify-center "
+            <motion.div
+              style={{ display: isShowing[index] ? 'flex' : 'none' }}
+              className="absolute h-full bg-gray-900/[.5]  w-full flex flex-col rounded justify-center "
+              animate={{
+                opacity: isShowing[index] ? 1 : 0,
+              }}
+              transition={{
+                duration: 0.2,
+              }}
             >
-              <Transition
-                className="flex gap-12 justify-center items-center w-full mt-auto mb-auto py-1"
-                show={isShowing[index]}
-              >
+              <div className="flex gap-12 justify-center items-center w-full mt-auto mb-auto py-1">
                 <a href={project.live}>
                   <button
-                    className={`bg-blue-900 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
+                    className={`bg-sky-900 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
                       lightMode ? 'text-white' : ''
                     }`}
                   >
@@ -273,29 +273,38 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
 
                 <a href={project.github}>
                   <button
-                    className={`bg-blue-900 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
+                    className={`bg-sky-900 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
                       lightMode ? 'text-white' : ''
                     }`}
                   >
                     Github
                   </button>
                 </a>
-              </Transition>
-              <Transition
+              </div>
+              <motion.div
                 className={`${
-                  showDescription ? 'h-full' : 'h-6'
-                } bg-sky-900	 transition-all duration-300 rounded text-white text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-xs lg:text-base`}
-                show={isShowing[index]}
-                leave="transition-all"
-                leaveFrom="h-0 w-0"
-                leaveTo="h-0 w-0"
-                onMouseEnter={() => setShowDescription(true)}
+                  showDescription ? 'h-full' : 'h-10'
+                } bg-sky-900	 transition-all duration-300 rounded text-white text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-[3.5vw] sm:text-base 2xl:text-lg`}
+                whileHover={{
+                  height: '100%',
+                  transition: {
+                    duration: 0.07,
+                  },
+                }}
+                onHoverStart={(e) => {}}
+                onHoverEnd={(e) => {}}
+                onMouseEnter={() =>
+                  setTimeout(() => {
+                    setShowDescription(true)
+                  }, 70)
+                }
                 onMouseLeave={() => setShowDescription(false)}
               >
-                {showDescription ? '' : 'Description'}
-                {showDescription ? project.description : ''}
-              </Transition>
-            </Transition>
+                <motion.p>
+                  {showDescription ? project.description : 'Description'}
+                </motion.p>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       ))}
