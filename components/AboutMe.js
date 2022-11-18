@@ -23,7 +23,7 @@ export default function AboutMe(props) {
         <p className="sm:w-1/2 w-3/4 tracking-wide">
           I am a 28 year old aspiring developer currently based out of Goose
           Creek, South Carolina. I started my self taught developer journey
-          about 1 year ago, focusing on the frontend. My intrests include Tech,
+          about 1 year ago, focusing on the frontend. My interests include Tech,
           Music, Video Games, and Anime. I try to reflect them in my personal
           projects. . I enjoy creating websites and web apps with
           Javascript/React, but am always open to expanding my programming
