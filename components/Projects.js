@@ -71,6 +71,28 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
 
   const [projects, setProjects] = useState([
     {
+      title: 'Stripe Shop',
+      image: '/stripeShopSS.png',
+      github: 'https://github.com/brandonrainey/stripe-shop',
+      live: 'https://stripe-shop.netlify.app/',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1">
+          <li className="mb-1">
+            Responsive and featured Ecommerce site connected with stripe payment processing.
+          </li>
+          <li className="mb-1">
+            Uses google OAuth with firestore backend to store users and thier orders
+            utilizing a webhook to capture stripe events.
+          </li>
+          <li className="mb-1">
+            Created using Next.js, Typescript, Redux Toolkit, and Tailwind CSS.
+          </li>
+        </ul>
+      ),
+      showing: false,
+      showingDescription: false,
+    },
+    {
       title: 'Anime Database',
       image: '/animedbss.png',
       github: 'https://github.com/brandonrainey/anime-database',
@@ -92,30 +114,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       showing: false,
       showingDescription: false,
     },
-    {
-      title: 'eCommerce Product Page',
-      image: '/productpagess.png',
-      github: 'https://github.com/brandonrainey/eCommerce-product-page',
-      live: 'https://brainey-product-page.netlify.app/',
-      description: (
-        <ul className="transition-all list-disc list-inside gap-2 px-1">
-          <li className="mb-1">
-            Displays product image gallery/lightbox, with state to add and track
-            items in cart.
-          </li>
-          <li className="mb-1">
-            Ability to create and log in to account using Firebase
-            Authentication.
-          </li>
-          <li className="mb-1">
-            Created using Next.js React framework, recreated visually following
-            Frontend Mentor design challenge.
-          </li>
-        </ul>
-      ),
-      showing: false,
-      showingDescription: false,
-    },
+    
     {
       title: 'Twitch Follow Tracker',
       image: '/twitchfollowsSS.png',
