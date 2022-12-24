@@ -72,7 +72,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
   const [projects, setProjects] = useState([
     {
       title: 'Stripe Shop',
-      image: '/stripeShopSS.png',
+      image: '/stripeShopSS.webp',
       github: 'https://github.com/brandonrainey/stripe-shop',
       live: 'https://stripe-shop.netlify.app/',
       description: (
@@ -94,7 +94,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     },
     {
       title: 'Anime Database',
-      image: '/animedbss.png',
+      image: '/animedbss.webp',
       github: 'https://github.com/brandonrainey/anime-database',
       live: 'https://anime-calendar.netlify.app/',
       description: (
@@ -117,7 +117,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     
     {
       title: 'Twitch Follow Tracker',
-      image: '/twitchfollowsSS.png',
+      image: '/twitchfollowsSS.webp',
       github: 'https://github.com/brandonrainey/twitch-vip-tracker',
       live: 'https://mytwitchfollows.netlify.app/',
       description: (
@@ -141,7 +141,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     },
     {
       title: 'Reddit Clone',
-      image: '/redditCloneSS.png',
+      image: '/redditCloneSS.webp',
       github: 'https://github.com/brandonrainey/reddit-clone',
       live: 'https://brainey-reddit-clone.netlify.app/',
       description: (
@@ -163,7 +163,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     },
     {
       title: 'Tile Memory Game',
-      image: '/tilegamess.png',
+      image: '/tilegamess.webp',
       github: 'https://github.com/brandonrainey/tile-game',
       live: 'https://tile-memory-game.netlify.app/',
       description: (
@@ -186,7 +186,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     },
     {
       title: 'Easybank Landing Page',
-      image: '/eblandingpagess.png',
+      image: '/eblandingpagess.webp',
       github: 'https://github.com/brandonrainey/easybank-landing-page',
       live: 'https://eb-landing-page.netlify.app/',
       description: (
