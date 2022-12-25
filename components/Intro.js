@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Intro() {
   return (
-    <div className="flex flex-col justify-center items-center text-center mt-24 md:mt-44">
+    <div className="flex flex-col justify-center items-center text-center mt-14 md:mt-20">
       <h1 className="font-bold text-4xl tracking-wide pb-6">Hi, I&apos;m Brandon</h1>
       <img
         src="/pfp.webp"
@@ -11,7 +11,7 @@ export default function Intro() {
         alt="profile picture"
       />
       <div className="flex justify-center mt-4">
-        <p className="md:text-6xl text-2xl w-3/4 text-center font-bold  tracking-wide">
+        <p className="md:text-5xl text-2xl w-3/4 text-center font-bold  tracking-wide">
           I am a Frontend Developer who enjoys solving interesting problems and
           creating websites people love to use.
         </p>
