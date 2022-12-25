@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FaChevronDown } from 'react-icons/fa'
 import Image from 'next/image'
+import project1SS from '../public/animedbss.webp'
 
 import { useInView } from 'react-intersection-observer'
 import { motion, Variants } from 'framer-motion'
@@ -265,12 +266,16 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </p>
 
           <div className="flex flex-col relative  h-full" ref={testRef}>
-            <img
+            
+              <img
               className="h-full rounded "
               src={project.image}
               alt="project thumbnail"
               layout="responsive"
+              
             />
+            
+            
             <motion.div
               style={{ display: projects[index].showing ? 'flex' : 'none' }}
               className="absolute h-full bg-gray-900/[.5]  w-full flex flex-col rounded justify-center "

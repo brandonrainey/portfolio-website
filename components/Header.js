@@ -15,22 +15,22 @@ export default function Header(props) {
         Frontend Developer Portfolio
       </h1>
 
-      <nav className="ml-auto mt-auto headerNav md:bg-inherit bg-slate-800 py-2">
+      <nav className={`ml-auto mt-auto headerNav md:bg-inherit bg-slate-800 py-2 ${props.lightMode ? 'bg-slate-300' : ''}`}>
         <button
           onClick={() => props.setWorkScroll(true)}
-          className="sm:mr-6 tracking-wide hover:text-teal-400"
+          className={`sm:mr-6 tracking-wide hover:text-teal-400 ${props.lightMode ? 'hover:text-teal-700' : ''}`}
         >
           Projects
         </button>
         <button
           onClick={() => props.setAboutMeScroll(true)}
-          className="sm:mr-6 tracking-wide hover:text-teal-400"
+          className={`sm:mr-6 tracking-wide hover:text-teal-400 ${props.lightMode ? 'hover:text-teal-700' : ''}`}
         >
           About
         </button>
         <button
           onClick={() => props.setContactScroll(true)}
-          className="sm:mr-6 tracking-wide hover:text-teal-400"
+          className={`sm:mr-6 tracking-wide hover:text-teal-400 ${props.lightMode ? 'hover:text-teal-700' : ''}`}
         >
           Contact
         </button>
