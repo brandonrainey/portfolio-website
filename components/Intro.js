@@ -11,16 +11,12 @@ export default function Intro(props) {
         alt="profile picture"
       />
       <div className="flex justify-center mt-4">
-        <p className="md:text-4xl text-2xl w-3/4 text-center font-bold  tracking-wide">
+        <p className="md:text-4xl text-2xl md:w-3/4 text-center font-bold  tracking-wide">
           I am a Frontend Developer who enjoys solving interesting problems and
-          creating websites people love to use.
+          building websites people love to use.
         </p>
       </div>
-      <p className="mt-4 w-3/4 md:text-base text-xs tracking-wide self-center">
-        I am self-taught, currently focusing on the Frontend using primarily
-        React, <br />
-        but love being able to learn new things every day.
-      </p>
+      
     </div>
   )
 }
