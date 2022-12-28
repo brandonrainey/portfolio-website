@@ -80,11 +80,12 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-            Responsive and featured Ecommerce site connected with stripe payment processing.
+            Responsive and featured Ecommerce site connected with stripe payment
+            processing.
           </li>
           <li className="mb-1">
-            Uses google OAuth with firestore backend to store users and thier orders
-            utilizing a webhook to capture stripe events.
+            Uses google OAuth with firestore backend to store users and thier
+            orders utilizing a webhook to capture stripe events.
           </li>
           <li className="mb-1">
             Created using Next.js, Typescript, Redux Toolkit, and Tailwind CSS.
@@ -117,7 +118,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       showing: false,
       showingDescription: false,
     },
-    
+
     {
       title: 'Twitch Follow Tracker',
       image: '/twitchfollowsSS.webp',
@@ -257,7 +258,6 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           onMouseEnter={() => handleHoverIn(index)}
           onMouseLeave={() => handleHoverOut(index)}
           ref={projectRefs[index]}
-          
           style={{
             transform: `${
               projectInView[index] ? 'translateX(0)' : 'translateX(-50%)'
@@ -272,16 +272,13 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
           </p>
 
           <div className="flex flex-col relative  h-full" ref={testRef}>
-            
-              <img
-              className="h-full rounded "
+            <img
+              className="h-full rounded w-auto"
               src={project.image}
               alt="project thumbnail"
               layout="responsive"
-              
             />
-            
-            
+
             <motion.div
               style={{ display: projects[index].showing ? 'flex' : 'none' }}
               className="absolute h-full bg-gray-900/[.6]  w-full flex flex-col rounded justify-center "
@@ -292,17 +289,12 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 duration: 0.2,
               }}
             >
-
-
-              
-                
-
               <div className="flex gap-12 justify-center items-center w-full mt-auto mb-auto py-1">
                 <a href={project.live}>
                   <button
-                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${projects[index].showingDescription ? 'hidden' : ''} ${
-                      lightMode ? 'text-white' : ''
-                    }`}
+                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${
+                      projects[index].showingDescription ? 'hidden' : ''
+                    } ${lightMode ? 'text-white' : ''}`}
                   >
                     Live
                   </button>
@@ -310,9 +302,9 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
 
                 <a href={project.github}>
                   <button
-                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${projects[index].showingDescription ? 'hidden' : ''} ${
-                      lightMode ? 'text-white' : ''
-                    }`}
+                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${
+                      projects[index].showingDescription ? 'hidden' : ''
+                    } ${lightMode ? 'text-white' : ''}`}
                   >
                     Github
                   </button>
@@ -350,8 +342,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   handleDescription(index)
                 }}
               >
-                <motion.div className=''>
-                
+                <motion.div className="">
                   {projects[index].showingDescription
                     ? project.description
                     : 'Description'}
