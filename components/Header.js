@@ -15,22 +15,22 @@ export default function Header(props) {
         Frontend Developer Portfolio
       </h1>
 
-      <nav className={`ml-auto mt-auto headerNav md:bg-inherit py-2 ${props.lightMode ? 'bg-slate-300' : ''}`}>
+      <nav className={`ml-auto mt-auto headerNav md:bg-inherit py-2 ${props.lightMode ? '' : ''}`}>
         <button
           onClick={() => props.setWorkScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:text-teal-400 bg-slate-600 px-1 rounded ${props.lightMode ? 'hover:text-teal-700' : ''}`}
+          className={`sm:mr-6 tracking-wide hover:bg-indigo-500 bg-slate-600 px-2 py-[1px] rounded-2xl ${props.lightMode ? ' text-white bg-[#244257]' : ''}`}
         >
           Projects
         </button>
         <button
           onClick={() => props.setAboutMeScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:text-teal-400 bg-slate-600 px-1 rounded ${props.lightMode ? 'hover:text-teal-700' : ''}`}
+          className={`sm:mr-6 tracking-wide hover:bg-indigo-500 bg-slate-600 px-2 py-[1px] rounded-2xl ${props.lightMode ? ' text-white bg-[#244257]' : ''}`}
         >
           About
         </button>
         <button
           onClick={() => props.setContactScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:text-teal-400 bg-slate-600 px-1 rounded ${props.lightMode ? 'hover:text-teal-700' : ''}`}
+          className={`sm:mr-6 tracking-wide hover:bg-indigo-500 bg-slate-600 px-2 py-[1px] rounded-2xl ${props.lightMode ? ' text-white bg-[#244257]' : ''}`}
         >
           Contact
         </button>

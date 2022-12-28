@@ -16,7 +16,7 @@ export default function AboutMe(props) {
   return (
     <div
       ref={aboutMeDiv}
-      className="flex justify-center mt-40 flex-col text-center "
+      className={`flex justify-center mt-40 flex-col text-center bg-[#13385c]/50 md:w-3/4 py-8 self-center rounded-lg drop-shadow-lg ${props.lightMode ? 'bg-[#052033] text-white' : ''}`}
     >
       <h1 className="font-bold text-5xl tracking-wide">About Me</h1>
       <div className="flex justify-center mt-6">

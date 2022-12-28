@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-export default function Intro() {
+export default function Intro(props) {
   return (
-    <div className="flex flex-col justify-center items-center text-center mt-14 md:mt-20">
+    <div className={`flex flex-col justify-center items-center text-center mt-14 md:mt-20 bg-[#13385c]/50 py-8 md:w-3/4 self-center rounded-xl drop-shadow-lg ${props.lightMode ? 'bg-[#052033] text-white' : ''}`}>
       <h1 className="font-bold text-4xl tracking-wide pb-6">Hi, I&apos;m Brandon</h1>
       <img
         src="/pfp.webp"
@@ -11,7 +11,7 @@ export default function Intro() {
         alt="profile picture"
       />
       <div className="flex justify-center mt-4">
-        <p className="md:text-5xl text-2xl w-3/4 text-center font-bold  tracking-wide">
+        <p className="md:text-4xl text-2xl w-3/4 text-center font-bold  tracking-wide">
           I am a Frontend Developer who enjoys solving interesting problems and
           creating websites people love to use.
         </p>
@@ -19,7 +19,7 @@ export default function Intro() {
       <p className="mt-4 w-3/4 md:text-base text-xs tracking-wide self-center">
         I am self-taught, currently focusing on the Frontend using primarily
         React, <br />
-        but I am always open to learning new frameworks and languages.
+        but love being able to learn new things every day.
       </p>
     </div>
   )

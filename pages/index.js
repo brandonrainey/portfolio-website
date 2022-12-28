@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div
-      className={` ${lightMode ? 'lightModeBackground lightModeText' : null}`}
+      className={`flex flex-col  ${lightMode ? 'lightModeBackground lightModeText' : null}`}
     >
       <ToggleSwitch lightMode={lightMode} setLightMode={setLightMode} />
       <Header
@@ -29,7 +29,7 @@ export default function Home() {
         lightMode={lightMode}
         setLightMode={setLightMode}
       />
-      <Intro />
+      <Intro lightMode={lightMode}/>
       <Work
         workScroll={workScroll}
         setWorkScroll={setWorkScroll}

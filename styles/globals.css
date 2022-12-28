@@ -36,11 +36,11 @@ body {
 
 .lightModeBorder {
   border: 1px solid black;
-  background: #6c9dac52;
+  background: #ffffff;
 }
 
 .lightModeLabel {
-  color: black;
+  color: white;
 }
 
 .lightModeButton {

@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { FaChevronDown } from 'react-icons/fa'
-import Image from 'next/image'
-import project1SS from '../public/animedbss.webp'
+import { useRouter } from 'next/router'
 
 import { useInView } from 'react-intersection-observer'
 import { motion, Variants } from 'framer-motion'
@@ -10,6 +8,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
   const workDiv = useRef()
 
   const testRef = useRef()
+
+  const router = useRouter()
 
   const [ref, inView] = useInView({
     /* Optional options */
@@ -76,6 +76,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       image: '/stripeShopSS.webp',
       github: 'https://github.com/brandonrainey/stripe-shop',
       live: 'https://stripe-shop.netlify.app/',
+      page: '/stripe-shop',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
@@ -97,7 +98,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       title: 'Anime Database',
       image: '/animedbss.webp',
       github: 'https://github.com/brandonrainey/anime-database',
-      live: 'https://anime-calendar.netlify.app/',
+      live: 'https://anime-calendar.netlify.app',
+      page: '/stripe-shop',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
@@ -120,7 +122,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       title: 'Twitch Follow Tracker',
       image: '/twitchfollowsSS.webp',
       github: 'https://github.com/brandonrainey/twitch-vip-tracker',
-      live: 'https://mytwitchfollows.netlify.app/',
+      live: 'https://mytwitchfollows.netlify.app',
+      page: '/stripe-shop',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
@@ -144,7 +147,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       title: 'Reddit Clone',
       image: '/redditCloneSS.webp',
       github: 'https://github.com/brandonrainey/reddit-clone',
-      live: 'https://brainey-reddit-clone.netlify.app/',
+      live: 'https://brainey-reddit-clone.netlify.app',
+      page: '/stripe-shop',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
@@ -166,7 +170,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       title: 'Tile Memory Game',
       image: '/tilegamess.webp',
       github: 'https://github.com/brandonrainey/tile-game',
-      live: 'https://tile-memory-game.netlify.app/',
+      live: 'https://tile-memory-game.netlify.app',
+      page: '/stripe-shop',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1s">
           <li className="mb-1">
@@ -189,7 +194,8 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       title: 'Easybank Landing Page',
       image: '/eblandingpagess.webp',
       github: 'https://github.com/brandonrainey/easybank-landing-page',
-      live: 'https://eb-landing-page.netlify.app/',
+      live: 'https://eb-landing-page.netlify.app',
+      page: '/stripe-shop',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1s">
           <li className="mb-1">
@@ -278,7 +284,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
             
             <motion.div
               style={{ display: projects[index].showing ? 'flex' : 'none' }}
-              className="absolute h-full bg-gray-900/[.5]  w-full flex flex-col rounded justify-center "
+              className="absolute h-full bg-gray-900/[.6]  w-full flex flex-col rounded justify-center "
               animate={{
                 opacity: projects[index].showing ? 1 : 0,
               }}
@@ -286,10 +292,15 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 duration: 0.2,
               }}
             >
+
+
+              
+                
+
               <div className="flex gap-12 justify-center items-center w-full mt-auto mb-auto py-1">
                 <a href={project.live}>
                   <button
-                    className={`bg-sky-900 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
+                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${projects[index].showingDescription ? 'hidden' : ''} ${
                       lightMode ? 'text-white' : ''
                     }`}
                   >
@@ -299,7 +310,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
 
                 <a href={project.github}>
                   <button
-                    className={`bg-sky-900 hover:bg-indigo-500 hover:underline text-xl h-12 w-24 rounded tracking-wide font-semibold shadow-xl ${
+                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${projects[index].showingDescription ? 'hidden' : ''} ${
                       lightMode ? 'text-white' : ''
                     }`}
                   >
@@ -307,10 +318,23 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   </button>
                 </a>
               </div>
+
+              {/* <div className='flex w-full justify-center py-4 mb-8'>
+                <a href={project.page}>
+                  <button
+                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-40 rounded-3xl tracking-wide font-semibold shadow-xl ${projects[index].showingDescription ? 'hidden' : ''} ${
+                      lightMode ? 'text-white' : ''
+                    }`}
+                  >
+                    Learn More
+                  </button>
+                </a>
+              </div> */}
+
               <motion.div
                 className={`${
                   projects[index].showingDescription ? 'h-full' : 'h-10'
-                } bg-sky-900	 transition-all duration-300 rounded text-white text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-[3.5vw] sm:text-base 2xl:text-lg`}
+                } bg-sky-900	group transition-all duration-300 rounded text-white border-2 text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-[3.5vw] sm:text-base 2xl:text-lg`}
                 whileHover={{
                   height: '100%',
                   transition: {
@@ -326,7 +350,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                   handleDescription(index)
                 }}
               >
-                <motion.div>
+                <motion.div className=''>
                 
                   {projects[index].showingDescription
                     ? project.description
