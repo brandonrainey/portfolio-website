@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Intro(props) {
   return (
-    <div className={`flex flex-col justify-center items-center text-center mt-14 md:mt-20 bg-[#13385c]/50 py-8 md:w-3/4 self-center rounded-xl drop-shadow-lg ${props.lightMode ? 'bg-[#052033] text-white' : ''}`}>
+    <div className={`flex flex-col justify-center items-center text-center mt-14 md:mt-20 bg-gradient-to-t from-[#13385c]/50 to-[#1e5387]/50 py-8 md:w-3/4 self-center rounded-xl drop-shadow-lg ${props.lightMode ? 'bg-[#052033] text-white' : ''}`}>
       <h1 className="font-bold text-4xl tracking-wide pb-6">Hi, I&apos;m Brandon</h1>
       <img
         src="/pfp.webp"

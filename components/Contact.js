@@ -21,7 +21,7 @@ export default function Contact(props) {
   return (
     <div
       ref={contactDiv}
-      className={`flex justify-center mt-40 flex-col text-center mb-4 bg-[#13385c]/50 w-full md:w-3/4 self-center rounded-lg py-8 drop-shadow-lg ${props.lightMode ? 'bg-[#052033] text-white' : ''}`}
+      className={`flex justify-center mt-40 flex-col text-center mb-4 bg-gradient-to-t from-[#13385c]/50 to-[#1e5387]/50 w-full md:w-3/4 self-center rounded-lg py-8 drop-shadow-lg ${props.lightMode ? 'bg-[#052033] text-white' : ''}`}
     >
       <header className="font-bold text-5xl tracking-wide">Contact</header>
       <p
