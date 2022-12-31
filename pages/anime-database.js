@@ -24,22 +24,21 @@ const responsive = {
   },
 }
 
-export default function StripeShop() {
+export default function AnimeDatabase() {
   return (
     <div className="flex flex-col items-center gap-6">
       <h1 className="sm:text-6xl text-5xl mb-12 mt-4 px-4 font-semibold text-center">
-        Stripe Shop
+        Anime Database
       </h1>
       <Carousel
         responsive={responsive}
         itemClass={`image-item`}
         className="sm:w-5/6 w-full"
       >
-        <img src="/stripeShopSS.webp" className="mr-4"></img>
-        <img src="/stripeShopSS2.webp" className="mr-4"></img>
-        <img src="/stripeShopSS3.webp" className=" "></img>
-        <img src="/stripeShopSS4.webp" className=" "></img>
-        <img src="/stripeShopSS5.webp" className=" "></img>
+        <img src="/animedbss.webp" className=""></img>
+        <img src="/anime-db-SS2.webp" className=""></img>
+        <img src="/anime-db-SS3.webp" className=" "></img>
+        
       </Carousel>
 
       <div className="flex flex-col items-center">
@@ -52,7 +51,7 @@ export default function StripeShop() {
           <img src="/reduxIcon.png" className="h-20 w-30 mt-4"></img>
           <img src={`/nextjsIconWhite.png`} className="h-20 w-30"></img>
           <img src="/tailwindIcon.png" className=" aspect-5/3 max-h-14"></img>
-          <img src="/firebaseIcon.png" className="h-24 w-30 mt-4"></img>
+          
         </div>
       </div>
 
@@ -62,17 +61,26 @@ export default function StripeShop() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full">
           <li>
-            First time using typescript in a project. Learned about how to to type the props sent to each component,
-            along with arguements sent into functions.
+            First time using a real payment processor through stripe. Which
+            consisted of creating an account and getting the required keys. Then
+            creating a file that takes in the items stored in our cart state and
+            transforming them into the proper object format required by stripe.
+            In the same file setting up the final propery formatted object with
+            the desired settings as our stripe session.
           </li>
           <li>
-            Utilized the browser's local storage to store non-sensitive user data. I created a calendar using the Date API
-            to determine and highlight the current day of the week to the user. The user can add currently airing anime to thier
-            watchlist, which gets stored in the browser's localstorage.
+            With the stripe session created the user will be redirected to
+            stripe's prebuilt checkout page to finish completing thier order. To
+            correctly capture the events sent back by stripe after an order has
+            been completed, i created my first webhook.
           </li>
           <li>
-            Created typically found sorting functions, such as acending, date, and score for the array of data returned from the api. 
-            Also created a search bar which fetches new data rather than filter a current array
+            I learned that a webhook acts as a middleman between our app and
+            stripe, allowing us to capture set events when an order is
+            completed. Capturing the checkoutSession event I was able to tell if
+            the order was successful, along with the accompanying details of
+            said order. Then sending the order details to our firestore backend,
+            storing individual users and thier past orders.
           </li>
         </ul>
       </article>

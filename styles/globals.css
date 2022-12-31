@@ -183,4 +183,14 @@ textarea:focus {
   background: rgb(129, 160, 216) !important;
 }
 
+.image-item {
+  padding: 0 20px 0  20px;
+}
+
+@media  (max-width: 640px) {
+  .image-item {
+    padding: 0;
+  }
+}
+
 
