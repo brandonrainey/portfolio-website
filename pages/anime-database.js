@@ -38,7 +38,6 @@ export default function AnimeDatabase() {
         <img src="/animedbss.webp" className=""></img>
         <img src="/anime-db-SS2.webp" className=""></img>
         <img src="/anime-db-SS3.webp" className=" "></img>
-        
       </Carousel>
 
       <div className="flex flex-col items-center">
@@ -51,7 +50,6 @@ export default function AnimeDatabase() {
           <img src="/reduxIcon.png" className="h-20 w-30 mt-4"></img>
           <img src={`/nextjsIconWhite.png`} className="h-20 w-30"></img>
           <img src="/tailwindIcon.png" className=" aspect-5/3 max-h-14"></img>
-          
         </div>
       </div>
 
@@ -61,26 +59,22 @@ export default function AnimeDatabase() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full">
           <li>
-            First time using a real payment processor through stripe. Which
-            consisted of creating an account and getting the required keys. Then
-            creating a file that takes in the items stored in our cart state and
-            transforming them into the proper object format required by stripe.
-            In the same file setting up the final propery formatted object with
-            the desired settings as our stripe session.
+            First time using typescript in a project. Learned about how to to
+            type the props sent to each component, along with arguements sent
+            into functions.
           </li>
           <li>
-            With the stripe session created the user will be redirected to
-            stripe's prebuilt checkout page to finish completing thier order. To
-            correctly capture the events sent back by stripe after an order has
-            been completed, i created my first webhook.
+            Utilized the browser&apos;s local storage to store non-sensitive user
+            data. I created a calendar using the Date API to determine and
+            highlight the current day of the week to the user. The user can add
+            currently airing anime to thier watchlist, which gets stored in the
+            browser&apos;s localstorage.
           </li>
           <li>
-            I learned that a webhook acts as a middleman between our app and
-            stripe, allowing us to capture set events when an order is
-            completed. Capturing the checkoutSession event I was able to tell if
-            the order was successful, along with the accompanying details of
-            said order. Then sending the order details to our firestore backend,
-            storing individual users and thier past orders.
+            Created typically found sorting functions, such as acending, date,
+            and score for the array of data returned from the api. Also created
+            a search bar which fetches new data rather than filter a current
+            array
           </li>
         </ul>
       </article>
