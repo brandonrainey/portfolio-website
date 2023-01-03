@@ -4,7 +4,6 @@ import 'react-multi-carousel/lib/styles.css'
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -60,7 +59,7 @@ export default function StripeShop() {
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
           What I Learned
         </h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
           <li>
             First time using a real payment processor through stripe. Which
             consisted of creating an account and getting the required keys. Then
@@ -71,9 +70,9 @@ export default function StripeShop() {
           </li>
           <li>
             With the stripe session created the user will be redirected to
-            stripe&apos;s prebuilt checkout page to finish completing thier order. To
-            correctly capture the events sent back by stripe after an order has
-            been completed, i created my first webhook.
+            stripe&apos;s prebuilt checkout page to finish completing thier
+            order. To correctly capture the events sent back by stripe after an
+            order has been completed, i created my first webhook.
           </li>
           <li>
             I learned that a webhook acts as a middleman between our app and

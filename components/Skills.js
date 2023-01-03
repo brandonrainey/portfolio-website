@@ -1,6 +1,5 @@
-import React, { useRef, useState } from 'react'
-import { motion, Variants, useInView } from 'framer-motion'
-
+import React, { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 
 export default function Skills({ lightMode }) {
   const ref = useRef(null)
@@ -35,7 +34,9 @@ export default function Skills({ lightMode }) {
 
   return (
     <div className="flex justify-center mt-40 flex-col text-center">
-      <h1 className="font-bold text-5xl tracking-wide">Skills</h1>
+      <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-2">
+        Skills
+      </h1>
       <div className="flex justify-center">
         <motion.div className="flex justify-center items-center mt-6 gap-x-10 gap-y-6 sm:basis-5/12 basis-9/12 flex-wrap">
           <motion.img
@@ -50,6 +51,7 @@ export default function Skills({ lightMode }) {
               x: { duration: 1 },
               default: { ease: 'linear' },
             }}
+            
           />
           <motion.img
             src="/cssLogo.png"

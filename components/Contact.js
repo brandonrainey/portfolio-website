@@ -17,13 +17,16 @@ export default function Contact(props) {
     }
   }, [props.contactScroll])
 
-  console.log(emailText.current)
   return (
     <div
       ref={contactDiv}
-      className={`flex justify-center mt-40 flex-col text-center mb-4 bg-gradient-to-t to-[#13385c]/50 from-[#13385c]/50 w-full md:w-3/4 self-center rounded-lg py-8 drop-shadow-lg ${props.lightMode ? 'bg-[#052033] text-white' : ''}`}
+      className={`flex justify-center mt-40 flex-col text-center mb-4 bg-gradient-to-t to-[#13385c]/50 from-[#13385c]/50 w-full md:w-3/4 self-center rounded-lg py-8 drop-shadow-lg ${
+        props.lightMode ? 'bg-[#052033] text-white' : ''
+      }`}
     >
-      <header className="font-bold text-5xl tracking-wide">Contact</header>
+      <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-2">
+        Contact
+      </h1>
       <p
         className="font-bold underline mt-6 tracking-wide cursor-copy"
         ref={emailText}
@@ -35,26 +38,22 @@ export default function Contact(props) {
         brandonhrainey@gmail.com
       </p>
       <Form lightMode={props.lightMode} />
-      <div className="flex justify-center mt-4 gap-x-6">
+      <nav className="flex justify-center mt-4 gap-x-6">
         <a href="https://github.com/brandonrainey">
           <img
-            src={`${
-              props.lightMode ? '/githubIcon.png' : '/githubIconWhite.png'
-            }`}
+            src={`/githubIconWhite.png`}
             className="h-10 w-10"
             alt="github icon"
           />
         </a>
         <a href="https://www.linkedin.com/in/brandon-rainey/">
           <img
-            src={`${
-              props.lightMode ? '/linkedinIconBlack.png' : '/linkedinIcon.png'
-            }`}
+            src={`/linkedinIcon.png`}
             className="h-10 w-10 rounded-full"
             alt="linkedin icon"
           />
         </a>
-      </div>
+      </nav>
     </div>
   )
 }

@@ -4,7 +4,6 @@ import 'react-multi-carousel/lib/styles.css'
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -24,20 +23,22 @@ const responsive = {
   },
 }
 
-export default function AnimeDatabase() {
+export default function RedditClone() {
   return (
     <div className="flex flex-col items-center gap-6">
       <h1 className="sm:text-6xl text-5xl mb-12 mt-4 px-4 font-semibold text-center">
-        Anime Database
+        Reddit Clone
       </h1>
       <Carousel
         responsive={responsive}
         itemClass={`image-item`}
         className="sm:w-5/6 w-full"
       >
-        <img src="/animedbss.webp" className=""></img>
-        <img src="/anime-db-SS2.webp" className=""></img>
-        <img src="/anime-db-SS3.webp" className=" "></img>
+        <img src="/redditCloneSS.webp" className=""></img>
+        <img src="/redditCloneSS2.webp" className=""></img>
+        <img src="/redditCloneSS3.webp" className=""></img>
+        <img src="/redditCloneSS4.webp" className=""></img>
+        <img src="/redditCloneSS5.webp" className=""></img>
       </Carousel>
 
       <div className="flex flex-col items-center">
@@ -46,10 +47,9 @@ export default function AnimeDatabase() {
         </h2>
         <div className="flex items-center gap-2  flex-wrap md:w-full w-5/6 justify-center mb-2">
           <img src="/reactIcon.png" className="h-20 w-30 mt-4"></img>
-          <img src="/typescriptIcon.png" className="h-16 w-26 mt-4"></img>
-          <img src="/reduxIcon.png" className="h-20 w-30 mt-4"></img>
           <img src={`/nextjsIconWhite.png`} className="h-20 w-30"></img>
           <img src="/tailwindIcon.png" className=" aspect-5/3 max-h-14"></img>
+          <img src="/firebaseIcon.png" className="h-24 w-30 mt-4"></img>
         </div>
       </div>
 
@@ -57,24 +57,22 @@ export default function AnimeDatabase() {
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
           What I Learned
         </h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
           <li>
-            First time using typescript in a project. Learned about how to to
-            type the props sent to each component, along with arguements sent
-            into functions.
+            Worked on simulating real world CRUD functionality where users sign
+            in to an account with auth, then have the data sent to the database
+            assigned to individual users. I also tried to have a sligntly more
+            complex database structure than a basic project. Where in addition
+            to user posts that are data connected to the user, giving the
+            ability to create a subreddit which has a wider scope thats
+            interactable by other users.
           </li>
+
           <li>
-            Utilized the browser&apos;s local storage to store non-sensitive user
-            data. I created a calendar using the Date API to determine and
-            highlight the current day of the week to the user. The user can add
-            currently airing anime to thier watchlist, which gets stored in the
-            browser&apos;s localstorage.
-          </li>
-          <li>
-            Created typically found sorting functions, such as acending, date,
-            and score for the array of data returned from the api. Also created
-            a search bar which fetches new data rather than filter a current
-            array
+            Worked on creating smoother responsive design from desktop down to
+            mobile by using less media queries, and adding responsiveness with
+            flexbox and percentage widths. Also practiced being able to create a
+            similar design to a popular website but not making it a 1:1 clone.
           </li>
         </ul>
       </article>

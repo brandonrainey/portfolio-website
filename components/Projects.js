@@ -100,7 +100,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       image: '/animedbss.webp',
       github: 'https://github.com/brandonrainey/anime-database',
       live: 'https://anime-calendar.netlify.app',
-      page: '/stripe-shop',
+      page: '/anime-database',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
@@ -124,7 +124,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       image: '/twitchfollowsSS.webp',
       github: 'https://github.com/brandonrainey/twitch-vip-tracker',
       live: 'https://mytwitchfollows.netlify.app',
-      page: '/stripe-shop',
+      page: '/twitch-follow-tracker',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
@@ -149,7 +149,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       image: '/redditCloneSS.webp',
       github: 'https://github.com/brandonrainey/reddit-clone',
       live: 'https://brainey-reddit-clone.netlify.app',
-      page: '/stripe-shop',
+      page: '/reddit-clone',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
@@ -172,7 +172,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       image: '/tilegamess.webp',
       github: 'https://github.com/brandonrainey/tile-game',
       live: 'https://tile-memory-game.netlify.app',
-      page: '/stripe-shop',
+      page: '/tile-memory-game',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1s">
           <li className="mb-1">
@@ -196,7 +196,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       image: '/eblandingpagess.webp',
       github: 'https://github.com/brandonrainey/easybank-landing-page',
       live: 'https://eb-landing-page.netlify.app',
-      page: '/stripe-shop',
+      page: '/',
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1s">
           <li className="mb-1">
@@ -247,10 +247,10 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
   return (
     <div className="flex flex-wrap gap-y-16 gap-x-20 justify-center mt-32 ">
       <div
-        className="w-full text-center font-bold text-5xl tracking-wide "
+        className="w-full text-center font-bold text-5xl sm:tracking-wide "
         ref={workDiv}
       >
-        <p className="">Projects</p>
+        <p className="underline underline-offset-[16px]">Projects</p>
       </div>
       {projects.map((project, index) => (
         <motion.div
@@ -311,17 +311,18 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
                 </a>
               </div>
 
-              {/* <div className='flex w-full justify-center py-4 mb-8'>
-                <a href={project.page}>
-                  <button
-                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-40 rounded-3xl tracking-wide font-semibold shadow-xl ${projects[index].showingDescription ? 'hidden' : ''} ${
-                      lightMode ? 'text-white' : ''
-                    }`}
-                  >
-                    Learn More
-                  </button>
-                </a>
-              </div> */}
+              <div className="flex w-full justify-center py-4 mb-4">
+                <button
+                  className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-40 rounded-3xl tracking-wide font-semibold shadow-xl ${
+                    projects[index].showingDescription ? 'hidden' : ''
+                  } ${lightMode ? 'text-white' : ''} ${
+                    project.title === 'Easybank Landing Page' ? 'hidden' : ''
+                  }`}
+                  onClick={() => router.push(projects[index].page)}
+                >
+                  Learn More
+                </button>
+              </div>
 
               <motion.div
                 className={`${

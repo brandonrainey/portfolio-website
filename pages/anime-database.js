@@ -4,7 +4,6 @@ import 'react-multi-carousel/lib/styles.css'
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -57,15 +56,15 @@ export default function AnimeDatabase() {
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
           What I Learned
         </h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
           <li>
             First time using typescript in a project. Learned about how to to
             type the props sent to each component, along with arguements sent
             into functions.
           </li>
           <li>
-            Utilized the browser&apos;s local storage to store non-sensitive user
-            data. I created a calendar using the Date API to determine and
+            Utilized the browser&apos;s local storage to store non-sensitive
+            user data. I created a calendar using the Date API to determine and
             highlight the current day of the week to the user. The user can add
             currently airing anime to thier watchlist, which gets stored in the
             browser&apos;s localstorage.
@@ -74,7 +73,7 @@ export default function AnimeDatabase() {
             Created typically found sorting functions, such as acending, date,
             and score for the array of data returned from the api. Also created
             a search bar which fetches new data rather than filter a current
-            array
+            array.
           </li>
         </ul>
       </article>

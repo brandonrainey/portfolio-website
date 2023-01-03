@@ -4,7 +4,6 @@ import 'react-multi-carousel/lib/styles.css'
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -24,7 +23,7 @@ const responsive = {
   },
 }
 
-export default function AnimeDatabase() {
+export default function TileMemoryGame() {
   return (
     <div className="flex flex-col items-center gap-6">
       <h1 className="sm:text-6xl text-5xl mb-12 mt-4 px-4 font-semibold text-center">
@@ -35,9 +34,10 @@ export default function AnimeDatabase() {
         itemClass={`image-item`}
         className="sm:w-5/6 w-full"
       >
-        <img src="/animedbss.webp" className=""></img>
-        <img src="/anime-db-SS2.webp" className=""></img>
-        <img src="/anime-db-SS3.webp" className=" "></img>
+        <img src="/tilegamess.webp" className=""></img>
+        <img src="/tilegamess2.webp" className=""></img>
+        <img src="/tilegamess3.webp" className=" "></img>
+        <img src="/tilegamess4.webp" className=" "></img>
       </Carousel>
 
       <div className="flex flex-col items-center">
@@ -46,8 +46,6 @@ export default function AnimeDatabase() {
         </h2>
         <div className="flex items-center gap-2  flex-wrap md:w-full w-5/6 justify-center mb-2">
           <img src="/reactIcon.png" className="h-20 w-30 mt-4"></img>
-          <img src="/typescriptIcon.png" className="h-16 w-26 mt-4"></img>
-          <img src="/reduxIcon.png" className="h-20 w-30 mt-4"></img>
           <img src={`/nextjsIconWhite.png`} className="h-20 w-30"></img>
           <img src="/tailwindIcon.png" className=" aspect-5/3 max-h-14"></img>
         </div>
@@ -57,25 +55,24 @@ export default function AnimeDatabase() {
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
           What I Learned
         </h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
           <li>
-            First time using typescript in a project. Learned about how to to
-            type the props sent to each component, along with arguements sent
-            into functions.
+            Created a memory game based on minigames from other games, with
+            different difficulty settings to challenge users. Was able to create
+            the logic from scratch from observing how the game worked. Starts a
+            countdown for the user to track which tiles are highlighted to
+            memorize. When users click a tile, a check occurs to see if thier
+            selection is contained in the array of correct answers. During
+            gameplay correct tiles are highlighted green and incorrect red, once
+            the win or loss condition is met, the game ends and displays a game
+            end message.
           </li>
           <li>
-            Utilized the browser&apos;s local storage to store non-sensitive user
-            data. I created a calendar using the Date API to determine and
-            highlight the current day of the week to the user. The user can add
-            currently airing anime to thier watchlist, which gets stored in the
-            browser&apos;s localstorage.
+            Worked on creating a smooth moving progress bar with both javascript
+            and css to create a dynamic width percentage that can move at
+            different speeds depending on game state.
           </li>
-          <li>
-            Created typically found sorting functions, such as acending, date,
-            and score for the array of data returned from the api. Also created
-            a search bar which fetches new data rather than filter a current
-            array
-          </li>
+          <li></li>
         </ul>
       </article>
     </div>
