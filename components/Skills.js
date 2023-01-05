@@ -34,142 +34,192 @@ export default function Skills({ lightMode }) {
 
   return (
     <div className="flex justify-center mt-40 flex-col text-center">
-      <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-2">
+      <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-8">
         Skills
       </h1>
       <div className="flex justify-center">
-        <motion.div className="flex justify-center items-center mt-6 gap-x-10 gap-y-6 sm:basis-5/12 basis-9/12 flex-wrap">
-          <motion.img
-            src="/htmlLogo.png"
-            className="h-24 w-30 mt-2"
-            alt="html logo"
-            ref={ref}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-            
-          />
-          <motion.img
-            src="/cssLogo.png"
-            className="h-28 w-30 cssLogo"
-            alt="css logo"
-            ref={ref2}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView2 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
-          <motion.img
-            src="/jsIcon.png"
-            className="h-20 w-26 mt-6"
-            alt="javascript logo"
-            ref={ref3}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView3 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
-          <motion.img
-            src="/reactIcon.png"
-            className="h-24 w-30 mt-4"
-            alt="react logo"
-            ref={ref4}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView4 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
-          <motion.img
-            src="/typescriptIcon.png"
-            className="h-20 w-26 mt-4"
-            alt="typescript logo"
-            ref={ref5}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView4 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
-          <motion.img
-            src="/reduxIcon.png"
-            className="h-24 w-30 mt-4"
-            alt="redux logo"
-            ref={ref6}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView5 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
-          <motion.img
-            src="/gitIcon.png"
-            className="h-24 w-30 mt-4"
-            alt="git logo"
-            ref={ref7}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView6 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
-          <motion.img
-            src={`${lightMode ? '/nextjsIcon.png' : '/nextjsIconWhite.png'}`}
-            className="h-24 w-30"
-            alt="next js logo"
-            ref={ref8}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView7 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
-          <motion.img
-            src="/tailwindIcon.png"
-            className=" aspect-5/3 max-h-16"
-            alt="tailwind css logo"
-            ref={ref9}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView8 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
-          <motion.img
-            src="/firebaseIcon.png"
-            className="h-28 w-30 mt-4"
-            alt="firebase logo"
-            ref={ref10}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={isInView9 ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-              delay: 0.2,
-              x: { duration: 1 },
-              default: { ease: 'linear' },
-            }}
-          />
+        <motion.div className="flex justify-center items-center mt-6 gap-x-10 gap-y-6 sm:basis-6/12 basis-11/12 flex-wrap ">
+          <div className="relative group">
+            <motion.img
+              src="/htmlLogo.png"
+              className="h-24 w-30 mt-2 "
+              alt="html logo"
+              ref={ref}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[30px] right-[18px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              HTML
+            </div>
+          </div>
+
+          <div className="relative group">
+            <motion.img
+              src="/cssLogo.png"
+              className="h-28 w-30 cssLogo"
+              alt="css logo"
+              ref={ref2}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView2 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[30px] right-[32px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              CSS
+            </div>
+          </div>
+          <div className="relative group">
+            <motion.img
+              src="/jsIcon.png"
+              className="h-20 w-26 mt-6"
+              alt="javascript logo"
+              ref={ref3}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView3 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[12px] sm:right-[-7px] right-[-10px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              Javascript
+            </div>
+          </div>
+          <div className="relative group">
+            <motion.img
+              src="/reactIcon.png"
+              className="h-24 w-30 mt-4"
+              alt="react logo"
+              ref={ref4}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView4 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[10px] right-[38px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              React
+            </div>
+          </div>
+          <div className="relative group">
+            <motion.img
+              src="/typescriptIcon.png"
+              className="h-20 w-26 mt-4"
+              alt="typescript logo"
+              ref={ref5}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView4 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[20px] right-[-10px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold  text-center">
+              Typescript
+            </div>
+          </div>
+          <div className="relative group">
+            <motion.img
+              src="/reduxIcon.png"
+              className="h-24 w-30 mt-4"
+              alt="redux logo"
+              ref={ref6}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView5 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[12px] right-[30px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              Redux
+            </div>
+          </div>
+          <div className="relative group">
+            <motion.img
+              src="/gitIcon.png"
+              className="h-24 w-30 mt-4"
+              alt="git logo"
+              ref={ref7}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView6 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[20px] right-[28px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              Git
+            </div>
+          </div>
+          <div className="relative group">
+            <motion.img
+              src={`${lightMode ? '/nextjsIcon.png' : '/nextjsIconWhite.png'}`}
+              className="h-24 w-30"
+              alt="next js logo"
+              ref={ref8}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView7 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[20px] right-[50px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              Next.js
+            </div>
+          </div>
+          <div className="relative group">
+            <motion.img
+              src="/tailwindIcon.png"
+              className=" aspect-5/3 max-h-16"
+              alt="tailwind css logo"
+              ref={ref9}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView8 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-[124px]  px-2 h-7 bg-[#3a688e] -top-[34px] right-[-6px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              Tailwind CSS
+            </div>
+          </div>
+          <div className="relative group">
+            <motion.img
+              src="/firebaseIcon.png"
+              className="h-28 w-30 mt-4"
+              alt="firebase logo"
+              ref={ref10}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={isInView9 ? { opacity: 1, scale: 1 } : {}}
+              transition={{
+                delay: 0.2,
+                x: { duration: 1 },
+                default: { ease: 'linear' },
+              }}
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] -top-[10px] right-[16px] rounded-lg absolute group-hover:opacity-100 transition-all opacity-0 font-semibold ">
+              Firebase
+            </div>
+          </div>
         </motion.div>
       </div>
     </div>
