@@ -25,9 +25,9 @@ const responsive = {
 
 export default function StripeShop() {
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-8">
       <h1 className="sm:text-6xl text-5xl mb-12 mt-4 px-4 font-semibold text-center">
-        Stripe Shop
+        <a href={'https://stripe-shop.netlify.app'}>Stripe Shop</a>
       </h1>
       <Carousel
         responsive={responsive}
@@ -54,10 +54,47 @@ export default function StripeShop() {
           <img src="/firebaseIcon.png" className="h-24 w-30 mt-4"></img>
         </div>
       </div>
+      <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+        <li>
+          I used Next.js as my react framework as i do for most projects, as i
+          find it the most feature rich and performant. Similarly i used
+          Tailwind CSS to style this project as it helps streamline my building
+          process. Another frequently used service by me is Firebase as the
+          backend, mostly as its what im most familiar with, which allows me to
+          focus on the frontend more.
+        </li>
+        <li>
+          This was my second project using Typescript with the intent to
+          continue to use it instead of vanilla Javascript. Same situation with
+          the use of Redux as my state management.
+        </li>
+      </ul>
 
-      <article className="flex flex-col items-center">
+      <article className="flex flex-col items-center gap-6">
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">Description</h2>
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+          <li>
+            Ecommerce site with serveral features, starting with a main page
+            with two sections. One to click icons to route to the different
+            category pages. And the other a list of deals that can be directly
+            added to cart. The header contains a nav for all products page,
+            categories of products pages, deals page, and orders page. The
+            search bar actively searches through all products, leading to a
+            lightbox product page. The last two items are the sign in/out link
+            through google, and the cart link.
+          </li>
+          <li>
+            All product pages are responsive grids of the products cards, with
+            an alert popup when an item is added to cart. The cart page displays
+            your items, the total, and a checkout button, with a button to
+            remove items from the cart. The checkout button navigates to the
+            prebuilt Stripe checkout page where you can complete your order. On
+            success, navigates to a success page where you then can view your
+            previous orders through the orders page.
+          </li>
+        </ul>
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
-          What I Learned
+          Challenges/What I Learned
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
           <li>
@@ -83,7 +120,24 @@ export default function StripeShop() {
             storing individual users and thier past orders.
           </li>
         </ul>
+
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
+          Potential Additions/Improvements
+        </h2>
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+          <li>
+            Migrate to a more vast api of products to increase
+            diversity/increase speed of the api calls
+          </li>
+          <li>Improve all parts of the design to improve user experience.</li>
+          <li>
+            Provide user more access to the data returned from the database,
+            such as more order details, and potential stripe events
+          </li>
+        </ul>
       </article>
     </div>
   )
 }
+
+
