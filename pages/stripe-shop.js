@@ -26,7 +26,7 @@ const responsive = {
 export default function StripeShop() {
   return (
     <div className="flex flex-col items-center gap-8">
-      <h1 className="sm:text-6xl text-5xl mb-12 mt-4 px-4 font-semibold text-center">
+      <h1 className="sm:text-6xl text-5xl sm:mb-12 mt-4 px-4 font-semibold text-center">
         <a href={'https://stripe-shop.netlify.app'}>Stripe Shop</a>
       </h1>
       <Carousel
@@ -54,7 +54,7 @@ export default function StripeShop() {
           <img src="/firebaseIcon.png" className="h-24 w-30 mt-4"></img>
         </div>
       </div>
-      <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+      <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
         <li>
           I used Next.js as my react framework as i do for most projects, as i
           find it the most feature rich and performant. Similarly i used
@@ -71,8 +71,8 @@ export default function StripeShop() {
       </ul>
 
       <article className="flex flex-col items-center gap-6">
-        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">Description</h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">Description</h2>
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             Ecommerce site with serveral features, starting with a main page
             with two sections. One to click icons to route to the different
@@ -93,10 +93,10 @@ export default function StripeShop() {
             previous orders through the orders page.
           </li>
         </ul>
-        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">
           Challenges/What I Learned
         </h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             First time using a real payment processor through stripe. Which
             consisted of creating an account and getting the required keys. Then
@@ -126,10 +126,10 @@ export default function StripeShop() {
           </li>
         </ul>
 
-        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center px-2">
           Potential Additions/Improvements
         </h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             Migrate to a more vast api of products to increase
             diversity/increase speed of the api calls

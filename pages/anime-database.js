@@ -26,7 +26,7 @@ const responsive = {
 export default function AnimeDatabase() {
   return (
     <div className="flex flex-col items-center gap-8">
-      <h1 className="sm:text-6xl text-5xl mb-12 mt-4 px-4 font-semibold text-center">
+      <h1 className="sm:text-6xl text-5xl sm:mb-12 mt-4 px-4 font-semibold text-center">
         Anime Database
       </h1>
       <Carousel
@@ -51,7 +51,7 @@ export default function AnimeDatabase() {
           <img src="/tailwindIcon.png" className=" aspect-5/3 max-h-14"></img>
         </div>
       </div>
-      <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+      <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
         <li>
           I used Next.js as my react framework as i do for most projects, as i
           find it the most feature rich and performant. Similarly i used
@@ -64,7 +64,7 @@ export default function AnimeDatabase() {
 
       <article className="flex flex-col items-center gap-6">
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">Description</h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             Fetches data on anime from a MyAnimeList api to display a grid of
             cards that link to thier corresponding MyAnimeList page. The user
@@ -81,7 +81,7 @@ export default function AnimeDatabase() {
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
           Challenges/What I Learned
         </h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             First time using typescript in a project. Learned about how to to
             type the props sent to each component, along with arguements sent
@@ -102,10 +102,10 @@ export default function AnimeDatabase() {
           </li>
         </ul>
 
-        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">
           Potential Additions/Improvements
         </h2>
-        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>Create a more permanent storage of user&apos;s tracked anime.</li>
           <li>Update UI to create a better user experience</li>
           <li>Add more data from the api to display on the anime cards.</li>
