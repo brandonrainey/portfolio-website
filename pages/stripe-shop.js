@@ -119,6 +119,11 @@ export default function StripeShop() {
             said order. Then sending the order details to our firestore backend,
             storing individual users and thier past orders.
           </li>
+          <li>
+            Started using getServerSideProps to fetch the data from the api. But ended up switching
+            over to getStaticProps to increase the performance signifigantly as i learned when using
+            getServerSideProps runs every time there was a route change, slowing performance.
+          </li>
         </ul>
 
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">

@@ -106,7 +106,7 @@ export default function AnimeDatabase() {
           Potential Additions/Improvements
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
-          <li>Create a more permanent storage of user's tracked anime.</li>
+          <li>Create a more permanent storage of user&apos;s tracked anime.</li>
           <li>Update UI to create a better user experience</li>
           <li>Add more data from the api to display on the anime cards.</li>
         </ul>
