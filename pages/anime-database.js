@@ -56,9 +56,10 @@ export default function AnimeDatabase() {
           I used Next.js as my react framework as i do for most projects, as i
           find it the most feature rich and performant. Similarly i used
           Tailwind CSS to style this project as it helps streamline my building
-          process. Another frequently used service by me is Firebase as the
-          backend, mostly as its what im most familiar with, which allows me to
-          focus on the frontend more.
+          process.
+        </li>
+        <li>
+          First project using typescript, so only used simple types and inferred types.
         </li>
       </ul>
 
@@ -67,13 +68,13 @@ export default function AnimeDatabase() {
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             Fetches data on anime from a MyAnimeList api to display a grid of
-            cards that link to thier corresponding MyAnimeList page. The user
-            can sort the results by different categories and sort by serveral
+            cards that link to their corresponding MyAnimeList page. The user
+            can sort the results by different categories and sort by several
             values as well. Users can also user the search box to search through
             all anime, with pagination for all results and categories.
           </li>
           <li>
-            There is a calendar that users can add currently air animes to to
+            There is a calendar that users can add currently air anime&apos;s to to
             track what day of the week they air, using local storage.
           </li>
         </ul>
@@ -84,18 +85,18 @@ export default function AnimeDatabase() {
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             First time using typescript in a project. Learned about how to to
-            type the props sent to each component, along with arguements sent
+            type the props sent to each component, along with arguments sent
             into functions.
           </li>
           <li>
             Utilized the browser&apos;s local storage to store non-sensitive
             user data. I created a calendar using the Date API to determine and
             highlight the current day of the week to the user. The user can add
-            currently airing anime to thier watchlist, which gets stored in the
+            currently airing anime to their watchlist, which gets stored in the
             browser&apos;s localstorage.
           </li>
           <li>
-            Created typically found sorting functions, such as acending, date,
+            Created typically found sorting functions, such as ascending, date,
             and score for the array of data returned from the api. Also created
             a search bar which fetches new data rather than filter a current
             array.

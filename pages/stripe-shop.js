@@ -74,7 +74,7 @@ export default function StripeShop() {
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">Description</h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            Ecommerce site with serveral features, starting with a main page
+            Ecommerce site with several features, starting with a main page
             with two sections. One to click icons to route to the different
             category pages. And the other a list of deals that can be directly
             added to cart. The header contains a nav for all products page,
@@ -102,12 +102,12 @@ export default function StripeShop() {
             consisted of creating an account and getting the required keys. Then
             creating a file that takes in the items stored in our cart state and
             transforming them into the proper object format required by stripe.
-            In the same file setting up the final propery formatted object with
+            In the same file setting up the final properly formatted object with
             the desired settings as our stripe session.
           </li>
           <li>
             With the stripe session created the user will be redirected to
-            stripe&apos;s prebuilt checkout page to finish completing thier
+            stripe&apos;s prebuilt checkout page to finish completing their
             order. To correctly capture the events sent back by stripe after an
             order has been completed, i created my first webhook.
           </li>
@@ -117,11 +117,11 @@ export default function StripeShop() {
             completed. Capturing the checkoutSession event I was able to tell if
             the order was successful, along with the accompanying details of
             said order. Then sending the order details to our firestore backend,
-            storing individual users and thier past orders.
+            storing individual users and their past orders.
           </li>
           <li>
             Started using getServerSideProps to fetch the data from the api. But ended up switching
-            over to getStaticProps to increase the performance signifigantly as i learned when using
+            over to getStaticProps to increase the performance significantly as i learned when using
             getServerSideProps runs every time there was a route change, slowing performance.
           </li>
         </ul>

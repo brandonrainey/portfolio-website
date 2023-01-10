@@ -50,10 +50,25 @@ export default function TwitchFollowTracker() {
           <img src="/tailwindIcon.png" className=" aspect-5/3 max-h-14"></img>
         </div>
       </div>
+      <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
+        <li>
+
+        </li>
+      </ul>
 
       <article className="flex flex-col items-center">
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">
+          Description
+        </h2>
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
+          <li>
+
+          </li>
+        </ul>
+
+
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
-          What I Learned
+          Challenges/What I Learned
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full">
           <li>
@@ -70,8 +85,18 @@ export default function TwitchFollowTracker() {
             in the request to authorize the user. This required creation of a
             Developer account with twitch then installing the CLI to create your
             client-id. For the second part of the header, once the user
-            connected thier twitch account i took the bearer token from the
+            connected their twitch account i took the bearer token from the
             updated url to allow the fetching of that user&apos;s data.
+          </li>
+        </ul>
+
+
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">
+        Potential Additions/Improvements
+        </h2>
+        <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
+          <li>
+            
           </li>
         </ul>
       </article>
