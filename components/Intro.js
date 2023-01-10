@@ -10,11 +10,11 @@ export default function Intro(props) {
       <h1 className="font-bold text-4xl sm:tracking-wide pb-6">
         Hi, I&apos;m Brandon
       </h1>
-      <img
+      {/* <img
         src="/pfp.webp"
         className="h-52 sm:h-72 w-52 sm:w-72 self-center mt-8 "
         alt="profile picture"
-      />
+      /> */}
       <div className="flex justify-center mt-4">
         <p className="md:text-4xl text-2xl md:w-3/4 text-center font-bold  tracking-wide">
           I am a Frontend Developer who enjoys solving interesting problems and

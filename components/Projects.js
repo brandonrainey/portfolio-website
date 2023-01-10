@@ -191,30 +191,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       showing: false,
       showingDescription: false,
     },
-    {
-      title: 'Easybank Landing Page',
-      image: '/eblandingpagess.webp',
-      github: 'https://github.com/brandonrainey/easybank-landing-page',
-      live: 'https://eb-landing-page.netlify.app',
-      page: '/',
-      description: (
-        <ul className="transition-all list-disc list-inside gap-2 px-1s">
-          <li className="mb-1">
-            Landing page with multiple sections including a header nav, hero
-            image, articles and footer.
-          </li>
-          <li className="mb-1">
-            Desgin is from a Frontend Mentor challenge, and was recreated
-            visually only.
-          </li>
-          <li className="mb-1">
-            Created using Next.js React framework, styled with vanilla CSS
-          </li>
-        </ul>
-      ),
-      showing: false,
-      showingDescription: false,
-    },
+    
   ])
 
   function handleMoveOut() {
