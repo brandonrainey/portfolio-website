@@ -62,6 +62,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     setProjects(copy)
   }
 
+  //toggles the showingDescription value
   function handleDescription(index) {
     let copy = [...projects]
     projects[index].showingDescription
@@ -191,7 +192,6 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       showing: false,
       showingDescription: false,
     },
-    
   ])
 
   function handleMoveOut() {
@@ -202,6 +202,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
     setProjects(copy)
   }
 
+  //scrolls into view
   useEffect(() => {
     if (workScroll === true) {
       workDiv.current.scrollIntoView({
@@ -222,7 +223,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
   }, [])
 
   return (
-    <div className="flex flex-wrap gap-y-16 gap-x-20 justify-center mt-32 ">
+    <div className="flex flex-wrap gap-y-16 gap-x-20 justify-center mt-32">
       <div
         className="w-full text-center font-bold text-5xl sm:tracking-wide "
         ref={workDiv}
@@ -256,6 +257,7 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               layout="responsive"
             />
 
+            {/* Hover Overlay */}
             <motion.div
               style={{ display: projects[index].showing ? 'flex' : 'none' }}
               className="absolute h-full bg-gray-900/[.6]  w-full flex flex-col rounded justify-center "
