@@ -73,7 +73,7 @@ export default function TwitchFollowTracker() {
           </li>
           <li>
             There is a search bar that actively filters the grid of followers.
-            If a user has more than 100 followed streams, a "load more" button
+            If a user has more than 100 followed streams, a &quot;load more&quot; button
             will be displayed allowing the user to paginate and fetch more of
             their followed streams.
           </li>
