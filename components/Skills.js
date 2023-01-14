@@ -11,24 +11,24 @@ export default function Skills({ lightMode }) {
       </h1>
       <div className="flex justify-center">
         <div className="flex justify-center items-center mt-6 gap-x-10 gap-y-6 flex-wrap w-5/6 max-w-[800px]">
-          <div className="flex flex-col items-center group">
+          <div className="flex flex-col items-center group ">
             <img
               src="/htmlLogo.png"
               className="h-24 w-30 mt-2 mb-2"
               alt="html logo"
             />
-            <div className="w-[70px] px-2 h-7 bg-[#3a688e] bottom-0 right-[18px] rounded-lg font-semibold ">
+            <div className="w-[70px] px-2 h-7 bg-[#3a688e] rounded-lg font-semibold mt-auto">
               HTML
             </div>
           </div>
 
-          <div className="flex flex-col items-center group">
+          <div className="flex flex-col items-center justify-center group ">
             <img
               src="/cssLogo.png"
               className="h-28 w-30 cssLogo"
               alt="css logo"
             />
-            <div className="w-auto px-2 h-7 bg-[#3a688e] bottom-0 right-[34px] rounded-lg font-semibold ">
+            <div className="w-auto px-2 h-7 bg-[#3a688e] bottom-0 right-[34px] rounded-lg font-semibold mt-auto">
               CSS
             </div>
           </div>
