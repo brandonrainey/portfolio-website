@@ -52,7 +52,7 @@ export default function TwitchFollowTracker() {
       </div>
       <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
         <li>
-        I used Next.js as my react framework as i do for most projects, as i
+          I used Next.js as my react framework as i do for most projects, as i
           find it the most feature rich and performant. Similarly i used
           Tailwind CSS to style this project as it helps streamline my building
           process. Redux is used for state management.
@@ -65,16 +65,19 @@ export default function TwitchFollowTracker() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            Users can connect their twitch account to view thier followers. Once connected a grid of cards of the user&apos;s
-            followers(up to 100) will be displayed. Clicking on a card will open a popup which shows the streamer&apos;s
-            3 most recent vods, where clicking the thumbnail will link to the corresponding video. 
+            Users can connect their twitch account to view thier followers. Once
+            connected up to 100 of the user&apos;s followed stream will be
+            displayed in a grid of cards. Clicking on a card will open a popup
+            which shows the streamer&apos;s 3 most recent vods, where clicking
+            the thumbnail will link to the corresponding video.
           </li>
           <li>
-            There is a search bar that actively filters the grid of followers. If a user has more than 100 followed streams, a 
-            "load more" button will be displayed allowing the user to paginate and fetch more of their followed streams.
+            There is a search bar that actively filters the grid of followers.
+            If a user has more than 100 followed streams, a "load more" button
+            will be displayed allowing the user to paginate and fetch more of
+            their followed streams.
           </li>
         </ul>
-
 
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">
           Challenges/What I Learned
@@ -99,13 +102,13 @@ export default function TwitchFollowTracker() {
           </li>
         </ul>
 
-
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">
-        Potential Additions/Improvements
+          Potential Additions/Improvements
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            Access more endpoints from the twitch api to display more information on each card
+            Access more endpoints from the twitch api to display more
+            information on each card
           </li>
           <li>
             Persist the user&apos;s authentication past the browser session.
