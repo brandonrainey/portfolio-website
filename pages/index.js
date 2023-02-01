@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import Work from '../components/Projects'
-import ToggleSwitch from '../components/ToggleSwitch'
+
 
 export default function Home() {
   const [workScroll, setWorkScroll] = useState(false)
@@ -20,7 +20,7 @@ export default function Home() {
         lightMode ? 'lightModeBackground lightModeText' : null
       }`}
     >
-      <ToggleSwitch lightMode={lightMode} setLightMode={setLightMode} />
+      
       <Header
         workScroll={workScroll}
         setWorkScroll={setWorkScroll}
