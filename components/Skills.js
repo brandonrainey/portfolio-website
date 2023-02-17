@@ -112,6 +112,16 @@ export default function Skills({ lightMode }) {
               Firebase
             </div>
           </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src="/sassLogo.png"
+              className="h-24 w-30 mt-4"
+              alt="firebase logo"
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] bottom-0 right-[16px] rounded-lg font-semibold mt-1">
+              Sass/Scss
+            </div>
+          </div>
         </div>
       </div>
     </div>
