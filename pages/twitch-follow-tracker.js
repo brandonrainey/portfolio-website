@@ -43,9 +43,9 @@ export default function TwitchFollowTracker() {
         <h2 className="sm:text-3xl text-2xl mt-4 font-semibold">
           Technology Used
         </h2>
-        <div className="flex items-center gap-4  flex-wrap md:w-full w-5/6 justify-center mb-2">
-          <img src="/reactIcon.png" className="h-20 w-30 mt-4"></img>
-          <img src="/reduxIcon.png" className="h-16 w-30 mt-4"></img>
+        <div className="flex items-center gap-4  flex-wrap md:w-full w-5/6 justify-center mt-6">
+          <img src="/reactIcon.png" className="h-20 w-30 "></img>
+          <img src="/reduxIcon.png" className="h-16 w-30 "></img>
           <img src={`/nextjsIconWhite.png`} className="h-20 w-30"></img>
           <img src="/tailwindIcon.png" className=" aspect-5/3 max-h-14"></img>
         </div>

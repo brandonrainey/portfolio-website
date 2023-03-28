@@ -43,10 +43,10 @@ export default function AnimeDatabase() {
         <h2 className="sm:text-3xl text-2xl mt-4 font-semibold">
           Technology Used
         </h2>
-        <div className="flex items-center gap-2  flex-wrap md:w-full w-5/6 justify-center mb-2">
-          <img src="/reactIcon.png" className="h-20 w-30 mt-4"></img>
-          <img src="/typescriptIcon.png" className="h-16 w-26 mt-4"></img>
-          <img src="/reduxIcon.png" className="h-20 w-30 mt-4"></img>
+        <div className="flex items-center gap-4  flex-wrap md:w-full w-5/6 justify-center mb-2 mt-6">
+          <img src="/reactIcon.png" className="h-20 w-30 "></img>
+          <img src="/typescriptIcon.png" className="h-16 w-26 "></img>
+          <img src="/reduxIcon.png" className="h-20 w-30 "></img>
           <img src={`/nextjsIconWhite.png`} className="h-20 w-30"></img>
           <img src="/tailwindIcon.png" className=" aspect-5/3 max-h-14"></img>
         </div>
@@ -59,7 +59,8 @@ export default function AnimeDatabase() {
           process.
         </li>
         <li>
-          First project using typescript, so only used simple types and inferred types.
+          First project using typescript, so only used simple types and inferred
+          types.
         </li>
       </ul>
 
@@ -74,8 +75,8 @@ export default function AnimeDatabase() {
             all anime, with pagination for all results and categories.
           </li>
           <li>
-            There is a calendar that users can add currently air anime&apos;s to to
-            track what day of the week they air, using local storage.
+            There is a calendar that users can add currently air anime&apos;s to
+            to track what day of the week they air, using local storage.
           </li>
         </ul>
 

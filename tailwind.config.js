@@ -2,7 +2,11 @@ module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+      'pfp': '0 0 8px 8px #052033 inset'
+    }
+    },
     flex: {
       '4': '1 0 21%',
     },
@@ -20,6 +24,7 @@ module.exports = {
       '5/3': '5 / 3',
       '1.9/1': '1.9 / 1'
     },
+    
     
   },
   variants: {

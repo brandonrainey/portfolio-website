@@ -22,7 +22,7 @@ export default function Header(props) {
       >
         <button
           onClick={() => props.setWorkScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:bg-indigo-500 bg-[#626794] px-2 py-[1px] rounded-2xl font-semibold ${
+          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold ${
             props.lightMode ? ' text-white bg-[#244257]' : ''
           }`}
         >
@@ -30,7 +30,7 @@ export default function Header(props) {
         </button>
         <button
           onClick={() => props.setAboutMeScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:bg-indigo-500 bg-[#626794] px-2 py-[1px] rounded-2xl font-semibold ${
+          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold ${
             props.lightMode ? ' text-white bg-[#244257]' : ''
           }`}
         >
@@ -38,7 +38,7 @@ export default function Header(props) {
         </button>
         <button
           onClick={() => props.setContactScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:bg-indigo-500 bg-[#626794] px-2 py-[1px] rounded-2xl font-semibold ${
+          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold ${
             props.lightMode ? ' text-white bg-[#244257]' : ''
           }`}
         >

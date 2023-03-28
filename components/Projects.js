@@ -192,6 +192,30 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
       showing: false,
       showingDescription: false,
     },
+    {
+      title: 'Developer Application',
+      image: '/applicationSS.png',
+      github: 'https://github.com/brandonrainey/developer-application-v2',
+      live: 'https://developer-job-application.netlify.app',
+      page: '/developer-application',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1s">
+          <li className="mb-1">
+            A simplified three step application, created specifically for a
+            frontend developer.
+          </li>
+          <li className="mb-1">
+            Utilizes multiple different input element styles to take in data
+            from the user.
+          </li>
+          <li className="mb-1">
+            Created using Next.js React framework, styled using SCSS
+          </li>
+        </ul>
+      ),
+      showing: false,
+      showingDescription: false,
+    },
   ])
 
   function handleMoveOut() {

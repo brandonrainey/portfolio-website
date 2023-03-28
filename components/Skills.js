@@ -1,9 +1,6 @@
 import React from 'react'
 
-
 export default function Skills({ lightMode }) {
-  
-
   return (
     <div className="flex justify-center mt-40 flex-col text-center">
       <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-8">
