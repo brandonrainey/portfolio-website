@@ -7,7 +7,7 @@ export default function Skills({ lightMode }) {
         Skills
       </h1>
       <div className="flex justify-center">
-        <div className="flex justify-center items-center mt-6 gap-x-10 gap-y-6 flex-wrap w-5/6 max-w-[800px]">
+        <div className="flex justify-center items-end mt-6 gap-x-10 gap-y-6 flex-wrap w-5/6 max-w-[800px]">
           <div className="flex flex-col items-center group ">
             <img
               src="/htmlLogo.png"
@@ -112,11 +112,21 @@ export default function Skills({ lightMode }) {
           <div className="flex flex-col items-center group">
             <img
               src="/sassLogo.png"
-              className="h-24 w-30 mt-4"
-              alt="firebase logo"
+              className="h-24 w-30 mt-4 mb-2"
+              alt="sass logo"
             />
             <div className="w-auto px-2 h-7 bg-[#3a688e] bottom-0 right-[16px] rounded-lg font-semibold mt-1">
               Sass/Scss
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src="/jest-icon.png"
+              className="h-24 w-30 mt-4 mb-2"
+              alt="jest logo"
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] bottom-0 right-[16px] rounded-lg font-semibold ">
+              Jest
             </div>
           </div>
         </div>
