@@ -78,7 +78,7 @@ export default function DeveloperApplication() {
           </li>
           <li>
             The second step is used to upload a resume. It uses the input
-            type="file" to allow the user to upload thier resume from thier
+            file type to allow the user to upload thier resume from thier
             computer. The resume name is displayed after successfully uploading.
           </li>
           <li>
