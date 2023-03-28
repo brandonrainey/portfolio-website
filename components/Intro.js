@@ -25,18 +25,14 @@ export default function Intro(props) {
       <h1 className="font-bold text-4xl sm:tracking-wide pb-6">
         Hi, I&apos;m Brandon
       </h1>
-      <div className='h-52 sm:h-72 w-52 sm:w-72 border-8 border-[#052033] rounded-full'>
-      <Image
+      
+      <img
           src="/pfp.png"
-          className=" self-center mt-8 rounded-full "
+          className=" self-center mt-8 rounded-full h-52 sm:h-72 w-52 sm:w-72 border-8 border-[#052033]"
           alt="profile picture"
-          width={288}
-          height={288}
-          priority={true}
-          placeholder='blur'
-          blurDataURL={rgbDataURL(237, 181, 6)}
+          
         />
-      </div>
+      
       
       <div className="flex justify-center mt-4">
         <p className="md:text-4xl text-2xl md:w-3/4 text-center font-bold  tracking-wide ">
