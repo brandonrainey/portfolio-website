@@ -23,7 +23,7 @@ export default function AboutMe(props) {
       <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-2">
         About Me
       </h1>
-      <atricle className="flex justify-center mt-6">
+      <article className="flex justify-center mt-6">
         <p className="sm:w-1/2 w-3/4 tracking-wide">
           I am a 28 year old Frontend Developer currently based out of Goose
           Creek, South Carolina. I first started coding in high school classes
@@ -40,7 +40,7 @@ export default function AboutMe(props) {
           employment as a Frontend Developer, so feel free to contact me if your
           interested in a committed life long learner!
         </p>
-      </atricle>
+      </article>
     </div>
   )
 }
