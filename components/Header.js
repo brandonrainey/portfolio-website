@@ -15,32 +15,22 @@ export default function Header(props) {
         Frontend Developer Portfolio
       </h1>
 
-      <nav
-        className={`ml-auto mt-auto headerNav md:bg-inherit py-2 ${
-          props.lightMode ? '' : ''
-        }`}
-      >
+      <nav className={`ml-auto mt-auto headerNav md:bg-inherit py-2 `}>
         <button
           onClick={() => props.setWorkScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold ${
-            props.lightMode ? ' text-white bg-[#244257]' : ''
-          }`}
+          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold `}
         >
           Projects
         </button>
         <button
           onClick={() => props.setAboutMeScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold ${
-            props.lightMode ? ' text-white bg-[#244257]' : ''
-          }`}
+          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold `}
         >
           About
         </button>
         <button
           onClick={() => props.setContactScroll(true)}
-          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold ${
-            props.lightMode ? ' text-white bg-[#244257]' : ''
-          }`}
+          className={`sm:mr-6 tracking-wide hover:bg-[#626794] border-[#626794] border-2 px-2 py-[1px] rounded-2xl font-semibold `}
         >
           Contact
         </button>

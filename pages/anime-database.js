@@ -90,11 +90,11 @@ export default function AnimeDatabase() {
             into functions.
           </li>
           <li>
-            Utilized the browser local storage to store non-sensitive
-            user data. I created a calendar using the Date API to determine and
-            highlight the current day of the week to the user. The user can add
-            currently airing anime to their watchlist, which gets stored in the
-            browser localstorage.
+            Utilized the browser local storage to store non-sensitive user data.
+            I created a calendar using the Date API to determine and highlight
+            the current day of the week to the user. The user can add currently
+            airing anime to their watchlist, which gets stored in the browser
+            localstorage.
           </li>
           <li>
             Created typically found sorting functions, such as ascending, date,

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Skills({ lightMode }) {
+export default function Skills() {
   return (
     <div className="flex justify-center mt-40 flex-col text-center">
       <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-8">
@@ -81,7 +81,7 @@ export default function Skills({ lightMode }) {
           </div>
           <div className="flex flex-col items-center group">
             <img
-              src={`${lightMode ? '/nextjsIcon.png' : '/nextjsIconWhite.png'}`}
+              src={`/nextjsIconWhite.png`}
               className="h-24 w-30 mb-2 mt-6"
               alt="next js logo"
             />

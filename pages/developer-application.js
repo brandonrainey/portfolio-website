@@ -77,9 +77,9 @@ export default function DeveloperApplication() {
             focused.
           </li>
           <li>
-            The second step is used to upload a resume. It uses the input
-            file type to allow the user to upload thier resume from thier
-            computer. The resume name is displayed after successfully uploading.
+            The second step is used to upload a resume. It uses the input file
+            type to allow the user to upload thier resume from thier computer.
+            The resume name is displayed after successfully uploading.
           </li>
           <li>
             The third step is a grid of checkboxes of frontend related

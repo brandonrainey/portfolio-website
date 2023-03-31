@@ -6,21 +6,13 @@ import Intro from '../components/Intro'
 import Skills from '../components/Skills'
 import Work from '../components/Projects'
 
-
 export default function Home() {
   const [workScroll, setWorkScroll] = useState(false)
   const [aboutMeScroll, setAboutMeScroll] = useState(false)
   const [contactScroll, setContactScroll] = useState(false)
 
-  const [lightMode, setLightMode] = useState(false)
-
   return (
-    <div
-      className={`flex flex-col  ${
-        lightMode ? 'lightModeBackground lightModeText' : null
-      }`}
-    >
-      
+    <div className={`flex flex-col `}>
       <Header
         workScroll={workScroll}
         setWorkScroll={setWorkScroll}
@@ -28,28 +20,17 @@ export default function Home() {
         setAboutMeScroll={setAboutMeScroll}
         contactScroll={contactScroll}
         setContactScroll={setContactScroll}
-        lightMode={lightMode}
-        setLightMode={setLightMode}
       />
-      <Intro lightMode={lightMode} />
-      <Work
-        workScroll={workScroll}
-        setWorkScroll={setWorkScroll}
-        lightMode={lightMode}
-        setLightMode={setLightMode}
-      />
+      <Intro />
+      <Work workScroll={workScroll} setWorkScroll={setWorkScroll} />
       <AboutMe
         aboutMeScroll={aboutMeScroll}
         setAboutMeScroll={setAboutMeScroll}
-        lightMode={lightMode}
-        setLightMode={setLightMode}
       />
-      <Skills lightMode={lightMode} setLightMode={setLightMode} />
+      <Skills />
       <Contact
         contactScroll={contactScroll}
         setContactScroll={setContactScroll}
-        lightMode={lightMode}
-        setLightMode={setLightMode}
       />
     </div>
   )

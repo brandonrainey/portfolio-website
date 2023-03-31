@@ -18,42 +18,6 @@ body {
   font-family: 'Noto Sans KR';
 }
 
-.lightModeText {
-  color: black;
-}
-
-.lightModeTitle {
-  background: #9ab7cc !important;
-}
-
-.lightModeProjects {
-  color: white;
-}
-
-.lightModeBackground {
-  background: rgb(246, 244, 252);
-}
-
-.lightModeBorder {
-  border: 1px solid black;
-  background: #ffffff;
-}
-
-.lightModeLabel {
-  color: white;
-}
-
-.lightModeButton {
-  background-color: white;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-
-.lightModeAbout {
-  background: #c9d1e7 !important;
-}
-
 /* mobile view */
 @media (max-width: 900px) {
   html,
@@ -179,18 +143,12 @@ textarea:focus {
   margin-top: 4px;
 }
 
-.lightModeDescription {
-  background: rgb(129, 160, 216) !important;
-}
-
 .image-item {
-  padding: 0 20px 0  20px;
+  padding: 0 20px 0 20px;
 }
 
-@media  (max-width: 640px) {
+@media (max-width: 640px) {
   .image-item {
     padding: 0;
   }
 }
-
-

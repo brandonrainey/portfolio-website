@@ -71,17 +71,19 @@ export default function StripeShop() {
       </ul>
 
       <article className="flex flex-col items-center gap-6">
-        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">Description</h2>
+        <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">
+          Description
+        </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            Ecommerce site with several features, starting with a main page
-            with two sections. One to click icons to route to the different
-            category pages. And the other a list of deals that can be directly
-            added to cart. The header contains a nav for all products page,
-            categories of products pages, deals page, and orders page. The
-            search bar actively searches through all products, leading to a
-            lightbox product page. The last two items are the sign in/out link
-            through google, and the cart link.
+            Ecommerce site with several features, starting with a main page with
+            two sections. One to click icons to route to the different category
+            pages. And the other a list of deals that can be directly added to
+            cart. The header contains a nav for all products page, categories of
+            products pages, deals page, and orders page. The search bar actively
+            searches through all products, leading to a lightbox product page.
+            The last two items are the sign in/out link through google, and the
+            cart link.
           </li>
           <li>
             All product pages are responsive grids of the products cards, with
@@ -120,9 +122,10 @@ export default function StripeShop() {
             storing individual users and their past orders.
           </li>
           <li>
-            Started using getServerSideProps to fetch the data from the api. But ended up switching
-            over to getStaticProps to increase the performance significantly as i learned when using
-            getServerSideProps runs every time there was a route change, slowing performance.
+            Started using getServerSideProps to fetch the data from the api. But
+            ended up switching over to getStaticProps to increase the
+            performance significantly as i learned when using getServerSideProps
+            runs every time there was a route change, slowing performance.
           </li>
         </ul>
 
@@ -144,5 +147,3 @@ export default function StripeShop() {
     </div>
   )
 }
-
-

@@ -16,9 +16,7 @@ export default function AboutMe(props) {
   return (
     <div
       ref={aboutMeDiv}
-      className={`flex justify-center mt-40 flex-col text-center bg-gradient-to-t to-[#13385c]/50 from-[#13385c]/50  md:w-3/4 py-8 self-center rounded-lg drop-shadow-lg ${
-        props.lightMode ? 'bg-[#052033] text-white' : ''
-      }`}
+      className={`flex justify-center mt-40 flex-col text-center bg-gradient-to-t to-[#13385c]/50 from-[#13385c]/50  md:w-3/4 py-8 self-center rounded-lg drop-shadow-lg `}
     >
       <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-2">
         About Me

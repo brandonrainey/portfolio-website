@@ -20,9 +20,7 @@ export default function Contact(props) {
   return (
     <div
       ref={contactDiv}
-      className={`flex justify-center mt-40 flex-col text-center mb-4 bg-gradient-to-t to-[#13385c]/50 from-[#13385c]/50 w-full md:w-3/4 self-center rounded-lg py-8 drop-shadow-lg ${
-        props.lightMode ? 'bg-[#052033] text-white' : ''
-      }`}
+      className={`flex justify-center mt-40 flex-col text-center mb-4 bg-gradient-to-t to-[#13385c]/50 from-[#13385c]/50 w-full md:w-3/4 self-center rounded-lg py-8 drop-shadow-lg `}
     >
       <h1 className="font-bold text-5xl sm:tracking-wide underline underline-offset-[16px] pb-2">
         Contact
@@ -37,7 +35,7 @@ export default function Contact(props) {
       >
         brandonhrainey@gmail.com
       </p>
-      <Form lightMode={props.lightMode} />
+      <Form />
       <nav className="flex justify-center mt-4 gap-x-6">
         <a href="https://github.com/brandonrainey">
           <img

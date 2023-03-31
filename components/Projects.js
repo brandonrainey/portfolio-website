@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { useInView } from 'react-intersection-observer'
 import { motion, Variants } from 'framer-motion'
 
-export default function Work({ workScroll, setWorkScroll, lightMode }) {
+export default function Work({ workScroll, setWorkScroll }) {
   const workDiv = useRef()
 
   const testRef = useRef()
@@ -278,7 +278,6 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               className="h-full rounded w-auto"
               src={project.image}
               alt="project thumbnail"
-              layout="responsive"
             />
 
             {/* Hover Overlay */}
@@ -293,34 +292,30 @@ export default function Work({ workScroll, setWorkScroll, lightMode }) {
               }}
             >
               <div className="flex gap-12 justify-center items-center w-full mt-auto mb-auto py-1">
-                <a href={project.live}>
-                  <button
-                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${
-                      projects[index].showingDescription ? 'hidden' : ''
-                    } ${lightMode ? 'text-white' : ''}`}
-                  >
-                    Live
-                  </button>
-                </a>
+                <button
+                  className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${
+                    projects[index].showingDescription ? 'hidden' : ''
+                  } `}
+                  onClick={() => router.push(project.live)}
+                >
+                  Live
+                </button>
 
-                <a href={project.github}>
-                  <button
-                    className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${
-                      projects[index].showingDescription ? 'hidden' : ''
-                    } ${lightMode ? 'text-white' : ''}`}
-                  >
-                    Github
-                  </button>
-                </a>
+                <button
+                  className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-24 rounded-3xl tracking-wide font-semibold shadow-xl ${
+                    projects[index].showingDescription ? 'hidden' : ''
+                  } `}
+                  onClick={() => router.push(project.github)}
+                >
+                  Github
+                </button>
               </div>
 
               <div className="flex w-full justify-center py-4 mb-4">
                 <button
                   className={`bg-sky-900/50 border-4 hover:bg-indigo-500 text-xl h-12 w-40 rounded-3xl tracking-wide font-semibold shadow-xl ${
                     projects[index].showingDescription ? 'hidden' : ''
-                  } ${lightMode ? 'text-white' : ''} ${
-                    project.title === 'Easybank Landing Page' ? 'hidden' : ''
-                  }`}
+                  }  `}
                   onClick={() => router.push(projects[index].page)}
                 >
                   Learn More
