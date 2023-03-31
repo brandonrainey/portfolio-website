@@ -28,7 +28,6 @@ export default function Contact(props) {
       <p
         className="font-bold underline mt-6 tracking-wide cursor-copy"
         ref={emailText}
-        value="brandonhrainey@gmail.com"
         onClick={() => {
           navigator.clipboard.writeText('brandonhrainey@gmail.com')
         }}

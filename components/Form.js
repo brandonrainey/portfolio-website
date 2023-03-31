@@ -39,13 +39,13 @@ export default function Form() {
           className={`rounded text-black p-1 w-72  `}
         ></textarea>
       </p>
-      <button className="submitButton mt-2" type="button">
+      
         <input
           type="submit"
           value="Submit"
           className={`p-1 rounded font-bold cursor-pointer darkButton`}
         />
-      </button>
+      
     </form>
   )
 }
