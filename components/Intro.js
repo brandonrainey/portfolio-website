@@ -17,8 +17,10 @@ export default function Intro(props) {
 
       <div className="flex justify-center mt-4">
         <p className="md:text-4xl text-2xl md:w-3/4 text-center font-bold  tracking-wide ">
-          I am a Frontend Developer who enjoys solving interesting problems and
-          building websites people love to use.
+          As a driven Frontend Developer, I specialize in crafting visually
+          stunning, user-centric websites that captivate and engage. Let's
+          collaborate to create exceptional experiences that make a lasting
+          impact.
         </p>
       </div>
     </div>

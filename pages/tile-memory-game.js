@@ -52,10 +52,9 @@ export default function TileMemoryGame() {
       </div>
       <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
         <li>
-          I used Next.js as my react framework as i do for most projects, as i
-          find it the most feature rich and performant. Similarly i used
-          Tailwind CSS to style this project as it helps streamline my building
-          process.
+          For this project, I used Next.js as my React framework and Tailwind
+          CSS for styling, as they offer rich features and streamline the
+          development process.
         </li>
       </ul>
 
@@ -65,24 +64,11 @@ export default function TileMemoryGame() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            A tile memory game where the goal is to memorize a series of tiles
-            in a certain amount of time. When the user clicks start, a timer
-            countdown begins where a random array of tiles will highlight black
-            and they must memorize their positions. After the countdown expires,
-            another timer begins and all tiles are reverted back to their
-            original color. The user must then attempt to click the same
-            positions of the tiles that highlighted black in the beginning. When
-            a correct tile is clicked it turns green, when incorrect it turns
-            red. If the user correctly guesses all of the tiles, the game won
-            message will appear, alternatively if the loss condition is met
-            first the game over message appears.
-          </li>
-          <li>
-            There are three levels for each mode, which increases the size of
-            the grid. Hard mode changes the original game to where tiles now
-            have a sequence of numbers and the user must click them in the
-            correct order, such as 1..2..3..etc., and allows for no incorrect
-            clicks.
+            This tile memory game challenges users to memorize a series of
+            highlighted tiles within a given time. The game features different
+            difficulty levels and grid sizes, with a hard mode that requires
+            users to remember and click a sequence of numbered tiles in the
+            correct order.
           </li>
         </ul>
 
@@ -91,22 +77,19 @@ export default function TileMemoryGame() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full text-lg">
           <li>
-            Created a memory game based on minigames from other games, with
-            different difficulty settings to challenge users. Was able to create
-            the logic from scratch from observing how the game worked. Starts a
-            countdown for the user to track which tiles are highlighted to
-            memorize. When users click a tile, a check occurs to see if their
-            selection is contained in the array of correct answers. During
-            gameplay correct tiles are highlighted green and incorrect red, once
-            the win or loss condition is met, the game ends and displays a game
-            end message.
+            I created a memory game inspired by minigames from other titles and
+            devised the logic from scratch based on my observations of how the
+            game worked.
           </li>
           <li>
-            Worked on creating a smooth moving progress bar with both javascript
-            and css to create a dynamic width percentage that can move at
-            different speeds depending on game state.
+            I implemented a countdown timer to track the user's progress and
+            created a smooth-moving progress bar using both JavaScript and CSS.
           </li>
-          <li></li>
+          <li>
+            During gameplay, correct tile selections are highlighted green, and
+            incorrect ones are red. The game ends when the win or loss condition
+            is met, displaying an appropriate game end message.
+          </li>
         </ul>
 
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold text-center">
@@ -114,10 +97,12 @@ export default function TileMemoryGame() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            Add more levels and more game modes that can utilize a grid of
-            tiles.
+            Introduce more levels and game modes that utilize a grid of tiles.
           </li>
-          <li>Add animations to make it more alive/game-like.</li>
+          <li>
+            Incorporate animations to make the game more engaging and visually
+            appealing.
+          </li>
         </ul>
       </article>
     </div>

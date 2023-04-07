@@ -81,15 +81,13 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-            Responsive and featured Ecommerce site connected with stripe payment
-            processing.
+          Developed a responsive and feature-rich e-commerce site, integrating Stripe payment processing for seamless transactions.
           </li>
           <li className="mb-1">
-            Uses google OAuth with firestore backend to store users and thier
-            orders utilizing a webhook to capture stripe events.
+          Implemented Google OAuth and Firestore backend for secure user authentication, order storage, and efficient handling of Stripe events via webhooks.
           </li>
           <li className="mb-1">
-            Created using Next.js, Typescript, Redux Toolkit, and Tailwind CSS.
+          Employed Next.js, TypeScript, Redux Toolkit, and Tailwind CSS to create a modern and user-friendly interface.
           </li>
         </ul>
       ),
@@ -105,14 +103,13 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-            Fetches data from an API to display in a grid of cards, with
-            paginated results and search functionality
+          Developed a dynamic application that fetches data from an API to display in a grid of cards, incorporating paginated results and search functionality for a user-friendly experience.
           </li>
           <li className="mb-1">
-            Add anime to watchlist calendar using local storage
+          Implemented a watchlist calendar feature, allowing users to add anime using local storage for easy access and organization.
           </li>
           <li className="mb-1">
-            Created using Next.js, Typescript and styled with Tailwind CSS
+          Crafted using Next.js, TypeScript, and styled with Tailwind CSS for a modern and visually appealing interface.
           </li>
         </ul>
       ),
@@ -129,16 +126,13 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-            Fetches data from the Twitch API to display connected user&apos;s
-            followed streams in a grid of cards.
+          Developed an application that fetches data from the Twitch API to display a connected user's followed streams in a grid of cards, providing a personalized experience.
           </li>
           <li className="mb-1">
-            Displays the up to the 3 latest VOD&apos;s from a streamer when
-            clicking on a card, also allowing search by name.
+          Enhanced by displaying up to 3 of the latest VODs upon card selection, and included search by name for easy navigation.
           </li>
           <li className="mb-1">
-            Created using Next.js with Redux Toolkit state management, and
-            styled with Tailwind CSS.
+          Created using Next.js, incorporated Redux Toolkit for state management, and styled with Tailwind CSS.
           </li>
         </ul>
       ),
@@ -154,14 +148,13 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-            Implements CRUD functionality of posts with comments on specific
-            reddits
+          Developed an application that implements CRUD functionality for posts and comments on specific subreddits, providing users with an interactive experience.
           </li>
           <li className="mb-1">
-            Stores and fetches data using Firebase Firestore as a backend
+          Utilized Firebase Firestore as a backend for efficient data storage and retrieval.
           </li>
           <li className="mb-1">
-            Created using Next.js React framework and styled with Tailwind CSS
+          Crafted using the Next.js React framework and styled with Tailwind CSS for a modern and visually appealing interface.
           </li>
         </ul>
       ),
@@ -177,15 +170,13 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1s">
           <li className="mb-1">
-            Displays square grid of tiles where user memorizes a pattern and
-            recalls that pattern in a time limit.
+          Developed an engaging memory game that displays a square grid of tiles, challenging users to memorize and recall a pattern within a specified time limit.
           </li>
           <li className="mb-1">
-            User can choose several grid sizes, with visual animations and
-            progress bar
+          Enhanced user experience by offering multiple grid size options, accompanied by visually appealing animations and a progress bar.
           </li>
           <li className="mb-1">
-            Created using Next.js React framework, styled with Tailwind CSS
+          Crafted using the Next.js React framework and styled with Tailwind CSS for a modern and visually appealing interface.
           </li>
         </ul>
       ),
@@ -201,15 +192,13 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1s">
           <li className="mb-1">
-            A simplified three step application, created specifically for a
-            frontend developer.
+          Developed a streamlined three-step application tailored specifically for frontend developers, offering an intuitive user experience.
           </li>
           <li className="mb-1">
-            Utilizes multiple different input element styles to take in data
-            from the user.
+          Incorporated various input element styles for efficient and interactive data collection from users.
           </li>
           <li className="mb-1">
-            Created using Next.js React framework, styled using SCSS
+          Crafted using the Next.js React framework and styled with SCSS for a modern and visually appealing interface.
           </li>
         </ul>
       ),
@@ -325,7 +314,7 @@ export default function Work({ workScroll, setWorkScroll }) {
               <motion.div
                 className={`${
                   projects[index].showingDescription ? 'h-full' : 'h-10'
-                } bg-sky-900	group transition-all duration-300 rounded text-white border-2 text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-[3.5vw] sm:text-base 2xl:text-lg`}
+                } bg-sky-900	group transition-all duration-300 rounded text-white border-2 text-center font-bold overflow-hidden flex justify-center items-center flex-col shadow-xl text-[2.9vw] md:hidden xl:block sm:text-base `}
                 whileHover={{
                   height: '100%',
                   transition: {
@@ -341,7 +330,7 @@ export default function Work({ workScroll, setWorkScroll }) {
                   handleDescription(index)
                 }}
               >
-                <motion.div className="">
+                <motion.div className=" h-full flex items-center justify-center">
                   {projects[index].showingDescription
                     ? project.description
                     : 'Description'}

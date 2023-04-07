@@ -54,13 +54,10 @@ export default function DeveloperApplication() {
       </div>
       <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
         <li>
-          I used Next.js as my react framework as I do for most projects, as I
-          find it the most feature rich and performant. For styling I used SCSS
-          syntax.
-        </li>
-        <li>
-          I also used TypeScript as default over JavaScript. Jest with React
-          Testing Library is used for unit testing components.
+          For this project, I used Next.js as my React framework and SCSS syntax
+          for styling, as they offer rich features and streamline the
+          development process. I also used TypeScript as the default language
+          and Jest with React Testing Library for unit testing components.
         </li>
       </ul>
 
@@ -68,35 +65,11 @@ export default function DeveloperApplication() {
         <h2 className="sm:text-3xl text-2xl mb-2 font-semibold">Description</h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            Four step application designed to be simplified to relevant
-            information to a frontend developers.
-          </li>
-          <li>
-            The first step has one form for name, one for email, and one for
-            phone number. All three have placeholders and are outlined when
-            focused.
-          </li>
-          <li>
-            The second step is used to upload a resume. It uses the input file
-            type to allow the user to upload thier resume from thier computer.
-            The resume name is displayed after successfully uploading.
-          </li>
-          <li>
-            The third step is a grid of checkboxes of frontend related
-            technologies with an icon for each. The checkboxes are outlined when
-            checked and persist through steps.
-          </li>
-          <li>
-            The fourth step is a summary of all user entered information so far.
-            With a section for personal info and with skills displayed in
-            bubbles below. If each personal information is not entered, an error
-            with display and the user cannot proceed to confirm for the final
-            step.
-          </li>
-          <li>
-            Once the user clicks confirm on the fourth step, a confirmation
-            screen displays, showing a thank you message with some contact
-            information.
+            This is a four-step application designed specifically for frontend
+            developers. It includes forms for personal information, resume
+            upload, selection of frontend-related technologies, and a summary of
+            all entered information. The application features validation, error
+            messages, and a final confirmation screen with contact information.
           </li>
         </ul>
 
@@ -105,17 +78,12 @@ export default function DeveloperApplication() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            First time using SCSS syntax in a project, so i was able to learn
-            about the different additions it provides over vanilla CSS. For
-            example i used a lot of the nesting structure, along with some
-            mixins.
+            I used SCSS syntax for the first time, learning about its various
+            features, such as nesting structures and mixins.
           </li>
           <li>
-            The design for this website was taken from a FrontendMentor
-            challenge, so I was able to practice taking the visual design given
-            and construct it into an actual website. Since i altered the theme
-            of the forms, I had to make my own pages for the resume upload and
-            skill checkboxes.
+            I used SCSS syntax for the first time, learning about its various
+            features, such as nesting structures and mixins.
           </li>
         </ul>
 
@@ -125,10 +93,16 @@ export default function DeveloperApplication() {
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             Restrict the text users can enter into personal info fields and
-            display an error
+            display error messages accordingly.
           </li>
-          <li>Allow user to enter thier own skills in addition</li>
-          <li>Allow user to edit thier info from the summary page</li>
+          <li>
+            Allow users to enter their own skills in addition to the provided
+            options.
+          </li>
+          <li>
+            Enable users to edit their information directly from the summary
+            page.
+          </li>
         </ul>
       </article>
     </div>

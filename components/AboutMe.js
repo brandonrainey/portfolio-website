@@ -23,20 +23,26 @@ export default function AboutMe(props) {
       </h1>
       <article className="flex justify-center mt-6">
         <p className="sm:w-1/2 w-3/4 tracking-wide">
-          I am a 28 year old Frontend Developer currently based out of Goose
-          Creek, South Carolina. I first started coding in high school classes
-          using Java and C++. Ive always been interested in technology while
-          trying to figure out how things work, and web development allows me to
-          create those very things. I just recently started my self taught
-          developer journey over 1 year ago, focusing on HTML, CSS, and
-          Javascript.
+          As a 29-year-old Frontend Developer based in Goose Creek, South
+          Carolina, I bring a passion for technology and a commitment to
+          lifelong learning to the table. My coding journey began in high school
+          with Java and C++ and has since evolved into a focus on web
+          development, specifically HTML, CSS, and JavaScript.
           <br />
-          <br />I love creating websites and web apps with Javascript/React, and
-          enjoying solving interesting problems while learning new things at the
-          same time. My interests include following the newest tech, listening
-          and playing music, pc gaming, and anime. I am actively looking for
-          employment as a Frontend Developer, so feel free to contact me if your
-          interested in a committed life long learner!
+          <br />
+          Over the past two years, I have been diligently teaching myself these
+          technologies and have developed a particular affinity for creating
+          websites and web apps using JavaScript and React. My enthusiasm for
+          problem-solving and continuous learning keeps me motivated as I
+          navigate this ever-evolving field. Outside of my professional
+          interests, I enjoy staying up-to-date with the latest tech trends,
+          playing and listening to music, PC gaming, and watching anime.
+          <br />
+          <br />
+          Currently, I am actively seeking opportunities as a Frontend Developer
+          and would be thrilled to contribute my skills and enthusiasm to your
+          team. If you're looking for a dedicated and ambitious developer,
+          please don't hesitate to reach out!
         </p>
       </article>
     </div>

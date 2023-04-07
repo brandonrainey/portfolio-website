@@ -54,12 +54,10 @@ export default function RedditClone() {
       </div>
       <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
         <li>
-          I used Next.js as my react framework as i do for most projects, as i
-          find it the most feature rich and performant. Similarly i used
-          Tailwind CSS to style this project as it helps streamline my building
-          process. Another frequently used service by me is Firebase as the
-          backend, mostly as its what im most familiar with, which allows me to
-          focus on the frontend more.
+        For this project, I used Next.js as my React framework and Tailwind
+          CSS for styling, as they offer rich features and streamline the
+          development process. Firebase was used as the backend, allowing me to
+          focus more on the frontend.
         </li>
       </ul>
 
@@ -69,12 +67,10 @@ export default function RedditClone() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            Similar to reddit, the users can view the posts of a subreddit in
-            ascending order. When signed in, the user can upvote or downvote a
-            post, as well as create a post. There is a navigation of subreddits
-            in the header, as well as to the right of posts, with a button to
-            create a new subreddit under the ladder. After clicking to view a
-            post, users can view the comment thread below, as well as normal
+          This application, similar to Reddit, allows users to view subreddit
+            posts in ascending order. When signed in, users can upvote or
+            downvote posts, create new posts, and navigate through various
+            subreddits. Users can also view comment threads and perform standard
             post actions when signed in.
           </li>
         </ul>
@@ -84,20 +80,20 @@ export default function RedditClone() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-            Worked on simulating real world CRUD functionality where users sign
-            in to an account with auth, then have the data sent to the database
-            assigned to individual users. I also tried to have a slightly more
-            complex database structure than a basic project. Where in addition
-            to user posts that are data connected to the user, giving the
-            ability to create a subreddit which has a wider scope thats
-            interactable by other users.
+          I worked on simulating real-world CRUD functionality, where users
+            sign in to an account with authentication and have their data sent
+            to the database assigned to individual users.
           </li>
 
           <li>
-            Worked on creating smoother responsive design from desktop down to
-            mobile by using less media queries, and adding responsiveness with
-            flexbox and percentage widths. Also practiced being able to create a
-            similar design to a popular website but not making it a 1:1 clone.
+          I created a slightly more complex database structure, allowing users
+            to create subreddits that are interactable by other users.
+          </li>
+          <li>
+          I focused on improving responsive design by using fewer media
+            queries and incorporating responsiveness with flexbox and percentage
+            widths. I also aimed to create a design similar to a popular website
+            without making it a 1:1 clone.
           </li>
         </ul>
 
@@ -105,12 +101,12 @@ export default function RedditClone() {
           Potential Additions/Improvements
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
-          <li>Improve post user interface to be more appealing.</li>
+          <li>Enhance the post user interface to be more visually appealing.</li>
           <li>
-            Refactor data structure of database to make more sense/easier to
-            access.
+          Refactor the data structure of the database for easier access and
+            better organization.
           </li>
-          <li>Allow searchbar to search through list of subreddits</li>
+          <li>Implement a search bar to search through the list of subreddits.</li>
         </ul>
       </article>
     </div>
