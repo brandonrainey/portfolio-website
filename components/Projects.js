@@ -126,7 +126,7 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-          Developed an application that fetches data from the Twitch API to display a connected user's followed streams in a grid of cards, providing a personalized experience.
+          Developed an application that fetches data from the Twitch API to display a connected user&apos;s followed streams in a grid of cards, providing a personalized experience.
           </li>
           <li className="mb-1">
           Enhanced by displaying up to 3 of the latest VODs upon card selection, and included search by name for easy navigation.

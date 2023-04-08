@@ -82,7 +82,7 @@ export default function TileMemoryGame() {
             game worked.
           </li>
           <li>
-            I implemented a countdown timer to track the user's progress and
+            I implemented a countdown timer to track the user&apos;s progress and
             created a smooth-moving progress bar using both JavaScript and CSS.
           </li>
           <li>

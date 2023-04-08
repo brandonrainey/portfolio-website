@@ -41,8 +41,8 @@ export default function AboutMe(props) {
           <br />
           Currently, I am actively seeking opportunities as a Frontend Developer
           and would be thrilled to contribute my skills and enthusiasm to your
-          team. If you're looking for a dedicated and ambitious developer,
-          please don't hesitate to reach out!
+          team. If you&apos;re looking for a dedicated and ambitious developer,
+          please don&apos;t hesitate to reach out!
         </p>
       </article>
     </div>

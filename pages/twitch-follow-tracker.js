@@ -65,11 +65,11 @@ export default function TwitchFollowTracker() {
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
             Users can connect their Twitch account to view their followers. Once
-            connected, up to 100 of the user's followed streams are displayed in
+            connected, up to 100 of the user&apos;s followed streams are displayed in
             a grid of cards. Clicking on a card opens a popup that shows the
-            streamer's three most recent VODs, with thumbnails linking to the
+            streamer&apos;s three most recent VODs, with thumbnails linking to the
             corresponding videos. An active search bar filters the grid of
-            followers, and a "load more" button allows users to paginate and
+            followers, and a &quot;load more&quot; button allows users to paginate and
             fetch more of their followed streams if they have over 100.
           </li>
         </ul>
@@ -101,7 +101,7 @@ export default function TwitchFollowTracker() {
             Access more endpoints from the Twitch API to display additional
             information on each card.
           </li>
-          <li>Persist the user's authentication beyond the browser session.</li>
+          <li>Persist the user&apos;s authentication beyond the browser session.</li>
         </ul>
       </article>
     </div>
