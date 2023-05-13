@@ -23,22 +23,22 @@ const responsive = {
   },
 }
 
-export default function RedditClone() {
+export default function GameFeedback() {
   return (
     <div className="flex flex-col items-center gap-6">
       <h1 className="sm:text-6xl text-5xl mb-12 mt-4 px-4 font-semibold text-center">
-        Reddit Clone
+        Game Feedback
       </h1>
       <Carousel
         responsive={responsive}
         itemClass={`image-item`}
         className="sm:w-5/6 w-full"
       >
-        <img src="/redditCloneSS.webp" className=""></img>
-        <img src="/redditCloneSS2.webp" className=""></img>
-        <img src="/redditCloneSS3.webp" className=""></img>
-        <img src="/redditCloneSS4.webp" className=""></img>
-        <img src="/redditCloneSS5.webp" className=""></img>
+        <img src="/game-feedback-SS.png" className=""></img>
+        <img src="/game-feedback-SS2.png" className=""></img>
+        <img src="/game-feedback-SS3.png" className=""></img>
+        <img src="/game-feedback-SS4.png" className=""></img>
+        
       </Carousel>
 
       <div className="flex flex-col items-center">
@@ -54,10 +54,8 @@ export default function RedditClone() {
       </div>
       <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
         <li>
-        For this project, I used Next.js as my React framework and Tailwind
-          CSS for styling, as they offer rich features and streamline the
-          development process. Firebase was used as the backend, allowing me to
-          focus more on the frontend.
+        For this project, I used Next.js as my React framework and SCSS for styling, as they offer rich features and streamline the
+          development process. MongoDB was used as the backend, in conjunction with Next.js API routes.
         </li>
       </ul>
 
@@ -67,11 +65,10 @@ export default function RedditClone() {
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
           <li>
-          This application, similar to Reddit, allows users to view subreddit
-            posts in ascending order. When signed in, users can upvote or
-            downvote posts, create new posts, and navigate through various
-            subreddits. Users can also view comment threads and perform standard
-            post actions when signed in.
+          This application allows users to view
+            posts of game suggestions in sortable order. When signed in, users can upvote or
+            downvote posts, create new posts, edit posts, comment on posts, and reply to comments. Posts can also be given
+            a status to be viewed in a roadmap layout of suggestions.
           </li>
         </ul>
 
@@ -87,13 +84,12 @@ export default function RedditClone() {
 
           <li>
           I created a slightly more complex database structure, allowing users
-            to create subreddits that are interactable by other users.
+            to create posts that are interactable by other users.
           </li>
           <li>
           I focused on improving responsive design by using fewer media
             queries and incorporating responsiveness with flexbox and percentage
-            widths. I also aimed to create a design similar to a popular website
-            without making it a 1:1 clone.
+            widths. 
           </li>
         </ul>
 
@@ -101,12 +97,11 @@ export default function RedditClone() {
           Potential Additions/Improvements
         </h2>
         <ul className="list-disc px-8 gap-2 flex flex-col pb-4 sm:w-3/4 w-full sm:text-lg text-md tracking-wide">
-          <li>Enhance the post user interface to be more visually appealing.</li>
+          <li>Revise the post user interface to be more visually appealing.</li>
           <li>
-          Refactor the data structure of the database for easier access and
-            better organization.
+          Add more points of interaction on the interface/create animations
           </li>
-          <li>Implement a search bar to search through the list of subreddits.</li>
+          <li>Create more interactive messages on actions or errors taken by the user.</li>
         </ul>
       </article>
     </div>

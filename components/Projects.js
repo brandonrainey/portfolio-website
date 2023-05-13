@@ -81,13 +81,44 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-          Developed a responsive and feature-rich e-commerce site, integrating Stripe payment processing for seamless transactions.
+            Developed a responsive and feature-rich e-commerce site, integrating
+            Stripe payment processing for seamless transactions.
           </li>
           <li className="mb-1">
-          Implemented Google OAuth and Firestore backend for secure user authentication, order storage, and efficient handling of Stripe events via webhooks.
+            Implemented Google OAuth and Firestore backend for secure user
+            authentication, order storage, and efficient handling of Stripe
+            events via webhooks.
           </li>
           <li className="mb-1">
-          Employed Next.js, TypeScript, Redux Toolkit, and Tailwind CSS to create a modern and user-friendly interface.
+            Employed Next.js, TypeScript, Redux Toolkit, and Tailwind CSS to
+            create a modern and user-friendly interface.
+          </li>
+        </ul>
+      ),
+      showing: false,
+      showingDescription: false,
+    },
+
+    {
+      title: 'Game Feedback',
+      image: '/game-feedback-SS.png',
+      github: 'https://github.com/brandonrainey/game-feedback',
+      live: 'https://game-feedback.netlify.app',
+      page: '/game-feedback',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1">
+          <li className="mb-1">
+            Developed an application that implements CRUD functionality for
+            posts and comments and replies, providing users with an interactive
+            experience.
+          </li>
+          <li className="mb-1">
+            Utilized MongoDB as a backend for efficient data storage and
+            retrieval.
+          </li>
+          <li className="mb-1">
+            Crafted using the Next.js React framework and styled with SCSS for a
+            modern and visually appealing interface.
           </li>
         </ul>
       ),
@@ -103,13 +134,44 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-          Developed a dynamic application that fetches data from an API to display in a grid of cards, incorporating paginated results and search functionality for a user-friendly experience.
+            Developed a dynamic application that fetches data from an API to
+            display in a grid of cards, incorporating paginated results and
+            search functionality for a user-friendly experience.
           </li>
           <li className="mb-1">
-          Implemented a watchlist calendar feature, allowing users to add anime using local storage for easy access and organization.
+            Implemented a watchlist calendar feature, allowing users to add
+            anime using local storage for easy access and organization.
           </li>
           <li className="mb-1">
-          Crafted using Next.js, TypeScript, and styled with Tailwind CSS for a modern and visually appealing interface.
+            Crafted using Next.js, TypeScript, and styled with Tailwind CSS for
+            a modern and visually appealing interface.
+          </li>
+        </ul>
+      ),
+      showing: false,
+      showingDescription: false,
+    },
+
+    {
+      title: 'Tile Memory Game',
+      image: '/tilegamess.webp',
+      github: 'https://github.com/brandonrainey/tile-game',
+      live: 'https://tile-memory-game.netlify.app',
+      page: '/tile-memory-game',
+      description: (
+        <ul className="transition-all list-disc list-inside gap-2 px-1s">
+          <li className="mb-1">
+            Developed an engaging memory game that displays a square grid of
+            tiles, challenging users to memorize and recall a pattern within a
+            specified time limit.
+          </li>
+          <li className="mb-1">
+            Enhanced user experience by offering multiple grid size options,
+            accompanied by visually appealing animations and a progress bar.
+          </li>
+          <li className="mb-1">
+            Crafted using the Next.js React framework and styled with Tailwind
+            CSS for a modern and visually appealing interface.
           </li>
         </ul>
       ),
@@ -126,63 +188,24 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1">
           <li className="mb-1">
-          Developed an application that fetches data from the Twitch API to display a connected user&apos;s followed streams in a grid of cards, providing a personalized experience.
+            Developed an application that fetches data from the Twitch API to
+            display a connected user&apos;s followed streams in a grid of cards,
+            providing a personalized experience.
           </li>
           <li className="mb-1">
-          Enhanced by displaying up to 3 of the latest VODs upon card selection, and included search by name for easy navigation.
+            Enhanced by displaying up to 3 of the latest VODs upon card
+            selection, and included search by name for easy navigation.
           </li>
           <li className="mb-1">
-          Created using Next.js, incorporated Redux Toolkit for state management, and styled with Tailwind CSS.
+            Created using Next.js, incorporated Redux Toolkit for state
+            management, and styled with Tailwind CSS.
           </li>
         </ul>
       ),
       showing: false,
       showingDescription: false,
     },
-    {
-      title: 'Reddit Clone',
-      image: '/redditCloneSS.webp',
-      github: 'https://github.com/brandonrainey/reddit-clone',
-      live: 'https://brainey-reddit-clone.netlify.app',
-      page: '/reddit-clone',
-      description: (
-        <ul className="transition-all list-disc list-inside gap-2 px-1">
-          <li className="mb-1">
-          Developed an application that implements CRUD functionality for posts and comments on specific subreddits, providing users with an interactive experience.
-          </li>
-          <li className="mb-1">
-          Utilized Firebase Firestore as a backend for efficient data storage and retrieval.
-          </li>
-          <li className="mb-1">
-          Crafted using the Next.js React framework and styled with Tailwind CSS for a modern and visually appealing interface.
-          </li>
-        </ul>
-      ),
-      showing: false,
-      showingDescription: false,
-    },
-    {
-      title: 'Tile Memory Game',
-      image: '/tilegamess.webp',
-      github: 'https://github.com/brandonrainey/tile-game',
-      live: 'https://tile-memory-game.netlify.app',
-      page: '/tile-memory-game',
-      description: (
-        <ul className="transition-all list-disc list-inside gap-2 px-1s">
-          <li className="mb-1">
-          Developed an engaging memory game that displays a square grid of tiles, challenging users to memorize and recall a pattern within a specified time limit.
-          </li>
-          <li className="mb-1">
-          Enhanced user experience by offering multiple grid size options, accompanied by visually appealing animations and a progress bar.
-          </li>
-          <li className="mb-1">
-          Crafted using the Next.js React framework and styled with Tailwind CSS for a modern and visually appealing interface.
-          </li>
-        </ul>
-      ),
-      showing: false,
-      showingDescription: false,
-    },
+
     {
       title: 'Developer Application',
       image: '/applicationSS.png',
@@ -192,13 +215,16 @@ export default function Work({ workScroll, setWorkScroll }) {
       description: (
         <ul className="transition-all list-disc list-inside gap-2 px-1s">
           <li className="mb-1">
-          Developed a streamlined three-step application tailored specifically for frontend developers, offering an intuitive user experience.
+            Developed a streamlined three-step application tailored specifically
+            for frontend developers, offering an intuitive user experience.
           </li>
           <li className="mb-1">
-          Incorporated various input element styles for efficient and interactive data collection from users.
+            Incorporated various input element styles for efficient and
+            interactive data collection from users.
           </li>
           <li className="mb-1">
-          Crafted using the Next.js React framework and styled with SCSS for a modern and visually appealing interface.
+            Crafted using the Next.js React framework and styled with SCSS for a
+            modern and visually appealing interface.
           </li>
         </ul>
       ),
