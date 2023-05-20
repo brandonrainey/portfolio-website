@@ -131,7 +131,7 @@ export default function Skills() {
           </div>
           <div className="flex flex-col items-center group">
             <img
-              src="/mongodbIcon.png"
+              src="/mongodbIcon.webp"
               className="h-24 w-30 mt-4 mb-2"
               alt="mongo db logo"
             />
