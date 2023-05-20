@@ -101,7 +101,7 @@ export default function Work({ workScroll, setWorkScroll }) {
 
     {
       title: 'Game Feedback',
-      image: '/game-feedback-SS.png',
+      image: '/game-feedback-SS.webp',
       github: 'https://github.com/brandonrainey/game-feedback',
       live: 'https://game-feedback.netlify.app',
       page: '/game-feedback',

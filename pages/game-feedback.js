@@ -34,10 +34,10 @@ export default function GameFeedback() {
         itemClass={`image-item`}
         className="sm:w-5/6 w-full"
       >
-        <img src="/game-feedback-SS.png" className=""></img>
-        <img src="/game-feedback-SS2.png" className=""></img>
-        <img src="/game-feedback-SS3.png" className=""></img>
-        <img src="/game-feedback-SS4.png" className=""></img>
+        <img src="/game-feedback-SS.webp" className=""></img>
+        <img src="/game-feedback-SS2.webp" className=""></img>
+        <img src="/game-feedback-SS3.webp" className=""></img>
+        <img src="/game-feedback-SS4.webp" className=""></img>
         
       </Carousel>
 
