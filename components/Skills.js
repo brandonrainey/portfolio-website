@@ -139,6 +139,16 @@ export default function Skills() {
               MongoDB
             </div>
           </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src="/nodejs-logo.png"
+              className="h-24 w-30 mt-4 mb-2"
+              alt="node js logo"
+            />
+            <div className="w-auto px-2 h-7 bg-[#3a688e] bottom-0 right-[16px] rounded-lg font-semibold ">
+              Node.js
+            </div>
+          </div>
         </div>
       </div>
     </div>
