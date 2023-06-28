@@ -27,7 +27,7 @@ export default function AboutMe(props) {
           Carolina, I bring a passion for technology and a commitment to
           lifelong learning to the table. My coding journey began in high school
           with Java and C++ and has since evolved into a focus on web
-          development, specifically HTML, CSS, and JavaScript.
+          development, specifically HTML, CSS, and JavaScript/Typescript.
           <br />
           <br />
           Over the past two years, I have been diligently teaching myself these
